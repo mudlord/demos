@@ -1,0 +1,64 @@
+float strp_cnt = 32.0;
+float strp_intens = 0.0011;
+float strp_trnsinst = 0.1116;
+float rgb_distort = 0.0215;
+
+uniform vec2 resolution;
+uniform sampler2D tex;
+//uniform float time;
+float time = iGlobalTime;
+
+
+float getRand(vec2 co)
+{
+    vec2 randOffset = vec2(time * 0.0001,time * 0.0001);
+    return fract(sin(dot(co.xy, vec2(12.9898,78.233) + randOffset)) * 43758.5453);
+}
+
+vec4 process(vec2 coords, sampler2D image)
+{
+	float time = 0.0;
+
+
+	float stripeId = floor(coords.y * max(1.0, strp_cnt)) / max(1.0, strp_cnt);
+	float stripeRand = getRand(vec2(0.0, -stripeId));
+	float stripeOffset = getRand(vec2(0.0, stripeId)) * strp_trnsinst;
+
+	// offsetting
+	vec2 texCoords= vec2(mod(coords.x + stripeOffset * 0.25, 1.0), 
+						  coords.y + min(1.0, 1.0 + mod(coords.x + stripeOffset * 0.25, 1.0)) - 1.0);
+	
+	
+	vec2 rOffset = vec2(0.0, rgb_distort);
+	vec2 gOffset = vec2(0.0, -rgb_distort);
+	vec2 bOffset = vec2(rgb_distort, 0.0);
+
+	vec4 img = vec4(texture2D(image, texCoords + rOffset).r, 
+					texture2D(image, texCoords + gOffset).g, 
+					texture2D(image, texCoords + bOffset).b, 
+					texture2D(image, texCoords).a);
+
+	
+	// stripe changes
+	if(stripeRand - (1.0 - strp_intens) > 0.0)
+	{
+		float so = getRand(vec2(stripeId, stripeRand));
+		if(so < 0.33)
+			img.r = 1.0;
+		else if(so < 0.66)
+			img.g = 1.0;
+		else
+			img.b = 1.0;
+	}
+
+	vec4 col = img;
+    return col;
+}
+
+
+void main(void)
+{
+	vec2 uv = gl_FragCoord.xy / iResolution.xy;
+    vec4 col = process(uv,iChannel0);
+	gl_FragColor = col;
+}

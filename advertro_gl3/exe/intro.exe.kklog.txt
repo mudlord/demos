@@ -1,0 +1,51 @@
+main: initializing...
+main: all main components initialized.
+main: reading parameter block...
+main: initialization done
+video/opengl: wglSwapIntervalEXT supported
+video/opengl: FBOs supported
+main: video encoder initialized.
+video: capturing at 1024x768
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+sound: waveOutOpen ffffffff (44100 hz, 16 bits, 2 channels)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 1 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 2 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 3 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 4 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 5 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 6 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 7 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits
+avi_vfw: segment 8 reached maximum size, creating next segment.
+avi_vfw: stopped recording
+avi_vfw: avifile shutdown complete
+avi_vfw: opened video stream at 60.000 fps (6000/100)
+avi_vfw: opened audio stream at 44100 hz, 2 channels, 16 bits

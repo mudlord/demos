@@ -1,0 +1,564 @@
+ intro
+
+ Timestamp is 536425e6 (Sat May 03 09:10:30 2014)
+
+ Preferred load address is 00600000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00009618H .text                   CODE
+ 0001:00009618 00000016H .text$yc                CODE
+ 0001:0000962e 0000000bH .text$yd                CODE
+ 0002:00000000 000001e4H .idata$5                DATA
+ 0002:000001e8 00002078H .rdata                  DATA
+ 0002:00002260 0000008cH .idata$2                DATA
+ 0002:000022ec 00000014H .idata$3                DATA
+ 0002:00002300 000001e4H .idata$4                DATA
+ 0002:000024e4 000006e4H .idata$6                DATA
+ 0002:00002bc8 00000000H .edata                  DATA
+ 0003:00000000 0000ae20H .data                   DATA
+ 0003:0000ae20 001827b0H .bss                    DATA
+ 0004:00000000 00000004H .CRT$XCU                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0001:00000000       _hvl_GenPanningTables      00601000 f   hvl_replay.obj
+ 0001:0000007d       _hvl_GenSawtooth           0060107d f   hvl_replay.obj
+ 0001:000000a7       _hvl_GenTriangle           006010a7 f   hvl_replay.obj
+ 0001:0000011a       _hvl_GenSquare             0060111a f   hvl_replay.obj
+ 0001:00000183       _hvl_GenFilterWaves        00601183 f   hvl_replay.obj
+ 0001:000002b1       _hvl_GenWhiteNoise         006012b1 f   hvl_replay.obj
+ 0001:00000304       _hvl_reset_some_stuff      00601304 f   hvl_replay.obj
+ 0001:000004fb       _hvl_InitSubsong           006014fb f   hvl_replay.obj
+ 0001:00000680       _hvl_InitReplayer          00601680 f   hvl_replay.obj
+ 0001:0000074d       _hvl_load_ahx              0060174d f   hvl_replay.obj
+ 0001:00000ed5       _hvl_LoadTune              00601ed5 f   hvl_replay.obj
+ 0001:000016ea       _hvl_FreeTune              006026ea f   hvl_replay.obj
+ 0001:000016fb       _hvl_process_stepfx_1      006026fb f   hvl_replay.obj
+ 0001:00001898       _hvl_process_stepfx_2      00602898 f   hvl_replay.obj
+ 0001:00001914       _hvl_process_stepfx_3      00602914 f   hvl_replay.obj
+ 0001:00001aa2       _hvl_process_step          00602aa2 f   hvl_replay.obj
+ 0001:00001eaf       _hvl_plist_command_parse   00602eaf f   hvl_replay.obj
+ 0001:00002166       _hvl_process_frame         00603166 f   hvl_replay.obj
+ 0001:00002976       _hvl_set_audio             00603976 f   hvl_replay.obj
+ 0001:00002b03       _hvl_play_irq              00603b03 f   hvl_replay.obj
+ 0001:00002d51       _hvl_mixchunk              00603d51 f   hvl_replay.obj
+ 0001:00002fb8       _hvl_DecodeFrame           00603fb8 f   hvl_replay.obj
+ 0001:00003075       _stbi_failure_reason       00604075 f   intro.obj
+ 0001:00003083       _stbi_image_free           00604083 f   intro.obj
+ 0001:000041b4       _stbi_zlib_decode_malloc_guesssize 006051b4 f   intro.obj
+ 0001:00004342       _stbi_zlib_decode_malloc   00605342 f   intro.obj
+ 0001:0000435d       ?stbi_zlib_decode_malloc_guesssize_headerflag@@YAPADPBDHHPAHH@Z 0060535d f   intro.obj
+ 0001:000043cd       _stbi_zlib_decode_buffer   006053cd f   intro.obj
+ 0001:0000452f       _stbi_zlib_decode_noheader_malloc 0060552f f   intro.obj
+ 0001:000045b9       _stbi_zlib_decode_noheader_buffer 006055b9 f   intro.obj
+ 0001:000050ee       _stbi_set_unpremultiply_on_load 006060ee f   intro.obj
+ 0001:000050fb       _stbi_convert_iphone_png_to_rgb 006060fb f   intro.obj
+ 0001:00005a68       _stbi_info_from_memory     00606a68 f   intro.obj
+ 0001:00005c20       ?flip@@YAPAEHHHPAE@Z       00606c20 f   intro.obj
+ 0001:00005ca7       ?scene1_free@@YAXXZ        00606ca7 f   intro.obj
+ 0001:00005ca8       ?logo_init@@YAXXZ          00606ca8 f   intro.obj
+ 0001:00005ca9       ?draw_sprite_dir_x@@YAXUsprite@@HH_N@Z 00606ca9 f   intro.obj
+ 0001:00005eb4       ?draw_sprite_dir_y@@YAXUsprite@@HH_N@Z 00606eb4 f   intro.obj
+ 0001:000060bf       ?logo_draw@@YAXXZ          006070bf f   intro.obj
+ 0001:00006109       ?make_texture@@YAIHHPAE@Z  00607109 f   intro.obj
+ 0001:00006211       ?draw_rotozoomer@@YAXXZ    00607211 f   intro.obj
+ 0001:00006692       ?draw_twister@@YAXM@Z      00607692 f   intro.obj
+ 0001:000067c0       ?scene1_render@@YAXMM@Z    006077c0 f   intro.obj
+ 0001:000067c5       ?fontwriter_save@@YAXXZ    006077c5 f   intro.obj
+ 0001:000067d2       ?gettablepos@@YAHD@Z       006077d2 f   intro.obj
+ 0001:00006832       ?Print@@YAXMMMPBDZZ        00607832 f   intro.obj
+ 0001:000069b7       ?fontwrite_write@@YAXHHPADM@Z 006079b7 f   intro.obj
+ 0001:00006a30       ?fontwrite@@YAXM@Z         00607a30 f   intro.obj
+ 0001:00006aea       ?AudioThread@@YGKPAX@Z     00607aea f   intro.obj
+ 0001:00006d0d       ?glenz_side@@YAXHHHMM@Z    00607d0d f   intro.obj
+ 0001:00006f54       ?gen_glenz@@YAXMMMMUrotate@@M@Z 00607f54 f   intro.obj
+ 0001:00007153       ?draw_glenz@@YAXNNNUrotate@@Ucolors@@M@Z 00608153 f   intro.obj
+ 0001:0000728d       ?intro_end@@YAXXZ          0060828d f   intro.obj
+ 0001:000072af       ?render_cube@@YAXMMM@Z     006082af f   intro.obj
+ 0001:00007731       ?intro_do@@YAHXZ           00608731 f   intro.obj
+ 0001:00007a5e       _stbi_load_from_file       00608a5e f   intro.obj
+ 0001:00007a96       _stbi_load_from_memory     00608a96 f   intro.obj
+ 0001:00007ad8       _stbi_load_from_callbacks  00608ad8 f   intro.obj
+ 0001:00007b0e       _stbi_info_from_file       00608b0e f   intro.obj
+ 0001:00007b62       _stbi_info_from_callbacks  00608b62 f   intro.obj
+ 0001:00007b97       ?scene1_init@@YAXXZ        00608b97 f   intro.obj
+ 0001:00007e81       ?fontwriter_init@@YAXXZ    00608e81 f   intro.obj
+ 0001:00007f5b       ?intro_init@@YAHHHHPAUIntroProgressDelegate@@@Z 00608f5b f   intro.obj
+ 0001:0000809d       _stbi_load                 0060909d f   intro.obj
+ 0001:000080e6       _stbi_info                 006090e6 f   intro.obj
+ 0001:0000812c       ??_Esprite2@@UAEPAXI@Z     0060912c f i intro.obj
+ 0001:0000812c       ??_Gsprite2@@UAEPAXI@Z     0060912c f i intro.obj
+ 0001:0000814c       ??0sprite2@@QAE@XZ         0060914c f   sprite.obj
+ 0001:000081a1       ?render@sprite2@@QAEXHMMMM@Z 006091a1 f   sprite.obj
+ 0001:000084b3       _sync_data_deinit          006094b3 f   data.obj
+ 0001:000084fa       _sync_create_track         006094fa f   data.obj
+ 0001:000085de       _sync_set_io_cb            006095de f   device.obj
+ 0001:000085fa       _sync_create_device        006095fa f   device.obj
+ 0001:0000864a       _sync_destroy_device       0060964a f   device.obj
+ 0001:0000871c       _sync_get_track            0060971c f   device.obj
+ 0001:000088a2       _sync_get_track_mem        006098a2 f   device.obj
+ 0001:0000897a       _sync_find_key             0060997a f   track.obj
+ 0001:000089d6       _sync_get_val              006099d6 f   track.obj
+ 0001:00008a70       ?rand_range@@YAHHH@Z       00609a70 f   msys.obj
+ 0001:00008a89       ?rand_rangef@@YAMMM@Z      00609a89 f   msys.obj
+ 0001:00008ab1       ?msys_init@@YAH_K@Z        00609ab1 f   msys.obj
+ 0001:00008abd       ?msys_end@@YAXXZ           00609abd f   msys.obj
+ 0001:00008abe       ?GetTime@@YAJXZ            00609abe f   msys.obj
+ 0001:00008b25       ?msys_glextInit@@YAHXZ     00609b25 f   msys_glext.obj
+ 0001:00008b68       ?BeginOrtho2D@@YAXMM_N@Z   00609b68 f   msys_glext.obj
+ 0001:00008bf2       ?BeginOrtho2D@@YAXMMMM@Z   00609bf2 f   msys_glext.obj
+ 0001:00008c48       ?GetWorldCoords@@YA?AUworld_coords@@HH@Z 00609c48 f   msys_glext.obj
+ 0001:00008ce0       ?GetScreenCoords@@YA?AUscreenspace_coords@@NNN@Z 00609ce0 f   msys_glext.obj
+ 0001:00008d7b       ?BeginPerspective@@YAXMM@Z 00609d7b f   msys_glext.obj
+ 0001:00008dd7       ?EndProjection@@YAXXZ      00609dd7 f   msys_glext.obj
+ 0001:00008dfa       ?Resize@@YAXHH@Z           00609dfa f   msys_glext.obj
+ 0001:00008e6c       ?draw_sprite@@YAXUsprite@@HH_N@Z 00609e6c f   msys_glext.obj
+ 0001:00009390       ?entrypoint@@YAXXZ         0060a390 f   main_rel.obj
+ 0001:000094e6       _gluLookAt@72              0060a4e6 f   glu32:GLU32.dll
+ 0001:000094ec       _gluOrtho2D@32             0060a4ec f   glu32:GLU32.dll
+ 0001:000094f2       _gluUnProject@48           0060a4f2 f   glu32:GLU32.dll
+ 0001:000094f8       _gluProject@48             0060a4f8 f   glu32:GLU32.dll
+ 0001:000094fe       _gluPerspective@32         0060a4fe f   glu32:GLU32.dll
+ 0001:00009510       __CIsin                    0060a510 f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009516       _memset                    0060a516 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000951c       _strncpy                   0060a51c f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009522       _printf                    0060a522 f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009528       _free                      0060a528 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000952e       _malloc                    0060a52e f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009534       _fread                     0060a534 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000953a       _fclose                    0060a53a f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009540       _ftell                     0060a540 f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009546       _fseek                     0060a546 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000954c       _fopen                     0060a54c f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009552       _memcpy                    0060a552 f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009558       __CIcos                    0060a558 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000955e       _feof                      0060a55e f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009564       _realloc                   0060a564 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000956a       ??3@YAXPAX@Z               0060a56a f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009570       _vsprintf                  0060a570 f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009580       __chkstk                   0060a580 f   msvcrt_vc6:chkstk.obj
+ 0001:00009580       __alloca_probe             0060a580 f   msvcrt_vc6:chkstk.obj
+ 0001:000095b0       _srand                     0060a5b0 f   msvcrt_vc6:MSVCRT.dll
+ 0001:000095b6       __onexit                   0060a5b6 f   msvcrt_vc6:atonexit.obj
+ 0001:000095e2       _atexit                    0060a5e2 f   msvcrt_vc6:atonexit.obj
+ 0001:000095f4       __strdup                   0060a5f4 f   msvcrt_vc6:MSVCRT.dll
+ 0001:000095fa       _strncat                   0060a5fa f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009600       __CIpow                    0060a600 f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009606       _floor                     0060a606 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000960c       _rand                      0060a60c f   msvcrt_vc6:MSVCRT.dll
+ 0001:00009612       ___dllonexit               0060a612 f   msvcrt_vc6:MSVCRT.dll
+ 0002:00000000       __imp__ChoosePixelFormat@8 0060b000     gdi32:GDI32.dll
+ 0002:00000004       __imp__SetPixelFormat@12   0060b004     gdi32:GDI32.dll
+ 0002:00000008       __imp__SwapBuffers@4       0060b008     gdi32:GDI32.dll
+ 0002:0000000c       \177GDI32_NULL_THUNK_DATA  0060b00c     gdi32:GDI32.dll
+ 0002:00000010       __imp__gluPerspective@32   0060b010     glu32:GLU32.dll
+ 0002:00000014       __imp__gluProject@48       0060b014     glu32:GLU32.dll
+ 0002:00000018       __imp__gluUnProject@48     0060b018     glu32:GLU32.dll
+ 0002:0000001c       __imp__gluOrtho2D@32       0060b01c     glu32:GLU32.dll
+ 0002:00000020       __imp__gluLookAt@72        0060b020     glu32:GLU32.dll
+ 0002:00000024       \177GLU32_NULL_THUNK_DATA  0060b024     glu32:GLU32.dll
+ 0002:00000028       __imp__Sleep@4             0060b028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__WaitForSingleObject@8 0060b02c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__ResetEvent@4        0060b030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__CreateThread@24     0060b034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__GetTickCount@0      0060b038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__QueryPerformanceCounter@4 0060b03c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__QueryPerformanceFrequency@4 0060b040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__GetModuleHandleA@4  0060b044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__CreateEventA@16     0060b048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__ExitProcess@4       0060b04c     kernel32:KERNEL32.dll
+ 0002:00000050       \177KERNEL32_NULL_THUNK_DATA 0060b050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__printf              0060b054     msvcrt_vc6:MSVCRT.dll
+ 0002:00000058       __imp___onexit             0060b058     msvcrt_vc6:MSVCRT.dll
+ 0002:0000005c       __imp____dllonexit         0060b05c     msvcrt_vc6:MSVCRT.dll
+ 0002:00000060       __imp__rand                0060b060     msvcrt_vc6:MSVCRT.dll
+ 0002:00000064       __imp__floor               0060b064     msvcrt_vc6:MSVCRT.dll
+ 0002:00000068       __imp___CIpow              0060b068     msvcrt_vc6:MSVCRT.dll
+ 0002:0000006c       __imp__strncat             0060b06c     msvcrt_vc6:MSVCRT.dll
+ 0002:00000070       __imp___strdup             0060b070     msvcrt_vc6:MSVCRT.dll
+ 0002:00000074       __imp__srand               0060b074     msvcrt_vc6:MSVCRT.dll
+ 0002:00000078       __imp__vsprintf            0060b078     msvcrt_vc6:MSVCRT.dll
+ 0002:0000007c       __imp_??3@YAXPAX@Z         0060b07c     msvcrt_vc6:MSVCRT.dll
+ 0002:00000080       __imp__realloc             0060b080     msvcrt_vc6:MSVCRT.dll
+ 0002:00000084       __imp__feof                0060b084     msvcrt_vc6:MSVCRT.dll
+ 0002:00000088       __imp___CIcos              0060b088     msvcrt_vc6:MSVCRT.dll
+ 0002:0000008c       __imp__memcpy              0060b08c     msvcrt_vc6:MSVCRT.dll
+ 0002:00000090       __imp__fopen               0060b090     msvcrt_vc6:MSVCRT.dll
+ 0002:00000094       __imp__fseek               0060b094     msvcrt_vc6:MSVCRT.dll
+ 0002:00000098       __imp__ftell               0060b098     msvcrt_vc6:MSVCRT.dll
+ 0002:0000009c       __imp__fclose              0060b09c     msvcrt_vc6:MSVCRT.dll
+ 0002:000000a0       __imp__fread               0060b0a0     msvcrt_vc6:MSVCRT.dll
+ 0002:000000a4       __imp__malloc              0060b0a4     msvcrt_vc6:MSVCRT.dll
+ 0002:000000a8       __imp__free                0060b0a8     msvcrt_vc6:MSVCRT.dll
+ 0002:000000ac       __imp__strncpy             0060b0ac     msvcrt_vc6:MSVCRT.dll
+ 0002:000000b0       __imp__memset              0060b0b0     msvcrt_vc6:MSVCRT.dll
+ 0002:000000b4       __imp___CIsin              0060b0b4     msvcrt_vc6:MSVCRT.dll
+ 0002:000000b8       \177MSVCRT_NULL_THUNK_DATA 0060b0b8     msvcrt_vc6:MSVCRT.dll
+ 0002:000000bc       __imp__glTexCoord2f@8      0060b0bc     opengl32:OPENGL32.dll
+ 0002:000000c0       __imp__glNormal3f@12       0060b0c0     opengl32:OPENGL32.dll
+ 0002:000000c4       __imp__glVertex3f@12       0060b0c4     opengl32:OPENGL32.dll
+ 0002:000000c8       __imp__glTexParameterf@12  0060b0c8     opengl32:OPENGL32.dll
+ 0002:000000cc       __imp__glTexSubImage2D@36  0060b0cc     opengl32:OPENGL32.dll
+ 0002:000000d0       __imp__glGenTextures@8     0060b0d0     opengl32:OPENGL32.dll
+ 0002:000000d4       __imp__glTexParameteri@12  0060b0d4     opengl32:OPENGL32.dll
+ 0002:000000d8       __imp__glVertex3i@12       0060b0d8     opengl32:OPENGL32.dll
+ 0002:000000dc       __imp__glMatrixMode@4      0060b0dc     opengl32:OPENGL32.dll
+ 0002:000000e0       __imp__glBindTexture@8     0060b0e0     opengl32:OPENGL32.dll
+ 0002:000000e4       __imp__glTranslatef@12     0060b0e4     opengl32:OPENGL32.dll
+ 0002:000000e8       __imp__glDisable@4         0060b0e8     opengl32:OPENGL32.dll
+ 0002:000000ec       __imp__glBlendFunc@8       0060b0ec     opengl32:OPENGL32.dll
+ 0002:000000f0       __imp__glColor4ub@16       0060b0f0     opengl32:OPENGL32.dll
+ 0002:000000f4       __imp__glBegin@4           0060b0f4     opengl32:OPENGL32.dll
+ 0002:000000f8       __imp__glEnd@0             0060b0f8     opengl32:OPENGL32.dll
+ 0002:000000fc       __imp__wglCreateContext@4  0060b0fc     opengl32:OPENGL32.dll
+ 0002:00000100       __imp__glEnable@4          0060b100     opengl32:OPENGL32.dll
+ 0002:00000104       __imp__wglMakeCurrent@8    0060b104     opengl32:OPENGL32.dll
+ 0002:00000108       __imp__wglDeleteContext@4  0060b108     opengl32:OPENGL32.dll
+ 0002:0000010c       __imp__glLineWidth@4       0060b10c     opengl32:OPENGL32.dll
+ 0002:00000110       __imp__glVertex2i@8        0060b110     opengl32:OPENGL32.dll
+ 0002:00000114       __imp__glViewport@16       0060b114     opengl32:OPENGL32.dll
+ 0002:00000118       __imp__glGetDoublev@8      0060b118     opengl32:OPENGL32.dll
+ 0002:0000011c       __imp__glGetIntegerv@8     0060b11c     opengl32:OPENGL32.dll
+ 0002:00000120       __imp__glOrtho@48          0060b120     opengl32:OPENGL32.dll
+ 0002:00000124       __imp__wglGetProcAddress@4 0060b124     opengl32:OPENGL32.dll
+ 0002:00000128       __imp__glPushAttrib@4      0060b128     opengl32:OPENGL32.dll
+ 0002:0000012c       __imp__glAlphaFunc@8       0060b12c     opengl32:OPENGL32.dll
+ 0002:00000130       __imp__glColor4f@16        0060b130     opengl32:OPENGL32.dll
+ 0002:00000134       __imp__glVertex2f@8        0060b134     opengl32:OPENGL32.dll
+ 0002:00000138       __imp__glPopAttrib@0       0060b138     opengl32:OPENGL32.dll
+ 0002:0000013c       __imp__glCopyTexImage2D@32 0060b13c     opengl32:OPENGL32.dll
+ 0002:00000140       __imp__glClearColor@16     0060b140     opengl32:OPENGL32.dll
+ 0002:00000144       __imp__glClear@4           0060b144     opengl32:OPENGL32.dll
+ 0002:00000148       __imp__glScissor@16        0060b148     opengl32:OPENGL32.dll
+ 0002:0000014c       __imp__glCopyTexSubImage2D@32 0060b14c     opengl32:OPENGL32.dll
+ 0002:00000150       __imp__glLightfv@12        0060b150     opengl32:OPENGL32.dll
+ 0002:00000154       __imp__glRotatef@16        0060b154     opengl32:OPENGL32.dll
+ 0002:00000158       __imp__glTexImage2D@36     0060b158     opengl32:OPENGL32.dll
+ 0002:0000015c       __imp__glPushMatrix@0      0060b15c     opengl32:OPENGL32.dll
+ 0002:00000160       __imp__glLoadIdentity@0    0060b160     opengl32:OPENGL32.dll
+ 0002:00000164       __imp__glMaterialfv@12     0060b164     opengl32:OPENGL32.dll
+ 0002:00000168       __imp__glPopMatrix@0       0060b168     opengl32:OPENGL32.dll
+ 0002:0000016c       \177OPENGL32_NULL_THUNK_DATA 0060b16c     opengl32:OPENGL32.dll
+ 0002:00000170       __imp__MessageBoxA@16      0060b170     user32:USER32.dll
+ 0002:00000174       __imp__DispatchMessageA@4  0060b174     user32:USER32.dll
+ 0002:00000178       __imp__PeekMessageA@20     0060b178     user32:USER32.dll
+ 0002:0000017c       __imp__RegisterClassA@4    0060b17c     user32:USER32.dll
+ 0002:00000180       __imp__AdjustWindowRect@12 0060b180     user32:USER32.dll
+ 0002:00000184       __imp__GetSystemMetrics@4  0060b184     user32:USER32.dll
+ 0002:00000188       __imp__PostQuitMessage@4   0060b188     user32:USER32.dll
+ 0002:0000018c       __imp__DefWindowProcA@16   0060b18c     user32:USER32.dll
+ 0002:00000190       __imp__ShowCursor@4        0060b190     user32:USER32.dll
+ 0002:00000194       __imp__ChangeDisplaySettingsA@8 0060b194     user32:USER32.dll
+ 0002:00000198       __imp__UnregisterClassA@8  0060b198     user32:USER32.dll
+ 0002:0000019c       __imp__DestroyWindow@4     0060b19c     user32:USER32.dll
+ 0002:000001a0       __imp__ReleaseDC@8         0060b1a0     user32:USER32.dll
+ 0002:000001a4       __imp__SetFocus@4          0060b1a4     user32:USER32.dll
+ 0002:000001a8       __imp__SetForegroundWindow@4 0060b1a8     user32:USER32.dll
+ 0002:000001ac       __imp__GetDC@4             0060b1ac     user32:USER32.dll
+ 0002:000001b0       __imp__CreateWindowExA@48  0060b1b0     user32:USER32.dll
+ 0002:000001b4       \177USER32_NULL_THUNK_DATA 0060b1b4     user32:USER32.dll
+ 0002:000001b8       __imp__waveOutWrite@12     0060b1b8     winmm:WINMM.dll
+ 0002:000001bc       __imp__waveOutPrepareHeader@12 0060b1bc     winmm:WINMM.dll
+ 0002:000001c0       __imp__waveOutOpen@24      0060b1c0     winmm:WINMM.dll
+ 0002:000001c4       __imp__timeGetTime@0       0060b1c4     winmm:WINMM.dll
+ 0002:000001c8       __imp__timeEndPeriod@4     0060b1c8     winmm:WINMM.dll
+ 0002:000001cc       __imp__timeBeginPeriod@4   0060b1cc     winmm:WINMM.dll
+ 0002:000001d0       __imp__timeGetDevCaps@8    0060b1d0     winmm:WINMM.dll
+ 0002:000001d4       __imp__waveOutUnprepareHeader@12 0060b1d4     winmm:WINMM.dll
+ 0002:000001d8       __imp__waveOutReset@4      0060b1d8     winmm:WINMM.dll
+ 0002:000001dc       __imp__waveOutClose@4      0060b1dc     winmm:WINMM.dll
+ 0002:000001e0       \177WINMM_NULL_THUNK_DATA  0060b1e0     winmm:WINMM.dll
+ 0002:00001940       __real@3f7921fb53c8d4f1    0060c940     hvl_replay.obj
+ 0002:00001948       __real@406fe00000000000    0060c948     hvl_replay.obj
+ 0002:00001950       __real@0000000000000000    0060c950     hvl_replay.obj
+ 0002:00001958       __real@3ff921fb60000000    0060c958     hvl_replay.obj
+ 0002:00001960       ??_C@_0P@KKFLGJHG@Invalid?5file?4?6?$AA@ 0060c960     hvl_replay.obj
+ 0002:00001970       ??_C@_09DCFLLFKE@?$CFd?0?$CFd?0?$CFd?6?$AA@ 0060c970     hvl_replay.obj
+ 0002:00001980       __real@41f0000000000000    0060c980     hvl_replay.obj
+ 0002:00001988       ??_C@_0BA@BLONFKFG@Out?5of?5memory?$CB?6?$AA@ 0060c988     hvl_replay.obj
+ 0002:00001998       ??_C@_0BL@JKPEDLNI@Unable?5to?5read?5from?5file?$CB?6?$AA@ 0060c998     hvl_replay.obj
+ 0002:000019b4       ??_C@_0BB@GMLMJGFJ@Can?8t?5open?5file?6?$AA@ 0060c9b4     hvl_replay.obj
+ 0002:000019c8       ??_C@_02JDPG@rb?$AA@       0060c9c8     hvl_replay.obj
+ 0002:000019d0       __real@424b0f8780000000    0060c9d0     hvl_replay.obj
+ 0002:000019d8       ??_C@_0CL@DINLHCBH@?$CK?5IRC?5CHANNEL?5?$CKRETROARCH?$CK?5ON?5?$CKFR@ 0060c9d8     intro.obj
+ 0002:00001a04       ??_C@_0CL@EJNPMHEI@?$CK?5WE?5HOPE?5YOU?5VISIT?5OUR?5NICE?5LIL@ 0060ca04     intro.obj
+ 0002:00001a30       ??_C@_0CL@GFEGKKIE@?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0060ca30     intro.obj
+ 0002:00001a5c       ??_C@_0CE@EFEHIEOB@?$CK?5MUSIC?5?9?5KEITO?5?5?5?5?5?5?5?5?5?5?5?5?5?$CK?$CK?$CK?$CK@ 0060ca5c     intro.obj
+ 0002:00001a80       ??_C@_0CE@PNCJJDMM@?$CK?5GRAPHICS?5?9?5RETINALECLIPSE?5?$CK?$CK?$CK?$CK@ 0060ca80     intro.obj
+ 0002:00001aa4       ??_C@_0CE@HOIFHDGM@?$CK?5CODE?5?9?5MUDLORD?5?5?5?5?5?5?5?5?5?5?5?5?$CK?$CK?$CK?$CK@ 0060caa4     intro.obj
+ 0002:00001ac8       ??_C@_0CE@FEEMGFCG@?$CK?5CREDITS?5FOR?5THIS?5INTRO?5?9?5?5?$CK?$CK?$CK?$CK@ 0060cac8     intro.obj
+ 0002:00001aec       ??_C@_0CE@PGAHKKBF@?$CK?5WINDOWS?0?5LINUX?5AND?5MAC?5?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0060caec     intro.obj
+ 0002:00001b10       ??_C@_0CE@BEODEKIJ@?$CK?5ANDROID?0?5BLACKBERRY?0?5IOS?0?5?$CK?$CK?$CK?$CK@ 0060cb10     intro.obj
+ 0002:00001b34       ??_C@_0CE@FEBBPPJE@?$CK?5WII?0?5RASPBERRY?5PI?0?5OPENPANDORA@ 0060cb34     intro.obj
+ 0002:00001b58       ??_C@_0CE@HLIHHNMP@?$CK?5PS3?0?5PSP?0?5XBOX1?0?5XBOX360?0?5GC?5?0@ 0060cb58     intro.obj
+ 0002:00001b7c       ??_C@_0CE@BILBPJMO@?$CK?5RETROARCH?5WORKS?5ON?5?5?5?5?5?5?5?$CK?$CK?$CK?$CK?$CK@ 0060cb7c     intro.obj
+ 0002:00001ba0       ??_C@_0CE@FJJDLCNC@?$CK?5AS?5PIE?4?5?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0060cba0     intro.obj
+ 0002:00001bc4       ??_C@_0CE@MAICEDDL@?$CK?5OTHER?5MULTIMEDIA?5DEVEL?4?5AS?5EAS@ 0060cbc4     intro.obj
+ 0002:00001be8       ??_C@_0CE@OLEIFAJP@?$CK?5EMULATOR?0?5?$CKDEMO?$CK?0?5GAME?5AND?5?5?$CK?$CK@ 0060cbe8     intro.obj
+ 0002:00001c0c       ??_C@_0CE@INHGLGEN@?$CK?5AWESOME?5API?5THAT?5MAKES?5ALL?5YOU@ 0060cc0c     intro.obj
+ 0002:00001c30       ??_C@_0CE@BJHMDLKE@?$CK?5LIBRETRO?5IS?5?$CKTHE?$CK?5TOTALLY?5?$CK?$CK?$CK?$CK@ 0060cc30     intro.obj
+ 0002:00001c54       ??_C@_0CE@DBAOPLIN@?$CK?5OF?5THE?5LIBRETRO?5API?4?5?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0060cc54     intro.obj
+ 0002:00001c78       ??_C@_0CE@GMJKJEL@?$CK?5TOTALLY?5CROSS?9PLATFORM?5IMPL?4?5?$CK@ 0060cc78     intro.obj
+ 0002:00001c9c       ??_C@_0CE@DEEJLHOM@?$CK?5WE?5USE?5RETROARCH?5WHICH?5IS?5A?5?$CK?$CK@ 0060cc9c     intro.obj
+ 0002:00001cc0       ??_C@_0CE@OPEIGJDP@?$CK?5EMULATION?5AND?5GAMING?5NEEDS?4?5?$CK?$CK@ 0060ccc0     intro.obj
+ 0002:00001ce4       ??_C@_0CE@IIDCGMIC@?$CK?5WWW?4LIBRETRO?4COM?5FOR?5ALL?5YOUR?5@ 0060cce4     intro.obj
+ 0002:00001d08       ??_C@_0CE@CGIJLOF@?$CK?5WE?5INVITE?5YOU?5TO?5VISIT?5?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0060cd08     intro.obj
+ 0002:00001d2c       ??_C@_0CE@KNOKFEOC@?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0060cd2c     intro.obj
+ 0002:00001d54       ??_C@_08NOGIMCHF@outofmem?$AA@ 0060cd54     intro.obj
+ 0002:00001d60       ??_C@_0BA@MDNKOBMC@bad?5codelengths?$AA@ 0060cd60     intro.obj
+ 0002:00001d70       ??_C@_0BE@IBFIPFO@output?5buffer?5limit?$AA@ 0060cd70     intro.obj
+ 0002:00001d84       ??_C@_08DIAPIMGJ@bad?5dist?$AA@ 0060cd84     intro.obj
+ 0002:00001d90       ??_C@_0BB@IIMLINA@bad?5huffman?5code?$AA@ 0060cd90     intro.obj
+ 0002:00001da4       ??_C@_0BB@PIPBCKIA@read?5past?5buffer?$AA@ 0060cda4     intro.obj
+ 0002:00001db8       ??_C@_0N@IECDHMDI@zlib?5corrupt?$AA@ 0060cdb8     intro.obj
+ 0002:00001dc8       ??_C@_0BA@MCNBDLPD@bad?5compression?$AA@ 0060cdc8     intro.obj
+ 0002:00001dd8       ??_C@_0P@DOGMHEBI@no?5preset?5dict?$AA@ 0060cdd8     intro.obj
+ 0002:00001de8       ??_C@_0BA@OBKOPAFL@bad?5zlib?5header?$AA@ 0060cde8     intro.obj
+ 0002:00001df8       ??_C@_0M@DMDNBACF@bad?5png?5sig?$AA@ 0060cdf8     intro.obj
+ 0002:00001e04       ??_C@_0P@FBBCPGMN@invalid?5filter?$AA@ 0060ce04     intro.obj
+ 0002:00001e14       ??_C@_0BC@BHMPBBMG@not?5enough?5pixels?$AA@ 0060ce14     intro.obj
+ 0002:00001e28       ??_C@_09MNNCNKEO@outofdata?$AA@ 0060ce28     intro.obj
+ 0002:00001e34       ??_C@_07CKIELOEH@no?5PLTE?$AA@ 0060ce34     intro.obj
+ 0002:00001e3c       ??_C@_07MLPECBNA@no?5IDAT?$AA@ 0060ce3c     intro.obj
+ 0002:00001e44       ??_C@_0O@FNFBHCOO@0?9pixel?5image?$AA@ 0060ce44     intro.obj
+ 0002:00001e54       ??_C@_0BF@JCGDPBAA@bad?5interlace?5method?$AA@ 0060ce54     intro.obj
+ 0002:00001e6c       ??_C@_0BC@GHLIKKMD@bad?5filter?5method?$AA@ 0060ce6c     intro.obj
+ 0002:00001e80       ??_C@_0BA@MDMBDDFG@bad?5comp?5method?$AA@ 0060ce80     intro.obj
+ 0002:00001e90       ??_C@_09MBBNGCKB@bad?5ctype?$AA@ 0060ce90     intro.obj
+ 0002:00001e9c       ??_C@_09LKEACGKO@8bit?5only?$AA@ 0060ce9c     intro.obj
+ 0002:00001ea8       ??_C@_0N@POJLKMKK@bad?5IHDR?5len?$AA@ 0060cea8     intro.obj
+ 0002:00001eb8       ??_C@_0O@KBHBNJOK@multiple?5IHDR?$AA@ 0060ceb8     intro.obj
+ 0002:00001ec8       ??_C@_0N@JCPAJAKB@invalid?5PLTE?$AA@ 0060cec8     intro.obj
+ 0002:00001ed8       ??_C@_0BA@ENDPGCHB@tRNS?5with?5alpha?$AA@ 0060ced8     intro.obj
+ 0002:00001ee8       ??_C@_0N@KDLCCKCH@bad?5tRNS?5len?$AA@ 0060cee8     intro.obj
+ 0002:00001ef8       ??_C@_0BB@CEDNNLBG@tRNS?5before?5PLTE?$AA@ 0060cef8     intro.obj
+ 0002:00001f0c       ??_C@_0BA@PCPJHDKJ@tRNS?5after?5IDAT?$AA@ 0060cf0c     intro.obj
+ 0002:00001f1c       ??_C@_0P@JEAFOMAF@first?5not?5IHDR?$AA@ 0060cf1c     intro.obj
+ 0002:00001f2c       ??_C@_09OJDLMMBJ@too?5large?$AA@ 0060cf2c     intro.obj
+ 0002:00001f38       ??_C@_0N@KBPNPPBJ@bad?5req_comp?$AA@ 0060cf38     intro.obj
+ 0002:00001f48       ??_C@_0BD@CBEDEJPH@unknown?5image?5type?$AA@ 0060cf48     intro.obj
+ 0002:00001f5c       __real@4f800000            0060cf5c     intro.obj
+ 0002:00001f60       __real@40a0000000000000    0060cf60     intro.obj
+ 0002:00001f68       __real@3fb99999a0000000    0060cf68     intro.obj
+ 0002:00001f70       __real@3ff0000000000000    0060cf70     intro.obj
+ 0002:00001f78       __real@3f86872b020c49ba    0060cf78     intro.obj
+ 0002:00001f80       __real@3fe0000000000000    0060cf80     intro.obj
+ 0002:00001f88       __real@4008000000000000    0060cf88     intro.obj
+ 0002:00001f90       __real@3fd8000000000000    0060cf90     intro.obj
+ 0002:00001f98       __real@3f847ae140000000    0060cf98     intro.obj
+ 0002:00001fa0       __real@46180400            0060cfa0     intro.obj
+ 0002:00001fa8       __real@4014000000000000    0060cfa8     intro.obj
+ 0002:00001fb0       __real@3ff8000000000000    0060cfb0     intro.obj
+ 0002:00001fb8       __real@3f91df46a0000000    0060cfb8     intro.obj
+ 0002:00001fc0       __real@3f2bf7e7            0060cfc0     intro.obj
+ 0002:00001fc4       __real@bf2bf7e7            0060cfc4     intro.obj
+ 0002:00001fc8       ??_7sprite2@@6B@           0060cfc8     intro.obj
+ 0002:00001fd0       __real@3faacee9f37bebd6    0060cfd0     intro.obj
+ 0002:00001fd8       __real@3fc1df46a2529d39    0060cfd8     intro.obj
+ 0002:00001fe0       __real@3fd0000000000000    0060cfe0     intro.obj
+ 0002:00001fe8       __real@3fe6666666666666    0060cfe8     intro.obj
+ 0002:00001ff0       __real@3fb999999999999a    0060cff0     intro.obj
+ 0002:00001ff8       __real@3f4ccccd            0060cff8     intro.obj
+ 0002:00001ffc       __real@3e800000            0060cffc     intro.obj
+ 0002:00002000       __real@4024000000000000    0060d000     intro.obj
+ 0002:00002008       __real@42340000            0060d008     intro.obj
+ 0002:0000200c       __real@3faaaaab            0060d00c     intro.obj
+ 0002:00002010       __real@4020000000000000    0060d010     intro.obj
+ 0002:00002018       __real@42a00000            0060d018     intro.obj
+ 0002:00002020       __real@4097700000000000    0060d020     intro.obj
+ 0002:00002028       ??_C@_0BI@CFGHIDMM@Unable?5to?5open?5waveout?6?$AA@ 0060d028     intro.obj
+ 0002:00002040       ??_C@_0L@BKPAMLJP@WriteEvent?$AA@ 0060d040     intro.obj
+ 0002:0000204c       __real@bf000000            0060d04c     intro.obj
+ 0002:00002050       __real@3f000000            0060d050     intro.obj
+ 0002:00002054       __real@be800000            0060d054     intro.obj
+ 0002:00002058       __real@bf400000            0060d058     intro.obj
+ 0002:0000205c       __real@43870000            0060d05c     intro.obj
+ 0002:00002060       __real@43340000            0060d060     intro.obj
+ 0002:00002064       __real@42b40000            0060d064     intro.obj
+ 0002:00002068       __real@bf800000            0060d068     intro.obj
+ 0002:00002070       __real@3fd99999a0000000    0060d070     intro.obj
+ 0002:00002078       __real@3fc99999a0000000    0060d078     intro.obj
+ 0002:00002080       __real@3fd3333340000000    0060d080     intro.obj
+ 0002:00002088       __real@c1200000            0060d088     intro.obj
+ 0002:00002090       __real@402a000000000000    0060d090     intro.obj
+ 0002:00002098       __real@4010000000000000    0060d098     intro.obj
+ 0002:000020a0       __real@4066800000000000    0060d0a0     intro.obj
+ 0002:000020a8       __real@400921fb5443d6f4    0060d0a8     intro.obj
+ 0002:000020b0       __real@400eccccc0000000    0060d0b0     intro.obj
+ 0002:000020b8       __real@3f847ae147ae147b    0060d0b8     intro.obj
+ 0002:000020c0       __real@401599999999999a    0060d0c0     intro.obj
+ 0002:000020c8       __real@4018000000000000    0060d0c8     intro.obj
+ 0002:000020d0       __real@3efafafb            0060d0d0     intro.obj
+ 0002:000020d4       __real@3df8f8f9            0060d0d4     intro.obj
+ 0002:000020d8       __real@3e8c8c8d            0060d0d8     intro.obj
+ 0002:000020e0       __real@408f400000000000    0060d0e0     intro.obj
+ 0002:000020e8       __real@44360000            0060d0e8     intro.obj
+ 0002:000020ec       __real@43c00000            0060d0ec     intro.obj
+ 0002:000020f0       __real@443b0000            0060d0f0     intro.obj
+ 0002:000020f4       __real@437f0000            0060d0f4     intro.obj
+ 0002:000020f8       __real@41a00000            0060d0f8     intro.obj
+ 0002:000020fc       __real@44000000            0060d0fc     intro.obj
+ 0002:00002100       ??_C@_09DKONCECH@pagewrite?$AA@ 0060d100     intro.obj
+ 0002:0000210c       ??_C@_09KNIGBKM@textwrite?$AA@ 0060d10c     intro.obj
+ 0002:00002118       ??_C@_04JNABKDKF@sync?$AA@ 0060d118     intro.obj
+ 0002:00002120       ??_C@_0M@JPDHFAGK@can?8t?5fopen?$AA@ 0060d120     intro.obj
+ 0002:0000212c       ??_C@_06KBLCMJEL@?4track?$AA@ 0060d12c     device.obj
+ 0002:00002134       ??_C@_01IDAFKMJL@_?$AA@    0060d134     device.obj
+ 0002:00002138       __real@4000000000000000    0060d138     track.obj
+ 0002:00002140       __real@40dfffc000000000    0060d140     msys.obj
+ 0002:00002148       ??_C@_0BE@LPFILPOH@wglSwapIntervalEXT?$AA?$AA@ 0060d148     msys_glext.obj
+ 0002:00002160       __real@bff0000000000000    0060d160     msys_glext.obj
+ 0002:00002168       __real@4059000000000000    0060d168     msys_glext.obj
+ 0002:00002170       __real@404e000000000000    0060d170     msys_glext.obj
+ 0002:00002240       __real@4082c00000000000    0060d240     main_rel.obj
+ 0002:00002248       __real@40000000            0060d248     main_rel.obj
+ 0002:0000224c       __real@44160000            0060d24c     main_rel.obj
+ 0002:00002250       __real@44480000            0060d250     main_rel.obj
+ 0002:00002254       ??_C@_0M@CEGKMHFM@fullscreen?$DP?$AA@ 0060d254     main_rel.obj
+ 0002:00002260       __IMPORT_DESCRIPTOR_OPENGL32 0060d260     opengl32:OPENGL32.dll
+ 0002:00002274       __IMPORT_DESCRIPTOR_WINMM  0060d274     winmm:WINMM.dll
+ 0002:00002288       __IMPORT_DESCRIPTOR_GLU32  0060d288     glu32:GLU32.dll
+ 0002:0000229c       __IMPORT_DESCRIPTOR_MSVCRT 0060d29c     msvcrt_vc6:MSVCRT.dll
+ 0002:000022b0       __IMPORT_DESCRIPTOR_KERNEL32 0060d2b0     kernel32:KERNEL32.dll
+ 0002:000022c4       __IMPORT_DESCRIPTOR_USER32 0060d2c4     user32:USER32.dll
+ 0002:000022d8       __IMPORT_DESCRIPTOR_GDI32  0060d2d8     gdi32:GDI32.dll
+ 0002:000022ec       __NULL_IMPORT_DESCRIPTOR   0060d2ec     opengl32:OPENGL32.dll
+ 0003:00000014       ?ra_tile_len@@3IA          0060e014     intro.obj
+ 0003:00000094       ?ra_logo_len@@3IA          0060e094     intro.obj
+ 0003:00000114       ?ra_gradient_len@@3IA      0060e114     intro.obj
+ 0003:00000220       ?ra_tile@@3PAEA            0060e220     intro.obj
+ 0003:00006dc8       ?ra_logo@@3PAEA            00614dc8     intro.obj
+ 0003:00008c38       ?ra_gradient@@3PAEA        00616c38     intro.obj
+ 0003:000094bc       ?rotoheight@@3HA           006174bc     intro.obj
+ 0003:000094c0       ?rotowidth@@3HA            006174c0     intro.obj
+ 0003:000094c4       ?twistheight@@3HA          006174c4     intro.obj
+ 0003:000094c8       ?twistwidth@@3HA           006174c8     intro.obj
+ 0003:000094cc       ?font_len@@3IA             006174cc     intro.obj
+ 0003:000094d0       ?font@@3PAEA               006174d0     intro.obj
+ 0003:00009e0c       ?sync_pagewrite_data@@3PAEA 00617e0c     intro.obj
+ 0003:00009e48       ?sync_textwrite_data@@3PAEA 00617e48     intro.obj
+ 0003:00009f24       ?music_len@@3IA            00617f24     intro.obj
+ 0003:00009f28       ?demotext@@3PAUtext@@A     00617f28     intro.obj
+ 0003:0000a2e0       ?music@@3PAEA              006182e0     intro.obj
+ 0003:0000ae20       ?page_write@@3PBUsync_track@@B 00618e20     intro.obj
+ 0003:0000ae24       ?gradient_tex@@3IA         00618e24     intro.obj
+ 0003:0000ae28       ?rotodata@@3PAEA           00618e28     intro.obj
+ 0003:0010ae2c       ?dinothawr_h@@3HA          00718e2c     intro.obj
+ 0003:0010ae30       ?stbi_png_partial@@3HA     00718e30     intro.obj
+ 0003:0010ae34       ?rototex@@3IA              00718e34     intro.obj
+ 0003:0010ae38       ?tile_w@@3HA               00718e38     intro.obj
+ 0003:0010ae3c       ?logo_data@@3PAEA          00718e3c     intro.obj
+ 0003:0010ae40       ?rocket@@3PAUsync_device@@A 00718e40     intro.obj
+ 0003:0010ae44       ?dinothawr_w@@3HA          00718e44     intro.obj
+ 0003:0010ae48       ?twistspr@@3Usprite@@A     00718e48     intro.obj
+ 0003:0010ae7c       ?logo_h@@3HA               00718e7c     intro.obj
+ 0003:0010ae80       ?tile_tex@@3IA             00718e80     intro.obj
+ 0003:0010ae84       ?tile_data@@3PAEA          00718e84     intro.obj
+ 0003:0010ae88       ?threaddata@@3PAUthrddata@@A 00718e88     intro.obj
+ 0003:0010ae8c       ?gradient_data@@3PAEA      00718e8c     intro.obj
+ 0003:0010aeb0       ?bottomgradient@@3Usprite@@A 00718eb0     intro.obj
+ 0003:0010aee4       ?topgradient@@3Usprite@@A  00718ee4     intro.obj
+ 0003:0010af18       ?gradient_w@@3HA           00718f18     intro.obj
+ 0003:0010af1c       ?logo_w@@3HA               00718f1c     intro.obj
+ 0003:0010af20       ?dinothawr_tex@@3IA        00718f20     intro.obj
+ 0003:0010af24       ?dinothawr_data@@3PAEA     00718f24     intro.obj
+ 0003:0010af28       ?gradient_h@@3HA           00718f28     intro.obj
+ 0003:0010af2c       ?cube_creditstex@@3IA      00718f2c     intro.obj
+ 0003:0010af30       ?g_handle@@3PAXA           00718f30     intro.obj
+ 0003:0010af34       ?tile_h@@3HA               00718f34     intro.obj
+ 0003:0010af38       ?twistdata@@3PAEA          00718f38     intro.obj
+ 0003:00128588       ?logo_tex@@3IA             00736588     intro.obj
+ 0003:0012858c       ?rotozoom_spr@@3Usprite@@A 0073658c     intro.obj
+ 0003:001286e0       ?logo_spr@@3Usprite@@A     007366e0     intro.obj
+ 0003:00128714       ?twisttex@@3IA             00736714     intro.obj
+ 0003:00128718       ?text_write@@3PBUsync_track@@B 00736718     intro.obj
+ 0003:00128724       ?isplaying@@3_NA           00736724     intro.obj
+ 0003:00128728       ?fontletter@@3Vsprite2@@A  00736728     intro.obj
+ 0003:00128910       ?msys_oglfunc@@3PAPAXA     00736910     msys_glext.obj
+ 0003:00128940       _panning_left              00736940     <common>
+ 0003:00128d40       _panning_right             00736d40     <common>
+ 0003:00129140       _waves                     00737140     <common>
+ 0003:0018d5c8       ___onexitend               0079b5c8     <common>
+ 0003:0018d5cc       ___onexitbegin             0079b5cc     <common>
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0001:00000163       _clipshifted8              00601163 f   hvl_replay.obj
+ 0001:00003015       ?start_mem@@YAXPAUstbi@@PBEH@Z 00604015 f   intro.obj
+ 0001:00003032       ?stdio_read@@YAHPAXPADH@Z  00604032 f   intro.obj
+ 0001:0000304a       ?stdio_skip@@YAXPAXI@Z     0060404a f   intro.obj
+ 0001:0000305f       ?stdio_eof@@YAHPAX@Z       0060405f f   intro.obj
+ 0001:00003068       ?stbi_rewind@@YAXPAUstbi@@@Z 00604068 f   intro.obj
+ 0001:0000307b       ?e@@YAHPBD@Z               0060407b f   intro.obj
+ 0001:0000308c       ?refill_buffer@@YAXPAUstbi@@@Z 0060408c f   intro.obj
+ 0001:000030c8       ?get8@@YAHPAUstbi@@@Z      006040c8 f   intro.obj
+ 0001:000030fc       ?get8u@@YAEPAUstbi@@@Z     006040fc f   intro.obj
+ 0001:0000312b       ?skip@@YAXPAUstbi@@H@Z     0060412b f   intro.obj
+ 0001:00003161       ?getn@@YAHPAUstbi@@PAEH@Z  00604161 f   intro.obj
+ 0001:000031de       ?get16@@YAHPAUstbi@@@Z     006041de f   intro.obj
+ 0001:0000324a       ?get32@@YAIPAUstbi@@@Z     0060424a f   intro.obj
+ 0001:00003268       ?compute_y@@YAEHHH@Z       00604268 f   intro.obj
+ 0001:0000327c       ?convert_format@@YAPAEPAEHHII@Z 0060427c f   intro.obj
+ 0001:00003565       ?bitreverse16@@YAHH@Z      00604565 f   intro.obj
+ 0001:000035b0       ?bit_reverse@@YAHHH@Z      006045b0 f   intro.obj
+ 0001:00003607       ?zbuild_huffman@@YAHPAUzhuffman@@PAEH@Z 00604607 f   intro.obj
+ 0001:000037d9       ?zget8@@YAHPAUzbuf@@@Z     006047d9 f   intro.obj
+ 0001:000037ea       ?fill_bits@@YAXPAUzbuf@@@Z 006047ea f   intro.obj
+ 0001:0000381c       ?zreceive@@YAIPAUzbuf@@H@Z 0060481c f   intro.obj
+ 0001:00003840       ?zhuffman_decode@@YAHPAUzbuf@@PAUzhuffman@@@Z 00604840 f   intro.obj
+ 0001:00003919       ?expand@@YAHPAUzbuf@@H@Z   00604919 f   intro.obj
+ 0001:00003972       ?parse_huffman_block@@YAHPAUzbuf@@@Z 00604972 f   intro.obj
+ 0001:00003c41       ?compute_huffman_codes@@YAHPAUzbuf@@@Z 00604c41 f   intro.obj
+ 0001:00003efe       ?parse_uncompressed_block@@YAHPAUzbuf@@@Z 00604efe f   intro.obj
+ 0001:00003fe5       ?parse_zlib_header@@YAHPAUzbuf@@@Z 00604fe5 f   intro.obj
+ 0001:00004056       ?init_defaults@@YAXXZ      00605056 f   intro.obj
+ 0001:000040a5       ?parse_zlib@@YAHPAUzbuf@@H@Z 006050a5 f   intro.obj
+ 0001:00004195       ?do_zlib@@YAHPAUzbuf@@PADHHH@Z 00605195 f   intro.obj
+ 0001:00004618       ?get_chunk_header@@YA?AUchunk@@PAUstbi@@@Z 00605618 f   intro.obj
+ 0001:00004637       ?check_png_header@@YAHPAUstbi@@@Z 00605637 f   intro.obj
+ 0001:0000468e       ?paeth@@YAHHHH@Z           0060568e f   intro.obj
+ 0001:000046d9       ?create_png_image_raw@@YAHPAUpng@@PAEIHII@Z 006056d9 f   intro.obj
+ 0001:00004da0       ?create_png_image@@YAHPAUpng@@PAEIHH@Z 00605da0 f   intro.obj
+ 0001:00004fd5       ?compute_transparency@@YAHPAUpng@@QAEH@Z 00605fd5 f   intro.obj
+ 0001:00005029       ?expand_palette@@YAHPAUpng@@PAEHH@Z 00606029 f   intro.obj
+ 0001:00005108       ?stbi_de_iphone@@YAXPAUpng@@@Z 00606108 f   intro.obj
+ 0001:000051ad       ?parse_png_file@@YAHPAUpng@@HH@Z 006061ad f   intro.obj
+ 0001:000058f1       ?do_png@@YAPAEPAUpng@@PAH11H@Z 006068f1 f   intro.obj
+ 0001:0000599b       ?stbi_png_load@@YAPAEPAUstbi@@PAH11H@Z 0060699b f   intro.obj
+ 0001:000059bf       ?stbi_png_test@@YAHPAUstbi@@@Z 006069bf f   intro.obj
+ 0001:000059d3       ?stbi_png_info_raw@@YAHPAUpng@@PAH11@Z 006069d3 f   intro.obj
+ 0001:00005a25       ?stbi_png_info@@YAHPAUstbi@@PAH11@Z 00606a25 f   intro.obj
+ 0001:00005a3c       ?stbi_info_main@@YAHPAUstbi@@PAH11@Z 00606a3c f   intro.obj
+ 0001:00005aa9       ?rotozoom@@YAXPAEIIPBEMMM@Z 00606aa9 f   intro.obj
+ 0001:00006170       ?lissajous@@YAXIIMAAM0@Z   00607170 f   intro.obj
+ 0001:0000631a       ?ftoi@@YAHM@Z              0060731a f   intro.obj
+ 0001:0000634a       ?drawSideTex@@YAXPAEPBEHIIMM@Z 0060734a f   intro.obj
+ 0001:000064b8       ?twisty@@YAMMI@Z           006074b8 f   intro.obj
+ 0001:00006517       ?barTwister@@YAXPAEPBEM@Z  00607517 f   intro.obj
+ 0001:000079f0       ?start_callbacks@@YAXPAUstbi@@PAUstbi_io_callbacks@@PAX@Z 006089f0 f   intro.obj
+ 0001:00007a1e       ?start_file@@YAXPAUstbi@@PAU_iobuf@@@Z 00608a1e f   intro.obj
+ 0001:00007a28       ?stbi_load_main@@YAPAEPAUstbi@@PAH11H@Z 00608a28 f   intro.obj
+ 0001:00008542       _sync_find_track           00609542 f   device.obj
+ 0001:00008593       _sync_track_path           00609593 f   device.obj
+ 0001:0000866d       _get_track_data            0060966d f   device.obj
+ 0001:0000875a       _mopen                     0060975a f   device.obj
+ 0001:00008781       _mclose                    00609781 f   device.obj
+ 0001:00008792       _mread                     00609792 f   device.obj
+ 0001:000087f6       _get_track_data_mem        006097f6 f   device.obj
+ 0001:000088e4       _key_linear                006098e4 f   track.obj
+ 0001:0000890d       _key_smooth                0060990d f   track.obj
+ 0001:00008946       _key_ramp                  00609946 f   track.obj
+ 0001:000089b9       _key_idx_floor             006099b9 f   track.obj
+ 0001:00009016       ?loadbar@@YAXPAXM@Z        0060a016 f   main_rel.obj
+ 0001:0000912b       ?WndProc@@YGJPAUHWND__@@IIJ@Z 0060a12b f   main_rel.obj
+ 0001:0000917c       ?window_end@@YAXPAUWININFO@@@Z 0060a17c f   main_rel.obj
+ 0001:000091d8       ?window_init@@YAHPAUWININFO@@@Z 0060a1d8 f   main_rel.obj
+ 0001:00009618       ??__Efontletter@@YAXXZ     0060a618 f   intro.obj
+ 0001:0000962e       ??__Ffontletter@@YAXXZ     0060a62e f   intro.obj

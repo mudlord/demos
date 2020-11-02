@@ -1,0 +1,231 @@
+13:44 <LJ> like this?
+13:44 <mudlord> yes
+13:44 <LJ> thats way better :)
+13:45 <mudlord> i tweaked the desat sync a bit, now it seems to properly fade to grey
+13:45 <mudlord> dasc was thinking of random godrays at some point
+13:45 <mudlord> two points only
+13:45 <mudlord> we have now abusing tthe tremelo XM effect for syncs
+13:45 <mudlord> :P
+13:46 <mudlord> each 7xx number is a different sync type
+13:46 <LJ> thats a neat idea
+13:47 <LJ> I mean using "noop" instruments to do sync
+13:47 <mudlord> on the scene transitions is a hard glitch, there is soft glitches, as well as the desat
+13:47 <mudlord> yes
+13:47 <mudlord> and next dasc wants godrays
+13:47 <mudlord> which are done in the postpoc shader
+13:48 <mudlord> we are not even using insts
+13:48 <mudlord> just a blank channel
+13:48 <mudlord> with fake events
+13:48 <mudlord> :P
+13:48 <mudlord> and it of course compresses nicely
+13:48 <mudlord> ill look at the demo later today, right now i just wanna relax
+13:48 <LJ> yeah, in general the scene fits god rays quite well, however you may want to tone down the glitching otherwise there'll be not much left to see. I already feel like its quite post heavy.
+13:49 <mudlord> oh okay
+13:49 <mudlord> yeah
+13:49 <mudlord> dasc pointed out two spots to use god rays where its light on postproc
+13:50 <mudlord> i wanted a "corrupted" feel to the prod
+13:50 <mudlord> hence the name
+13:50 <mudlord> its a japanese name for corruption
+13:50 <LJ> imho the best way would be to first nail the camera and direction. Then decide on where to apply the godrays.
+13:50 <mudlord> yeah
+13:51 <mudlord> the camera is the biggest bugbear
+13:51 <mudlord> its fine in the final scene and the X
+13:51 <LJ> mhh thats neat didn't notice that, but certainly fits, the name.
+13:51 <mudlord> but yeah, first scene can be tweaked
+13:51 <mudlord> ill do that in bonzomatic
+13:51 <mudlord> easy to prototype then
+13:52 <mudlord> yeah
+13:52 <mudlord> thanks a lot :D
+13:52 <mudlord> ill work on the camera a bit more
+13:52 <mudlord> and then work out what dasc and you wants next
+13:53 <mudlord> then after that its final tweakings
+13:53 <LJ> no worries, I would offer my help but I'm really short on time in the coming weeks.
+13:53 <mudlord> its okay, you've been more than enough help already
+<mudlord> thats the thing, you know design really well
+
+
+
+14:07 <LJ> tils/glsl-syncbox.html
+14:07 <LJ> http://scene.xe-development.com/glsl-syncbox/
+14:08 <LJ> self explanatory, right?
+14:08 <mudlord> so the tracker at the bottom is to do the timing
+14:08 <mudlord> :)
+14:10 <LJ> Yeah on the far right is cutoff "browse" button, you select the track in a browser playable format and press play, oh and the timing uniform is actually "t" not "time". The 25:00 in the top right is a countdown, for live coding practice.
+14:11 <LJ> in seconds
+14:11 <mudlord> cool
+14:11 <mudlord> wow its quite the tool
+14:11 <mudlord> :)
+14:12 <LJ> all i did was patch in the audio player and the countdown, the existing glsl-sandbox codebase is too dirty for my taste, thats why I did not take it further yet.
+14:14 <mudlord> weird, black screen with chrome
+14:15 <LJ> you need to load a track, and change the time uniform to "t" and then either replace "time" with "t" or add a "define time t" right below the uniform for the default shader to work.
+14:15 <mudlord> oh
+14:16 <mudlord> i thought it also worked without the track
+14:16 <mudlord> what formats? vorbis?
+14:16 <LJ> you can see the error messages by hovering over the highlighted line numbers, or the "compiled" button next to "hidecode" and the resolution select.
+14:17 <LJ> Everything your browser can play, mostly mp3, vorbis, wav, with a bit of luck flac but probably not.
+14:18 <LJ> btw. mp4 would also work %)
+14:20 <mudlord> yep, got it all working now
+14:20 <mudlord> converted track to vorbis
+14:20 <mudlord> thanks a ton
+14:22 <LJ> you're welcome, this makes iterating on the shader way quicker and fun, using seconds as sync keys is not ideal but its all i got right now, should suffice for camera work even though you'll not have the track driven syncs, but you could mimic them using defines like "#define GLITCHSYNC pow(fract(t),5.)" or something
+14:29 <LJ> Btw. for WebGL to like your shader you need that "precision highp float" qualifier at the top. If you excuse me now, its 4:30 in the morning over here, so I'll go and catch some sleep now ;) Have good one!
+14:29 <mudlord> k, you too
+14:30 * LJ (~lj1102@x55b031ed.dyn.telefonica.de) has quit ("catching dem zZzs")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================================================
+precision mediump float;
+
+#extension GL_OES_standard_derivatives : enable
+
+uniform float t;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+#define time t
+
+#define PI 3.14159265359
+
+vec3 opTwist( vec3 p )
+{
+    float  c = cos(10.0*p.y+10.0);
+    float  s = sin(10.0*p.y+10.0);
+    mat2   m = mat2(c,-s,s,c);
+    return vec3(m*p.xz,p.y);
+}
+
+float map(vec3 f)
+{
+	vec3 cs=vec3(1.4,1.4,1.8);
+	float fs=1.8;
+	vec3 fc=vec3(2.1,2.1,2.1);
+	float fu=.0;
+	float fd=.1;
+	float v=1.;
+	for(int i=0; i<9; i++){
+		f=2.*clamp(f,-cs,cs)-f;
+		float c=max(fs/dot(f,f),1.);
+		f*=vec3(c);
+		v*=c;
+		f+=fc;
+	}
+	float z=length(f.xy)-fu;
+	return fd*max(z,floor(length(f.xy)*f.z)/dot(f,f))/abs(v);
+}
+
+void main( void ) {
+	
+	vec2 pos = (gl_FragCoord.xy*2.0 - resolution.xy) / resolution.y;
+	vec3 camPos;
+	if (time < 3.)
+	{
+	camPos = vec3(5.0*cos(time*0.3), 3.0*sin(time*0.1), 0.25*sin(time*0.25) + 0.75);
+	}
+	else if (time < 10.)
+        {
+	camPos = vec3(5.0*cos(time*0.3), 2.1*sin(time*0.1), 0.25*sin(time*0.25) + 0.75);
+	}
+	else if (time < 12.)
+        {
+	camPos = vec3(2.0*cos(time*0.3), 1.*sin(time*0.1), 0.25*sin(time*0.25) + 0.75);
+	}
+	else if (time < 16.)
+        {
+	camPos = vec3(2.0*cos(time*0.3), 1.5*sin(time*0.1), 0.25*sin(time*0.25) + 0.75);
+	}
+	else if (time < 18.0)
+	{
+	camPos = vec3(5.0*cos(time*0.1), 5.0*sin(time*0.1), 0.75*sin(time*0.25) + 0.75);
+	}
+	else if (time < 26.)
+	{
+	camPos = vec3(5.0*cos(time*0.1), 1.0*sin(time*0.1), 0.75*sin(time*0.25) + 0.75);
+	}
+	else if (time < 40.)
+	{
+	camPos = vec3(6.0*cos(time*0.1), 1.0*sin(time*0.1), 0.75*sin(time*0.25) + 0.75);
+	}
+	else 
+	{
+	camPos = vec3(6.1*cos(time*0.1), 1.2*sin(time*0.1), 0.15*sin(time*0.25) + 0.75);
+	}
+	vec3 camDir = normalize(camPos*vec3(-1.0, -1.0, sin(time*0.33)*2.5));
+	
+	vec3 camUp  = normalize(vec3(0.0, 1.0, 1.0));
+	vec3 camSide = cross(camDir, camUp);
+	float focus = 0.8;
+	
+	vec3 rayDir = normalize(camSide*pos.x + camUp*pos.y + camDir*focus);
+	vec3 ray = camPos;
+	float m = 0.0;
+	float d = 0.0, total_d = 0.0;
+	const int MAX_MARCH = 90;
+	const float MAX_DISTANCE = 90.0;
+	for(int i=0; i<MAX_MARCH; ++i) {
+		d = map(ray);
+		total_d += d;
+		ray += rayDir * d;
+		m += 1.;
+		if(d<0.001) { break; }
+		if(total_d>MAX_DISTANCE) { break; }
+	}
+	float c = (total_d)*.001;
+
+
+
+    float wobble = 0.7 + 0.5 * sin(time*16.0);
+  
+ //wobble = 0.9;
+
+  vec2 uv = gl_FragCoord.xy/resolution.xy;
+	vec3 c0 = vec3(sin(uv.x*2.-0.+time*1.), sin(uv.y*2.-4.0-time*1.), sin(uv.x*2.-4.+time*1.));
+	float a = pow(sin(uv.x*3.1416), 0.9)*pow(sin(uv.y*3.1416), 0.9);
+	vec4 col = mix(vec4(vec3(a), 1.0), vec4(c0, 1.), 0.1);
+
+col.rgb = mix(col.rgb, vec3(length(col.rgb)*.5), wobble);
+	vec4 result = vec4( vec3(c*col.x, c*col.y, c*col.z)*m, .2 );
+	gl_FragColor = result;
+}
+
+
+
+----------------
+00:47 mins
+(Pattern position 06)
+Ending row 55 in pattern pos 07
+and afterwards: Pattern Pos. 10, Row 16 - 31
+Pattern Pos. 11, Row 16 -31
+---------------------------
+on those high notes?
+those piano like ones?
+yep and from 00:47 on (pattern pos. 06, row 00 until pattern pos. 07, row 55)
+yes, these piano like ones
+these are the 2nd part:
+Pattern Pos. 10, Row 16 - 31 (Ray)
+Pattern Pos. 11, Row 16 -31
+in between no rays
+k
+in the latter part only on the piano (which is between row 16-31 in the two patterns)
+in the first part I would like to see it a bit longer, when the scene starts and the music starts
+to get the listener into the right mood
+that´s why there it lasts from the beginning of that music section until the beat gets back in
+So: pattern pos. 06, row 00 until pattern pos. 07, row 55
+
+
+

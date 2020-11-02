@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/dss_town/!svn/ver/1/src/sys/_windows
+END
+main_deb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dss_town/!svn/ver/9/src/sys/_windows/main_deb.cpp
+END
+msys_debugOS.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dss_town/!svn/ver/3/src/sys/_windows/msys_debugOS.cpp
+END
+main_rel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dss_town/!svn/ver/9/src/sys/_windows/main_rel.cpp
+END

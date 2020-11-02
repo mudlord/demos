@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\sys\_windows\main_deb.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\_windows\main_rel.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intro.cpp">
+      <Filter>intro</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\device.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\track.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\musys_gl.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\musys.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\sys\events.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intro.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\raymarch.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\sys\base.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\device.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\track.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\musys.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\musys_gl.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{7156de36-bb4f-4d9a-a59d-0e0046a61cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intro">
+      <UniqueIdentifier>{3daeeb26-e229-4c28-bcbb-d706fd749790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intro\rocket">
+      <UniqueIdentifier>{df38bd4e-3b05-4815-85df-8f3ea346b730}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="panda.ico" />
+    <Image Include="desirelogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="framework64k.rc" />
+  </ItemGroup>
+</Project>

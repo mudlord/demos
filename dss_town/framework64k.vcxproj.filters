@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7b802f73-c288-4071-93bd-f2d5de290826}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;asm;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\sys">
+      <UniqueIdentifier>{b8225112-78ba-4a1b-887b-e569da816715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sys\_windows">
+      <UniqueIdentifier>{f35bc103-09e2-4c9e-b53c-2f925bec974e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\intro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\msys.cpp">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\msys_glext.cpp">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\_windows\main_deb.cpp">
+      <Filter>Source Files\sys\_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\_windows\main_rel.cpp">
+      <Filter>Source Files\sys\_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\_windows\msys_debugOS.cpp">
+      <Filter>Source Files\sys\_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\msys_texgen.cpp">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\intro.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\events.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\glext.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys_debug.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys_glext.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys_types.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys_texgen.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\ufmod.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DemoText.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\resource.h" />
+    <ClInclude Include="src\sky.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\street.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\music_player.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\post_proc.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="src\sys\ufmod.obj">
+      <Filter>Source Files\sys</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img.ico" />
+    <None Include="src\sys\img.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="assets.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

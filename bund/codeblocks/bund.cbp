@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="bund" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bund" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="--version-script=link.T" />
+					<Add library="user32" />
+					<Add library="..\..\..\..\MinGW32\lib\libglu32.a" />
+					<Add library="..\..\..\..\MinGW32\lib\libopengl32.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bund" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+					<Add library="..\..\..\..\MinGW32\lib\libglu32.a" />
+					<Add library="..\..\..\..\MinGW32\lib\libopengl32.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../asset_particle.h" />
+		<Unit filename="../libmodplug/fastmix.cpp" />
+		<Unit filename="../libmodplug/it_defs.h" />
+		<Unit filename="../libmodplug/load_669.cpp" />
+		<Unit filename="../libmodplug/load_amf.cpp" />
+		<Unit filename="../libmodplug/load_ams.cpp" />
+		<Unit filename="../libmodplug/load_dbm.cpp" />
+		<Unit filename="../libmodplug/load_dmf.cpp" />
+		<Unit filename="../libmodplug/load_dsm.cpp" />
+		<Unit filename="../libmodplug/load_far.cpp" />
+		<Unit filename="../libmodplug/load_it.cpp" />
+		<Unit filename="../libmodplug/load_j2b.cpp" />
+		<Unit filename="../libmodplug/load_mdl.cpp" />
+		<Unit filename="../libmodplug/load_med.cpp" />
+		<Unit filename="../libmodplug/load_mod.cpp" />
+		<Unit filename="../libmodplug/load_mt2.cpp" />
+		<Unit filename="../libmodplug/load_mtm.cpp" />
+		<Unit filename="../libmodplug/load_okt.cpp" />
+		<Unit filename="../libmodplug/load_pat.h" />
+		<Unit filename="../libmodplug/load_psm.cpp" />
+		<Unit filename="../libmodplug/load_ptm.cpp" />
+		<Unit filename="../libmodplug/load_s3m.cpp" />
+		<Unit filename="../libmodplug/load_stm.cpp" />
+		<Unit filename="../libmodplug/load_ult.cpp" />
+		<Unit filename="../libmodplug/load_umx.cpp" />
+		<Unit filename="../libmodplug/load_wav.cpp" />
+		<Unit filename="../libmodplug/load_xm.cpp" />
+		<Unit filename="../libmodplug/mmcmp.cpp" />
+		<Unit filename="../libmodplug/modplug.cpp" />
+		<Unit filename="../libmodplug/modplug.h" />
+		<Unit filename="../libmodplug/snd_dsp.cpp" />
+		<Unit filename="../libmodplug/snd_flt.cpp" />
+		<Unit filename="../libmodplug/snd_fx.cpp" />
+		<Unit filename="../libmodplug/sndfile.cpp" />
+		<Unit filename="../libmodplug/sndfile.h" />
+		<Unit filename="../libmodplug/sndmix.cpp" />
+		<Unit filename="../libmodplug/stdafx.h" />
+		<Unit filename="../libmodplug/tables.h" />
+		<Unit filename="../libretro.cpp" />
+		<Unit filename="../libretro.h" />
+		<Unit filename="../metaball_tex.h" />
+		<Unit filename="../metaballs.h" />
+		<Unit filename="../starbg.h" />
+		<Unit filename="../sys/ddraw.h" />
+		<Unit filename="../sys/events.h" />
+		<Unit filename="../sys/glext.h" />
+		<Unit filename="../sys/msys.cpp" />
+		<Unit filename="../sys/msys.h" />
+		<Unit filename="../sys/msys_debug.h" />
+		<Unit filename="../sys/msys_glext.cpp" />
+		<Unit filename="../sys/msys_glext.h" />
+		<Unit filename="../sys/msys_texgen.cpp" />
+		<Unit filename="../sys/msys_texgen.h" />
+		<Unit filename="../sys/msys_types.h" />
+		<Unit filename="../sys/resource.h" />
+		<Unit filename="../sys/wglext.h" />
+		<Unit filename="../ttable.h" />
+		<Unit filename="../ufmod.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

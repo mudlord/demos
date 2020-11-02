@@ -1,0 +1,185 @@
+<sync rows="1050">
+	<tracks>
+		<track name="fade">
+			<key row="0" value="0" interpolation="2"/>
+			<key row="24" value="0.55" interpolation="0"/>
+			<key row="80" value="0.5" interpolation="2"/>
+			<key row="128" value="44" interpolation="0"/>
+			<key row="129" value="0" interpolation="0"/>
+			<key row="152" value="0" interpolation="2"/>
+			<key row="168" value="0.55" interpolation="0"/>
+			<key row="232" value="0.55" interpolation="2"/>
+			<key row="252" value="1" interpolation="2"/>
+			<key row="272" value="1.5" interpolation="0"/>
+			<key row="288" value="1.5" interpolation="2"/>
+			<key row="320" value="0.55" interpolation="0"/>
+			<key row="344" value="0.55" interpolation="2"/>
+			<key row="364" value="0.15" interpolation="2"/>
+			<key row="384" value="0.55" interpolation="0"/>
+			<key row="424" value="0.55" interpolation="2"/>
+			<key row="440" value="0" interpolation="0"/>
+			<key row="444" value="0" interpolation="2"/>
+			<key row="460" value="0.65" interpolation="0"/>
+			<key row="496" value="0.65" interpolation="2"/>
+			<key row="516" value="0" interpolation="0"/>
+			<key row="524" value="0" interpolation="2"/>
+			<key row="540" value="0.45" interpolation="0"/>
+			<key row="616" value="0.45" interpolation="2"/>
+			<key row="632" value="0" interpolation="2"/>
+			<key row="648" value="0.45" interpolation="0"/>
+			<key row="748" value="0.45" interpolation="2"/>
+			<key row="760" value="0" interpolation="2"/>
+			<key row="784" value="0.55" interpolation="0"/>
+			<key row="1016" value="0.55" interpolation="2"/>
+			<key row="1040" value="0" interpolation="2"/>
+		</track>
+		<track name="sync">
+			<key row="0" value="0.55" interpolation="0"/>
+			<key row="760" value="0.36" interpolation="0"/>
+			<key row="808" value="0.36" interpolation="2"/>
+			<key row="864" value="0.2" interpolation="2"/>
+			<key row="896" value="0.35" interpolation="0"/>
+			<key row="944" value="0.35" interpolation="2"/>
+			<key row="968" value="0.1" interpolation="2"/>
+			<key row="1000" value="0.35" interpolation="0"/>
+		</track>
+		<track name="shadernum">
+			<key row="0" value="0" interpolation="0"/>
+			<key row="129" value="1" interpolation="0"/>
+			<key row="440" value="2" interpolation="0"/>
+			<key row="516" value="3" interpolation="0"/>
+			<key row="632" value="4" interpolation="0"/>
+			<key row="760" value="5" interpolation="0"/>
+			<key row="1040" value="0" interpolation="0"/>
+		</track>
+		<track name="snarehit1">
+			<key row="0" value="0" interpolation="0"/>
+		</track>
+		<track name="snarehit2">
+			<key row="0" value="0" interpolation="0"/>
+		</track>
+		<track name="colordistort">
+			<key row="0" value="0" interpolation="0"/>
+		</track>
+		<track name="strp_cnt">
+			<key row="0" value="16" interpolation="0"/>
+			<key row="496" value="16" interpolation="0"/>
+			<key row="500" value="4" interpolation="0"/>
+			<key row="503" value="8" interpolation="0"/>
+			<key row="506" value="32" interpolation="0"/>
+			<key row="511" value="16" interpolation="0"/>
+			<key row="616" value="16" interpolation="0"/>
+			<key row="620" value="4" interpolation="0"/>
+			<key row="623" value="8" interpolation="0"/>
+			<key row="628" value="4" interpolation="0"/>
+			<key row="631" value="16" interpolation="0"/>
+			<key row="748" value="16" interpolation="0"/>
+			<key row="760" value="16" interpolation="0"/>
+			<key row="792" value="32" interpolation="0"/>
+		</track>
+		<track name="strp_intens">
+			<key row="0" value="0" interpolation="0"/>
+		</track>
+		<track name="strp_trnsinst">
+			<key row="0" value="0" interpolation="0"/>
+			<key row="252" value="0" interpolation="2"/>
+			<key row="272" value="0.1" interpolation="0"/>
+			<key row="288" value="0.1" interpolation="2"/>
+			<key row="320" value="0" interpolation="0"/>
+			<key row="344" value="0" interpolation="2"/>
+			<key row="364" value="0.1" interpolation="2"/>
+			<key row="384" value="0" interpolation="0"/>
+			<key row="424" value="0" interpolation="2"/>
+			<key row="439" value="0.1" interpolation="0"/>
+			<key row="444" value="0" interpolation="0"/>
+			<key row="496" value="0" interpolation="2"/>
+			<key row="516" value="0.1" interpolation="0"/>
+			<key row="517" value="0" interpolation="0"/>
+			<key row="616" value="0" interpolation="2"/>
+			<key row="632" value="0.1" interpolation="0"/>
+			<key row="633" value="0" interpolation="0"/>
+			<key row="708" value="0" interpolation="2"/>
+			<key row="711" value="0.1" interpolation="0"/>
+			<key row="712" value="0" interpolation="0"/>
+			<key row="748" value="0" interpolation="2"/>
+			<key row="760" value="0.1" interpolation="0"/>
+			<key row="761" value="0" interpolation="0"/>
+			<key row="792" value="0.3" interpolation="2"/>
+			<key row="795" value="0.3" interpolation="0"/>
+			<key row="796" value="0" interpolation="0"/>
+			<key row="837" value="0.3" interpolation="2"/>
+			<key row="840" value="0.3" interpolation="0"/>
+			<key row="841" value="0" interpolation="0"/>
+			<key row="859" value="0.3" interpolation="2"/>
+			<key row="862" value="0.3" interpolation="0"/>
+			<key row="863" value="0" interpolation="0"/>
+			<key row="886" value="0.3" interpolation="2"/>
+			<key row="889" value="0.3" interpolation="0"/>
+			<key row="890" value="0" interpolation="0"/>
+			<key row="909" value="0.3" interpolation="2"/>
+			<key row="912" value="0.3" interpolation="0"/>
+			<key row="913" value="0" interpolation="0"/>
+			<key row="937" value="0.3" interpolation="2"/>
+			<key row="940" value="0.3" interpolation="0"/>
+			<key row="941" value="0" interpolation="0"/>
+			<key row="960" value="0.3" interpolation="2"/>
+			<key row="963" value="0.3" interpolation="0"/>
+			<key row="964" value="0" interpolation="0"/>
+			<key row="989" value="0.4" interpolation="0"/>
+			<key row="996" value="0" interpolation="0"/>
+			<key row="1005" value="0.4" interpolation="0"/>
+			<key row="1012" value="0" interpolation="0"/>
+		</track>
+		<track name="rgb_distort">
+			<key row="0" value="0" interpolation="0"/>
+			<key row="252" value="0" interpolation="2"/>
+			<key row="272" value="0.01" interpolation="0"/>
+			<key row="288" value="0.01" interpolation="2"/>
+			<key row="320" value="0" interpolation="0"/>
+			<key row="344" value="0" interpolation="2"/>
+			<key row="364" value="0.01" interpolation="2"/>
+			<key row="384" value="0" interpolation="0"/>
+			<key row="424" value="0" interpolation="2"/>
+			<key row="439" value="0.1" interpolation="0"/>
+			<key row="444" value="0" interpolation="0"/>
+			<key row="496" value="0" interpolation="2"/>
+			<key row="516" value="0.2" interpolation="0"/>
+			<key row="517" value="0" interpolation="0"/>
+			<key row="616" value="0" interpolation="2"/>
+			<key row="632" value="0.1" interpolation="0"/>
+			<key row="633" value="0" interpolation="0"/>
+			<key row="708" value="0" interpolation="2"/>
+			<key row="711" value="0.1" interpolation="0"/>
+			<key row="712" value="0" interpolation="0"/>
+			<key row="748" value="0" interpolation="2"/>
+			<key row="760" value="0.01" interpolation="0"/>
+			<key row="761" value="0" interpolation="0"/>
+			<key row="792" value="0" interpolation="2"/>
+			<key row="795" value="0.1" interpolation="0"/>
+			<key row="796" value="0" interpolation="0"/>
+			<key row="837" value="0" interpolation="2"/>
+			<key row="840" value="0.1" interpolation="0"/>
+			<key row="841" value="0" interpolation="0"/>
+			<key row="859" value="0" interpolation="2"/>
+			<key row="862" value="0.1" interpolation="0"/>
+			<key row="863" value="0" interpolation="0"/>
+			<key row="886" value="0" interpolation="2"/>
+			<key row="889" value="0.1" interpolation="0"/>
+			<key row="890" value="0" interpolation="0"/>
+			<key row="909" value="0" interpolation="2"/>
+			<key row="912" value="0.1" interpolation="0"/>
+			<key row="913" value="0" interpolation="0"/>
+			<key row="937" value="0" interpolation="2"/>
+			<key row="940" value="0.1" interpolation="0"/>
+			<key row="941" value="0" interpolation="0"/>
+			<key row="960" value="0" interpolation="2"/>
+			<key row="963" value="0.1" interpolation="0"/>
+			<key row="964" value="0" interpolation="0"/>
+			<key row="989" value="0.2" interpolation="0"/>
+			<key row="996" value="0" interpolation="0"/>
+			<key row="1005" value="0.2" interpolation="0"/>
+			<key row="1012" value="0" interpolation="0"/>
+		</track>
+	</tracks>
+	<bookmarks/>
+</sync>

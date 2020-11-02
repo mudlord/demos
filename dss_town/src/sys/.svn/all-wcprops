@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/dss_town/!svn/ver/1/src/sys
+END
+msys_glext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dss_town/!svn/ver/8/src/sys/msys_glext.cpp
+END
+msys.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/dss_town/!svn/ver/8/src/sys/msys.h
+END
+ufmod.obj
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/dss_town/!svn/ver/1/src/sys/ufmod.obj
+END
+msys_glext.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/dss_town/!svn/ver/9/src/sys/msys_glext.h
+END
+img.ico
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/dss_town/!svn/ver/7/src/sys/img.ico
+END
+msys_texgen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dss_town/!svn/ver/1/src/sys/msys_texgen.cpp
+END
+logo.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/dss_town/!svn/ver/1/src/sys/logo.h
+END
+msys_debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/dss_town/!svn/ver/1/src/sys/msys_debug.h
+END
+ddraw.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/dss_town/!svn/ver/1/src/sys/ddraw.h
+END
+FWZ.APS
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/dss_town/!svn/ver/10/src/sys/FWZ.APS
+END
+events.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/dss_town/!svn/ver/1/src/sys/events.h
+END
+msys_texgen.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/dss_town/!svn/ver/1/src/sys/msys_texgen.h
+END
+logobg.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/dss_town/!svn/ver/1/src/sys/logobg.h
+END
+ufmod.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/dss_town/!svn/ver/1/src/sys/ufmod.h
+END
+wglext.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/dss_town/!svn/ver/1/src/sys/wglext.h
+END
+msys_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/dss_town/!svn/ver/1/src/sys/msys_types.h
+END
+fwzSetup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/dss_town/!svn/ver/1/src/sys/fwzSetup.cpp
+END
+glext.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/dss_town/!svn/ver/1/src/sys/glext.h
+END
+FWZ.rc
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/dss_town/!svn/ver/9/src/sys/FWZ.rc
+END
+msys.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/dss_town/!svn/ver/4/src/sys/msys.cpp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/dss_town/!svn/ver/8/src/sys/resource.h
+END
+fwzSetup.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/dss_town/!svn/ver/1/src/sys/fwzSetup.h
+END

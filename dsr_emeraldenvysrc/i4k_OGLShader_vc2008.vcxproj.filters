@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{398aa456-5f36-459d-8d3a-34c625e15f5c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\_windows">
+      <UniqueIdentifier>{c043adba-3691-469e-bb5e-0d4f516c880e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_linux">
+      <UniqueIdentifier>{7cfd739a-1de9-4ab8-8a38-d5ed33ded9c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders">
+      <UniqueIdentifier>{7990bad9-c245-428c-8c51-f647b2eca5bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sync">
+      <UniqueIdentifier>{063b4a46-faf0-4fc8-b2ec-440e15697f5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ext.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glext.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intro.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\base.h">
+      <Filter>Source Files\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\data.h">
+      <Filter>Source Files\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\device.h">
+      <Filter>Source Files\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\sync.h">
+      <Filter>Source Files\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\track.h">
+      <Filter>Source Files\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lalala.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\_windows\main_deb.cpp">
+      <Filter>Source Files\_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\_windows\main_rel.cpp">
+      <Filter>Source Files\_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\data.c">
+      <Filter>Source Files\sync</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\device.c">
+      <Filter>Source Files\sync</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\track.c">
+      <Filter>Source Files\sync</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\shaders\fsh_rayt.inl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="src\shaders\vsh_2d.inl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="src\4klang.obj">
+      <Filter>Source Files</Filter>
+    </Object>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+This is not an introsystem, neither it is a tool nor the
+source code of any intro. This is a base code or framework
+that you can use to build your own introsystem. 
+It contains:
+ 
+* Initialization code for OGL, with extensions for compressed textures, shaders, and FBOs
+* A fully functional texture generator
+* Code for loading DDS files/arrays to textures
+* A basic timing scheme for timing scenes to elapsed time.
+* Support for linking against MSVCRT.DLL, not chunky runtimes like MSVC2010's
+* Small footprint (compresses to 13 or so kb, last time I checked)
+
+To use, modify the intro_* files to hook into your relevant effects/shaders/routines. 
+
+Special thanks go to Inigo Quilez [http://www.iquilezles.org], for which this framework is based on.
+ 

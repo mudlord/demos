@@ -1,0 +1,87 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+uniform vec2 resolution;
+uniform float time;
+uniform float fade = 1.;
+
+const float PI=3.14159265358979323846;
+
+vec3 rotate_x(float theta, vec3 v) {
+	float ct = cos(theta), st = sin(theta);
+	return v * mat3(1.0, 0.0, 0.0, 0.0, ct,  -st, 0.0, st,  ct );
+}
+
+vec3 rotate_y(float theta, vec3 v) {
+	float ct = cos(theta), st = sin(theta);
+	return v * mat3(ct,  0.0, st,  0.0, 1.0, 0.0, -st, 0.0, ct );
+}
+
+vec3 rotate_z(float theta, vec3 v) {
+	float ct = cos(theta), st = sin(theta);
+	return v * mat3(ct,  -st, 0.0, st,  ct,  0.0, 0.0, 0.0, 1.0);
+}
+
+
+float scene(vec3 p)
+	{
+	float bar_p=0.5;
+	float bar_w=bar_p*(0.15);
+	vec3 bar;
+	bar.x=length(max(abs(mod(p.zy,bar_p)-0.25)-bar_w,0.0));
+	bar.y=length(max(abs(mod(p.xx,bar_p)-0.25)-bar_w,0.0));
+	return -min(min(max(max(-bar.x,-bar.y),-bar.x),0.0),0.0);
+	}
+
+
+vec3 getNormal(vec3 p)
+{
+	vec3 eps=vec3(.005,-.005,0);
+	return normalize(vec3(scene(p+eps.xyy),scene(p+eps.yxy),scene(p+eps.yyx)));
+}
+
+float render_scene(vec3 ray_origin, vec3 ray_dir,float t)
+{
+	const int ray_n=96;
+	for(int i=0;i<ray_n;i++)
+	{
+		
+		float k=scene(ray_origin+ray_dir*t);
+		t+=k*fade;
+	}
+	return t;	
+}
+
+
+void main(void)
+	{
+	vec2 position=(gl_FragCoord.xy/resolution.xy);
+	vec2 p=-1.0+2.0*position;
+	//set up camera
+	float speed=time*0.5;
+	vec3 dir=normalize(vec3(p*vec2(1.0/resolution.y*resolution.x,1.0),0.85)); // screen ratio (x,y) fov (z)
+	dir = rotate_x(0.1,dir);
+	dir = rotate_z(1.6,dir);
+	vec3 ray=vec3(0.0,0.0,6.0*speed*0.0625);
+	//the raymarch
+	float t=0.0;
+	t=render_scene(ray,dir,t);
+	vec3 hit=ray+dir*t;
+	//get normal for reflection
+	vec3 n=getNormal(hit);
+	//render reflection
+	dir=reflect(dir,n);
+	t+=dir.x;
+	t=render_scene(ray,dir,t);	
+	if (t > 0.0) { 
+	float c=(n.x*2.8+n.y+n.z)*0.25-t*0.025;	
+	vec3 color=vec3(c*t*0.1,c*t*0.25+t*0.01125,c*0.175+t*0.0125);
+	if (color.g > 1.)
+	{
+		color=vec3(1,1,1);
+		//discard;
+	}
+	gl_FragColor=vec4(smoothstep(0.8,0.9,c)+color*color,1.0);
+	}
+}

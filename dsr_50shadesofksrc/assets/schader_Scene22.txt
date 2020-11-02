@@ -1,0 +1,156 @@
+#version 330 core
+uniform float fGlobalTime; // in seconds
+uniform vec2 v2Resolution; // viewport resolution (in pixels)
+vec2 resolution = v2Resolution;
+uniform sampler2D texTex1;
+uniform sampler2D texTex2;
+uniform float speed = 0.05;
+
+layout(location = 0) out vec4 FragColor; // out_color must be written in order to see anything
+float time = fGlobalTime;
+float Pi = 3.1415296;
+
+#define INF 100000.0
+vec3 rotatex(in vec3 p, float ang) { return vec3(p.x, p.y*cos(ang) - p.z*sin(ang), p.y*sin(ang) + p.z*cos(ang)); }
+vec3 rotatey(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.z*sin(ang), p.y, p.x*sin(ang) + p.z*cos(ang)); }
+vec3 rotatez(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.y*sin(ang), p.x*sin(ang) + p.y*cos(ang), p.z); }
+
+
+float opS( float d1, float d2 )
+{
+    return max(-d2,d1);
+}
+
+float opU( float d1, float d2 )
+{
+	return (d1<d2) ? d1 : d2;
+}
+
+vec3 opRep( vec3 p, vec3 c )
+{
+    return mod(p,c)-0.5*c;
+}
+
+vec3 opTwist( vec3 p )
+{
+    float  c = cos(10.0*p.y+10.0);
+    float  s = sin(10.0*p.y+10.0);
+    mat2   m = mat2(c,-s,s,c);
+    return vec3(m*p.xz,p.y);
+}
+
+
+
+float sdPlane( vec3 p )
+{
+	return p.y;
+}
+
+float sdBox( vec3 p, vec3 b )
+{
+  vec3 d = abs(p) - b;
+  return min(max(d.x,max(d.y,d.z)),0.0) +
+         length(max(d,0.0));
+}
+
+float sdCross( in vec3 p )
+{
+  float da = sdBox(p.xyz,vec3(INF,1.0,1.0));
+  float db = sdBox(p.yzx,vec3(1.0,INF,1.0));
+  float dc = sdBox(p.zxy,vec3(1.0,1.0,INF));
+  return min(da,min(db,dc));
+}
+
+float mengersponge(vec3 pos)
+{
+ float d = sdBox(pos,vec3(1.));
+
+   float s = 1.;
+   for( int m=0; m<3; m++ )
+   {
+      vec3 a = mod( pos*s, 2.0 )-.5;
+      s *= 4.0;
+      vec3 r = 1.0 - 2.*a;
+
+      float c = sdCross(r)/s;
+      d = max(d,-c);
+   }
+ return d;
+}
+
+float opScale( vec3 p, float s )
+{
+    return mengersponge(p/s)*s;
+}
+
+
+
+float scene(vec3 p)
+{
+  p = rotatex(p, 0.18*time - 2.0);
+  p = rotatez(p, 0.10*time - 2.0);
+  p = rotatey(p, 0.24*time-2.);
+    p = mod(p,16.0) - 8.0;
+    p = abs(p);
+    float cube_normal = length(max(p -1., 0.0)) - 0.01 + clamp(sin((p.x+p.y+p.z)*3.0)*0.02, 0.0, 1.0);
+    float cube = opScale(p,2.5);
+    cube = mix(cube_normal,cube,1.0);
+    float xd = max(p.y,p.z)- 0.25 + clamp(sin((p.x+p.x+p.z)*50.0)*0.01, 0.0, 1.0);
+    float yd = max(p.x,p.z)- 0.25 + clamp(sin((p.x+p.y+p.z)*0.0)*0.01, 0.0, 1.0);
+    float zd = max(p.x,p.y)- 0.25 + clamp(sin((p.x+p.y+p.z)*40.0)*0.01, 0.0, 1.0);
+    float beams = min(zd, min(xd, yd)) - 0.25 + clamp(sin((p.x+p.y+p.z)*40.0)*0.01, 0.0, 1.0);
+    //return beams;
+    return min(beams, cube);
+
+  
+//return cage; 
+}
+
+vec3 get_normal(vec3 p)
+{
+	vec3 eps = vec3(0.1, 0.0, 0.0); 
+	float nx = scene(p + eps.xyy) - scene(p - eps.xyy); 
+	float ny = scene(p + eps.yxy) - scene(p - eps.yxy); 
+	float nz = scene(p + eps.yyx) - scene(p - eps.yyx); 
+	return normalize(vec3(nx,ny,nz)); 
+}
+
+
+
+
+void main( void ) 
+{
+	vec2 p = 2.0 * gl_FragCoord.xy / resolution - 1.0; 
+	p.x *= resolution.x / resolution.y; 
+	 vec2 sp=gl_FragCoord.rg/resolution.rg;
+	vec3 ro = vec3(0.0, 0.0, 0.0 );
+  ro.z -= speed*time;
+	vec3 rd = normalize(vec3(p.x, p.y, -2.7));
+  
+	vec3 color = vec3(0.0);   
+	vec3 pos = ro; 
+	float dist = 0.0; 
+
+	
+	for (int i = 0; i < 60; i++) 
+	{
+		float d = scene(pos); 
+		pos += rd*d; 
+		dist += d; 
+	}
+		vec3 n = get_normal(pos);
+		vec3 r = reflect(normalize(pos - ro),n); 
+		vec3 h = -normalize(n + pos - ro ); 
+		float diff  = 1.0*clamp(dot(n, normalize(vec3(1,1,1))), 0.0, 1.0); 
+		float diff2 = 0.2*clamp(dot(n, normalize(vec3(0.7,-1,0.5))), 0.0, 1.0); 
+		float diff3 = 0.1*clamp(dot(n, normalize(vec3(-0.7,-0.4,0.7))), 0.0, 1.0); 
+		float spec = pow(clamp(dot(r, normalize(vec3(1,1,1))), 0.0, 1.0), 150.0);  
+    vec3 rf = texture(texTex1, r.xy*0.5).xyz;
+    vec3 tex2 = texture(texTex2,r.xy*1.0).xyz;
+   
+		color = diff*vec3(.1,.3,.5) + diff2*vec3(.1,.3,.5)+rf+tex2  + diff3*vec3(.1,.3,.5) + spec*vec3(1,1,1); 
+if(dist >10.0)		
+color /= dist*0.1;
+
+	FragColor = vec4(color, 1.0); 
+}

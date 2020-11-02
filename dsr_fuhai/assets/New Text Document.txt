@@ -1,0 +1,42 @@
+* fractals
+* sine wave grid 
+* landscape
+* voronoi cube
+
+
+03:40 <@mudlord> 03:40 <+mudlord> in ft2play
+03:40 <@mudlord> 03:40 <+mudlord> is it possible to determine the current row and order?
+04:02 <@eightbitbubsy> extern SongTyp stm;
+04:02 <@eightbitbubsy> stm.stuff
+04:02 <@mudlord>     int16_t SongPos;
+04:02 <@mudlord>     int16_t PattNr;
+04:02 <@mudlord>     int16_t PattPos;
+04:02 <@mudlord> ?
+04:03 <@mudlord> ?
+04:03 <@eightbitbubsy> yes
+04:03 <@mudlord> thank you
+04:03 <@mudlord> :D
+04:03 <@eightbitbubsy> SongPos = order
+04:03 <@mudlord> and pattpos == row?
+04:03 <@mudlord> is it possible to detect certain notes?
+04:03 <@eightbitbubsy> yes, PattPos = row
+04:03 <@eightbitbubsy> Song.PattLen = number of rows in current pattern
+04:04 <@mudlord> :D
+04:04 <@eightbitbubsy> extern StmTyp Stm[32];
+04:04 <@eightbitbubsy> also you have to remove static from these two!
+04:05 <@mudlord> Stm = instrument?
+04:05 <@eightbitbubsy> Stm = channel
+04:05 <@eightbitbubsy> Stm[ch].TonNr = note
+04:05 <@mudlord> k
+04:06 <@mudlord> thanks very much
+04:06 <@mudlord> :D
+04:06 <@eightbitbubsy> Stm[ch].FinalVol = volume of channel (0.0f .. 1.0f)
+04:06 * SketchMan3 (~brkbrkbrk@nc-76-3-211-194.dhcp.embarqhsd.net) has joined
+04:06 <@eightbitbubsy> FinalPan = pan... same scaling
+04:06 <@eightbitbubsy> anyways this is not threadsafe and stuff like that
+04:07 <@eightbitbubsy> I guess, depends on what you do
+04:07 <@eightbitbubsy> and you can't really be certain that the value you read is the value you want (yet)
+04:07 <@mudlord> im using it for demo sync
+04:07 <@eightbitbubsy> totally depends on timing
+04:07 * NamhctekS3 (~brkbrkbrk@nc-76-3-211-194.dhcp.embarqhsd.net) has quit (Ping timeout: 186 seconds)
+04:07 <@eightbitbubsy> should work fine for demosync I think...

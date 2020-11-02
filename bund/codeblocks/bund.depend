@@ -1,0 +1,272 @@
+# depslib dependency file v1.0
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\fastmix.cpp
+	"stdafx.h"
+	"sndfile.h"
+	<math.h>
+
+1316827460 c:\codecrack\code\bundlibretro\libmodplug\stdafx.h
+	"config.h"
+	<inttypes.h>
+	<stdint.h>
+	<windows.h>
+	<windowsx.h>
+	<mmsystem.h>
+	<stdio.h>
+	<malloc.h>
+	<stdint.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1316827460 c:\codecrack\code\bundlibretro\libmodplug\sndfile.h
+	"config.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_669.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_amf.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_ams.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_dbm.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_dmf.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_dsm.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_far.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_it.cpp
+	"stdafx.h"
+	"sndfile.h"
+	"it_defs.h"
+
+1316827460 c:\codecrack\code\bundlibretro\libmodplug\it_defs.h
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_j2b.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_mdl.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_med.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_mod.cpp
+	"stdafx.h"
+	"sndfile.h"
+	"tables.h"
+
+1367837392 c:\codecrack\code\bundlibretro\libmodplug\tables.h
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_mt2.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_mtm.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_okt.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_psm.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_ptm.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_s3m.cpp
+	"stdafx.h"
+	"sndfile.h"
+	"tables.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_stm.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_ult.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_umx.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_wav.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\load_xm.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\mmcmp.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\modplug.cpp
+	"modplug.h"
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 c:\codecrack\code\bundlibretro\libmodplug\modplug.h
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\snd_dsp.cpp
+	"stdafx.h"
+	"sndfile.h"
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\snd_flt.cpp
+	"stdafx.h"
+	"sndfile.h"
+	<math.h>
+
+1316827460 source:c:\codecrack\code\bundlibretro\libmodplug\snd_fx.cpp
+	"stdafx.h"
+	<stdlib.h>
+	"sndfile.h"
+	"tables.h"
+
+1367837530 source:c:\codecrack\code\bundlibretro\libmodplug\sndfile.cpp
+	<math.h>
+	"stdafx.h"
+	"sndfile.h"
+
+1367837437 source:c:\codecrack\code\bundlibretro\libmodplug\sndmix.cpp
+	"stdafx.h"
+	"sndfile.h"
+	"tables.h"
+
+1368259671 source:c:\codecrack\code\bundlibretro\libretro.cpp
+	"libretro.h"
+	<stdint.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	"sys/msys.h"
+	"intro.h"
+	"starbg.h"
+	"metaballs.h"
+	"sys/msys_glext.h"
+	"libmodplug/modplug.h"
+	"music.h"
+
+1367748416 c:\codecrack\code\bundlibretro\libretro.h
+	<stdint.h>
+	<stddef.h>
+	<limits.h>
+	<stdbool.h>
+
+1368168354 c:\codecrack\code\bundlibretro\sys\msys.h
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<mmsystem.h>
+	"msys_types.h"
+	"msys_glext.h"
+	"msys_debug.h"
+
+1347385496 c:\codecrack\code\bundlibretro\sys\msys_types.h
+
+1368165184 c:\codecrack\code\bundlibretro\sys\msys_glext.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/GLU.h>
+	"glext.h"
+	"wglext.h"
+	<stdio.h>
+
+1367840884 c:\codecrack\code\bundlibretro\sys\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1347385496 c:\codecrack\code\bundlibretro\sys\wglext.h
+	<windows.h>
+
+1347385496 c:\codecrack\code\bundlibretro\sys\msys_debug.h
+
+1367838724 c:\codecrack\code\bundlibretro\intro.h
+
+1368186469 c:\codecrack\code\bundlibretro\starbg.h
+	"sys/msys.h"
+	"intro.h"
+	"asset_particle.h"
+
+1366893658 c:\codecrack\code\bundlibretro\asset_particle.h
+
+1368264064 c:\codecrack\code\bundlibretro\metaballs.h
+	"sys/msys.h"
+	"intro.h"
+	<time.h>
+	"ttable.h"
+	"metaball_tex.h"
+
+940401250 c:\codecrack\code\bundlibretro\ttable.h
+
+1367371952 c:\codecrack\code\bundlibretro\metaball_tex.h
+
+1367838662 source:c:\codecrack\code\bundlibretro\sys\msys.cpp
+	"msys_types.h"
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+
+1368261876 source:c:\codecrack\code\bundlibretro\sys\msys_glext.cpp
+	<windows.h>
+	"../libretro.h"
+	<GL/gl.h>
+	<gl/GLU.h>
+	"glext.h"
+	<string.h>
+	"ddraw.h"
+	"msys.h"
+	"msys_texgen.h"
+	"msys_glext.h"
+	<sys/stat.h>
+
+1347385496 c:\codecrack\code\bundlibretro\sys\ddraw.h
+	<objbase.h>
+
+1347385496 c:\codecrack\code\bundlibretro\sys\msys_texgen.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<windows.h>
+
+1367119720 source:c:\codecrack\code\bundlibretro\sys\msys_texgen.cpp
+	"msys_texgen.h"
+
+1368185733 c:\codecrack\code\bundlibretro\music.h
+

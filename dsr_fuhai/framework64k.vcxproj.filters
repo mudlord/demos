@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\sys\_windows\main_deb.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\_windows\main_rel.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\msys.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\msys_glext.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intro.cpp">
+      <Filter>intro</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\device.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\track.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\usync.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryModule.c">
+      <Filter>intro</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\sys\msys_types.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\events.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys_glext.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intro.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sprite.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\raymarch.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\base.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\device.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\sync.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\track.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\font.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fontwriter.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\postproc.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\usync.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemoryModule.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{7156de36-bb4f-4d9a-a59d-0e0046a61cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intro">
+      <UniqueIdentifier>{3daeeb26-e229-4c28-bcbb-d706fd749790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intro\rocket">
+      <UniqueIdentifier>{df38bd4e-3b05-4815-85df-8f3ea346b730}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="panda.ico" />
+    <Image Include="desirelogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="framework64k.rc" />
+  </ItemGroup>
+</Project>

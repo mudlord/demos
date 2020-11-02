@@ -1,0 +1,328 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+float Pi = 3.1415296;
+
+float sdf(vec3 p)
+{
+	float d1 = distance(p, vec3(0.0, 0.0, 0.0)) - 1.0 + sin( time + (p.x+p.y) * 11. ) * 0.05;
+	float d2 = distance(p, vec3(0.0, 0.0, 0.0)) - 1.0;
+	if ( d2 > d1 ) d1 = d2;
+	return d1;
+}
+
+vec3 grad(vec3 p)
+{
+	const float offs = 0.0001;
+	vec3 f = vec3(sdf(p));
+	vec3 g = vec3(sdf(p + vec3(offs, 0.0, 0.0)),
+		      sdf(p + vec3(0.0, offs, 0.0)),
+		      sdf(p + vec3(0.0, 0.0, offs)));
+	return (g - f) / offs;
+}
+
+void main() 
+{
+	vec2 m = mouse * 2. - 1.;
+	float ar = resolution.x / resolution.y;
+	vec2 p = gl_FragCoord.xy / resolution;
+	p = p * 2.0 - 1.0;
+	p.x *= ar;
+	
+	vec3 rayOrigin = vec3(0.0, 0.0, 3.0);
+	vec3 rayDir = normalize(vec3(p.x, p.y, -radians(90.0)));
+	vec3 rayPos = rayOrigin;
+        //vec3 lightDir = normalize(vec3(m, 1.0));
+	vec3 lightDir;
+	lightDir.z = cos( Pi * 0.5 * m.y );
+	lightDir.y = sin( Pi * 0.5 * m.y );
+	lightDir.x = sin( Pi * 0.5 * m.x ) * lightDir.z;
+	lightDir.z = cos( Pi * 0.5 * m.x ) * lightDir.z;
+	
+	float sd;
+	
+	for (int i=0; i<64; i++)
+	{
+		sd = sdf(rayPos);
+		
+		if (abs(sd) < 0.0001)
+		{
+			vec3 normal = normalize(grad(rayPos));
+			float intensity = dot(normal, lightDir);
+			vec3 diffuse = vec3( length(p), 0.75, 1.8 );
+			gl_FragColor = vec4( diffuse * intensity, 1.0);
+			return;
+		}
+		
+		rayPos = rayPos + rayDir * sd;
+	}
+	
+	gl_FragColor = vec4(0.0);
+}
+
+------------------------------------------------------------------------------
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+float sdf(vec3 p)
+{
+	return distance(p, vec3(0.0, 0.0, 0.0)) - 1.0;
+}
+
+vec3 grad(vec3 p)
+{
+	const float offs = 0.0001;
+	vec3 f = vec3(sdf(p));
+	vec3 g = vec3(sdf(p + vec3(offs, 0.0, 0.0)),
+		      sdf(p + vec3(0.0, offs, 0.0)),
+		      sdf(p + vec3(0.0, 0.0, offs)));
+	return (g - f) / offs;
+}
+
+void main() 
+{
+	float ar = resolution.x / resolution.y;
+	vec2 p = gl_FragCoord.xy / resolution;
+	p = p * 2.0 - 1.0;
+	p.x *= ar;
+	
+	vec3 rayOrigin = vec3(0.0, 0.0, 2.0);
+	vec3 rayDir = normalize(vec3(p.x, p.y, -radians(90.0)));
+	vec3 rayPos = rayOrigin;
+	vec3 lightDir = normalize(vec3(0.5, 0.7, 1.0));
+
+	float sd;
+	
+	for (int i=0; i<64; i++)
+	{
+		sd = sdf(rayPos);
+		
+		if (abs(sd) < 0.0001)
+		{
+			vec3 normal = normalize(grad(rayPos));
+			float intensity = dot(normal, lightDir);
+			gl_FragColor = vec4(vec3(intensity), 1.0);
+			return;
+		}
+		
+		rayPos = rayPos + rayDir * sd;
+	}
+	
+	gl_FragColor = vec4(0.0);
+}
+------------------------------------------------------------------------------------
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+varying vec2 surfacePosition;
+
+vec3   iResolution = vec3(resolution, 1.0);
+float  iGlobalTime = time;
+vec4   iMouse = vec4(mouse, 0.0, 1.0);
+uniform sampler2D iChannel0,iChannel1;
+
+// raymarcher from https://www.shadertoy.com/view/XsB3Rm
+
+// ray marching
+const int max_iterations = 80;
+const float stop_threshold = 0.001;
+const float grad_step = 0.0001;
+const float clip_far = 1000.0;
+
+// math
+const float PI = 3.14159265359;
+const float DEG_TO_RAD = PI / 180.0;
+
+
+// get distance in the world
+float dist_field(vec3 p) {
+    p = mod(p, 8.0) - 4.0;
+    p = abs(p);
+    float cube = length(max(p - 1.0, 0.0));
+    //return cube;
+    float xd = max(p.y,p.z);
+    float yd = max(p.x,p.z);
+    float zd = max(p.x,p.y);
+    float beams = min(zd, min(xd, yd)) - 0.25;
+    //return beams;
+    return min(beams, cube);
+}
+// phong shading
+vec3 shading( vec3 v, vec3 n, vec3 eye ) {
+	vec3 light_pos   = vec3( 100.0 * cos(iGlobalTime*0.2), 200.0 * sin(iGlobalTime*0.4), 20.0 );
+	vec3 light_color = vec3( 0.2 );
+	vec3 vl = normalize( light_pos - v );
+	float diffuse  = abs(dot( vl, n ) );
+	return light_color * diffuse; 
+}
+
+// get gradient in the world
+vec3 gradient( vec3 pos ) {
+	const vec3 dx = vec3( grad_step, 0.0, 0.0 );
+	const vec3 dy = vec3( 0.0, grad_step, 0.0 );
+	const vec3 dz = vec3( 0.0, 0.0, grad_step );
+	return normalize (
+		vec3(
+			dist_field( pos + dx ) - dist_field( pos - dx ),
+			dist_field( pos + dy ) - dist_field( pos - dy ),
+			dist_field( pos + dz ) - dist_field( pos - dz )			
+		)
+	);
+}
+
+// ray marching
+float ray_marching( vec3 origin, vec3 dir, float start, float end ) {
+	float depth = start;
+	for ( int i = 0; i < max_iterations; i++ ) {
+		float dist = dist_field( origin + dir * depth );
+		if ( dist < stop_threshold ) {
+			return depth;
+		}
+		depth += dist;
+		if ( depth >= end) {
+			return end;
+		}
+	}
+	return end;
+}
+
+// get ray direction
+vec3 ray_dir( float fov, vec2 size, vec2 pos ) {
+	vec2 xy = pos - size * 0.5;
+
+	float cot_half_fov = tan( ( 90.0 - fov * 0.5 ) * DEG_TO_RAD );	
+	float z = size.y * 0.5 * cot_half_fov;
+	
+	return normalize( vec3( xy, -z ) );
+}
+
+// camera rotation : pitch, yaw
+mat3 rotationXY( vec2 angle ) {
+	vec2 c = cos( angle );
+	vec2 s = sin( angle );
+	
+	return mat3(
+		c.y      ,  0.0, -s.y,
+		s.y * s.x,  c.x,  c.y * s.x,
+		s.y * c.x, -s.x,  c.y * c.x
+	);
+}
+
+void main(void)
+{
+	// default ray dir
+	vec3 dir = ray_dir( 35.0, iResolution.xy, gl_FragCoord.xy );
+	
+	// default ray origin
+	vec3 eye = vec3( 0.0, 0.0, 10.0 );
+
+	// rotate camera
+	mat3 rot = rotationXY( vec2( iGlobalTime * 0.13, iGlobalTime * 0.19 ) );
+	dir = rot * dir;
+	eye = rot * eye;
+    eye.z -=  mod(iGlobalTime * 4.0, 8.0);
+    eye.y = eye.x = 0.0;
+	
+	// ray marching
+	float depth = ray_marching( eye, dir, 3.75, clip_far );
+	if ( depth >= clip_far ) {
+		gl_FragColor = vec4(1.0);
+    } else {
+		// shading
+		vec3 pos = eye + dir * depth;
+		vec3 n = gradient( pos );
+		gl_FragColor = vec4( shading( pos, n, eye ) , 1.0 );
+        gl_FragColor += depth/clip_far * 12.0;
+    }
+}
+------------------------------------------------------------------------------------
+
+//---------------------------------------------------------
+// Shader:   SlicedCube.glsl
+// http://glslsandbox.com/e#22250.1     by Mr VB
+// mouse rotation added by I.G.P.
+//---------------------------------------------------------
+
+#ifdef GL_ES
+  precision mediump float;
+#endif
+
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+//---------------------------------------------------------
+vec3 rotatex(in vec3 p, float ang) { return vec3(p.x, p.y*cos(ang) - p.z*sin(ang), p.y*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatey(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.z*sin(ang), p.y, p.x*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatez(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.y*sin(ang), p.x*sin(ang) + p.y*cos(ang), p.z); }
+
+float scene(vec3 p)
+{
+  p = rotatex(p, 0.18*time - 2.0*mouse.y);
+  p = rotatez(p, 0.20*time - 2.0*mouse.x);
+  p = rotatey(p, 0.22*time);
+
+  float d0 = length(max(abs(p) - 0.5, 0.0))- 0.01 + clamp(sin((p.x+p.y+p.z)*20.0)*0.03, 0.0, 1.0); 
+  float d1 = length(p) - 0.5; 
+  return sin(max(d0,-d1)); 
+  //return length(p) - 0.85;   // test sphere
+}
+
+vec3 get_normal(vec3 p)
+{
+	vec3 eps = vec3(0.01, 0.0, 0.0); 
+	float nx = scene(p + eps.xyy) - scene(p - eps.xyy); 
+	float ny = scene(p + eps.yxy) - scene(p - eps.yxy); 
+	float nz = scene(p + eps.yyx) - scene(p - eps.yyx); 
+	return normalize(vec3(nx,ny,nz)); 
+}
+
+void main( void ) 
+{
+	vec2 p = 2.0 * gl_FragCoord.xy / resolution - 1.0; 
+	p.x *= resolution.x / resolution.y; 
+
+	vec3 ro = vec3(0.0, 0.0, 1.7); 
+	vec3 rd = normalize(vec3(p.x, p.y, -1.4)); 
+	vec3 color = (1.0 - vec3(length(p*0.5)))*0.2;   
+
+	vec3 pos = ro; 
+	float dist = 0.0; 
+	for (int i = 0; i < 64; i++) 
+	{
+		float d = scene(pos); 
+		pos += rd*d; 
+		dist += d; 
+	}
+	
+	if (dist < 100.0) 
+	{
+		vec3 n = get_normal(pos);
+		vec3 r = reflect(normalize(pos - ro),n); 
+		vec3 h = -normalize(n + pos - ro ); 
+		float diff  = 1.0*clamp(dot(n, normalize(vec3(1,1,1))), 0.0, 1.0); 
+		float diff2 = 0.2*clamp(dot(n, normalize(vec3(0.7,-1,0.5))), 0.0, 1.0); 
+		float diff3 = 0.1*clamp(dot(n, normalize(vec3(-0.7,-0.4,0.7))), 0.0, 1.0); 
+		//float spec = pow(clamp(dot(r, normalize(vec3(1,1,1))), 0.0, 1.0), 50.0); 
+		float spec = pow(clamp(dot(h, normalize(vec3(1,1,1))), 0.0, 1.0), 50.0); 
+		float amb = 0.2 + pos.y; 
+		color = diff*vec3(1,1,1) + diff2*vec3(1,0,0)  + diff3*vec3(1,0,1) + spec*vec3(1,1,1)  + amb*vec3(0.2,0.2,0.2); 
+		color /= dist;
+	}
+	gl_FragColor = vec4(color, 1.0); 
+}

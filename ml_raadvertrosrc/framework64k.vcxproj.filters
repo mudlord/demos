@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\sys\_windows\main_deb.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\_windows\main_rel.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\msys.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\_windows\msys_debugOS.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\msys_glext.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intro.cpp">
+      <Filter>intro</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\data.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\device.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync\track.c">
+      <Filter>intro\rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sprite.cpp">
+      <Filter>intro</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ahx\hvl_replay.c">
+      <Filter>intro\ahx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\sys\msys_types.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\events.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\glext.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys_debug.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\msys_glext.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intro.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\base.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\data.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\device.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\sync.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sync\track.h">
+      <Filter>intro\rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene1.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\syncs.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fontwriter.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sprite.h">
+      <Filter>intro</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ahx\hvl_replay.h">
+      <Filter>intro\ahx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ahx\hvl_tables.h">
+      <Filter>intro\ahx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{7156de36-bb4f-4d9a-a59d-0e0046a61cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intro">
+      <UniqueIdentifier>{3daeeb26-e229-4c28-bcbb-d706fd749790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intro\rocket">
+      <UniqueIdentifier>{df38bd4e-3b05-4815-85df-8f3ea346b730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intro\ahx">
+      <UniqueIdentifier>{f4c26d23-d6dd-4ca5-b7b4-52853d335736}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exe\ppl.vs">
+      <Filter>intro</Filter>
+    </None>
+    <None Include="exe\ppl.fs">
+      <Filter>intro</Filter>
+    </None>
+    <None Include="src\ft2play.h">
+      <Filter>intro</Filter>
+    </None>
+  </ItemGroup>
+</Project>

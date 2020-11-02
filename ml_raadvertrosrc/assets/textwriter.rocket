@@ -1,0 +1,39 @@
+<sync rows="618">
+	<tracks>
+		<track name="textwrite">
+			<key row="0" value="1024" interpolation="2"/>
+			<key row="16" value="110" interpolation="0"/>
+			<key row="72" value="110" interpolation="2"/>
+			<key row="88" value="-1024" interpolation="0"/>
+			<key row="104" value="1024" interpolation="2"/>
+			<key row="120" value="110" interpolation="0"/>
+			<key row="176" value="110" interpolation="2"/>
+			<key row="192" value="-1024" interpolation="0"/>
+			<key row="208" value="1024" interpolation="2"/>
+			<key row="224" value="110" interpolation="0"/>
+			<key row="296" value="110" interpolation="2"/>
+			<key row="312" value="-1024" interpolation="0"/>
+			<key row="328" value="1024" interpolation="2"/>
+			<key row="344" value="110" interpolation="0"/>
+			<key row="400" value="110" interpolation="2"/>
+			<key row="416" value="-1024" interpolation="0"/>
+			<key row="432" value="1024" interpolation="2"/>
+			<key row="448" value="110" interpolation="0"/>
+			<key row="496" value="110" interpolation="2"/>
+			<key row="512" value="-1024" interpolation="0"/>
+			<key row="528" value="1024" interpolation="2"/>
+			<key row="544" value="30" interpolation="0"/>
+			<key row="600" value="40" interpolation="2"/>
+			<key row="616" value="-1024" interpolation="0"/>
+		</track>
+		<track name="pagewrite">
+			<key row="0" value="1" interpolation="0"/>
+			<key row="104" value="2" interpolation="0"/>
+			<key row="208" value="3" interpolation="0"/>
+			<key row="328" value="4" interpolation="0"/>
+			<key row="432" value="5" interpolation="0"/>
+			<key row="528" value="6" interpolation="0"/>
+		</track>
+	</tracks>
+	<bookmarks/>
+</sync>

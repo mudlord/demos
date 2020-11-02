@@ -1,0 +1,611 @@
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+vec2 noise(vec2 t)
+{
+return t=vec2(dot(t,vec2(127.1,311.7)),dot(t,vec2(269.5,183.3))),fract(sin(t)*43758.5);
+}
+float voronoi(vec2 v)
+	{
+	vec2 r=floor(v),e=fract(v);
+	float f=8.;
+	for(float u=-1.;u<=1.;u++)
+	for(float m=-1.;m<=1.;m++)
+	{
+	vec2 g=vec2(m,u),d=noise(r+g);
+	d=.1+.5*sin(time+4.2831*d);
+	vec2 s=g+d-e;
+	float o=dot(s,s);
+	f=min(f,o);
+	}
+	return f;
+}
+
+
+float getBorder( in vec2 p )
+{
+    float dis = voronoi( p );
+
+    return 1.0 - smoothstep( 0.0, 0.55, dis );
+}
+void main()
+{
+	
+vec2 sp=gl_FragCoord.rg/resolution.rg;
+float f=getBorder(5.*sp);
+vec4 color=(f+1.0)*vec4(.1,.3,.5,0.0);
+gl_FragColor=vec4(color);
+
+---------------------------------------------------------------------------------------------------------------
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+float Pi = 3.1415296;
+
+void main( void ) {
+	vec2 sp = gl_FragCoord.xy/resolution.xy - 0.5;
+	vec2 p = sp*10.0 - vec2(20.0);
+	vec2 i = p;
+	float c = 1.0;
+	float inten = 0.001;
+	float t = time* (time*0.001 - (3.0 / float(0+1)));
+	i = p + vec2(cos(t - i.x) + sin(t + i.y + time*0.1), sin(t - i.y) + cos(t + i.x));
+	c += 1.2/length(vec2(p.x / (sin(i.x+t)/inten),p.y / (cos(i.y+t)/inten)));
+	c /= 20.0;
+	c = 1.2-sqrt(c);
+	gl_FragColor = vec4(vec3(c), 1.0) + vec4(0.1, 0.3, 0.5, 1.0);
+}
+-----------------------------------------------------------------------------------------------------------------------
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+//---------------------------------------------------------
+vec3 rotatex(in vec3 p, float ang) { return vec3(p.x, p.y*cos(ang) - p.z*sin(ang), p.y*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatey(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.z*sin(ang), p.y, p.x*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatez(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.y*sin(ang), p.x*sin(ang) + p.y*cos(ang), p.z); }
+
+float scene(vec3 p)
+{
+  p = rotatex(p, 0.18*time - 2.0);
+  p = rotatez(p, 0.20*time - 2.0);
+  p = rotatey(p, 0.22*time);
+
+  float d0 = length(max(abs(p) - 0.5, 0.0))- 0.01 + clamp(sin((p.x+p.y+p.z)*20.0)*0.03, 0.0, 1.0); 
+  float d1 = length(p) - 0.5; 
+  return sin(max(d0,-d1)); 
+  //return length(p) - 0.85;   // test sphere
+}
+
+vec3 get_normal(vec3 p)
+{
+	vec3 eps = vec3(0.01, 0.0, 0.0); 
+	float nx = scene(p + eps.xyy) - scene(p - eps.xyy); 
+	float ny = scene(p + eps.yxy) - scene(p - eps.yxy); 
+	float nz = scene(p + eps.yyx) - scene(p - eps.yyx); 
+	return normalize(vec3(nx,ny,nz)); 
+}
+
+
+
+vec2 noise(vec2 t)
+{
+return t=vec2(dot(t,vec2(127.1,311.7)),dot(t,vec2(269.5,183.3))),fract(sin(t)*43758.5);
+}
+float voronoi(vec2 v)
+	{
+	vec2 r=floor(v),e=fract(v);
+	float f=8.;
+	for(float u=-1.;u<=1.;u++)
+	for(float m=-1.;m<=1.;m++)
+	{
+	vec2 g=vec2(m,u),d=noise(r+g);
+	d=.1+.5*sin(time+4.2831*d);
+	vec2 s=g+d-e;
+	float o=dot(s,s);
+	f=min(f,o);
+	}
+	return f;
+}
+
+
+float getBorder( in vec2 p )
+{
+    float dis = voronoi( p );
+
+    return 1.0 - smoothstep( 0.0, 0.55, dis );
+}
+
+void main( void ) 
+{
+	vec2 p = 2.0 * gl_FragCoord.xy / resolution - 1.0; 
+	p.x *= resolution.x / resolution.y; 
+	 vec2 sp=gl_FragCoord.rg/resolution.rg;
+	vec3 ro = vec3(0.0, 0.0, 1.7); 
+	vec3 rd = normalize(vec3(p.x, p.y, -1.4)); 
+	vec3 color = (1.0 - vec3(length(p*0.5)))*0.2;   
+	vec3 pos = ro; 
+	float dist = 0.0; 
+
+	
+	for (int i = 0; i < 32; i++) 
+	{
+		float d = scene(pos); 
+		pos += rd*d; 
+		dist += d; 
+	}
+	
+	if (dist < 4.0) 
+	{
+		vec3 n = get_normal(pos);
+		vec3 r = reflect(normalize(pos - ro),n); 
+		vec3 h = -normalize(n + pos - ro ); 
+		float diff  = 1.0*clamp(dot(n, normalize(vec3(1,1,1))), 0.0, 1.0); 
+		float diff2 = 0.2*clamp(dot(n, normalize(vec3(0.7,-1,0.5))), 0.0, 1.0); 
+		float diff3 = 0.1*clamp(dot(n, normalize(vec3(-0.7,-0.4,0.7))), 0.0, 1.0); 
+		float spec = pow(clamp(dot(r, normalize(vec3(1,1,1))), 0.0, 1.0), 50.0); 
+		float amb = 0.2 + pos.y; 
+		
+		
+		
+               float x=getBorder(2.*sp);
+               vec4 color2=(x+1.0)*vec4(.1,.3,.5,0.0);
+		
+		color = diff*vec3(.1,.3,.5) + diff2*vec3(.1,.3,.5)  + diff3*vec3(.1,.3,.5)*color2.rgb + spec*vec3(1,1,1)  + amb*color2.rgb; 
+		color /= dist;
+	}
+	else
+	{
+	      
+               float f=getBorder(5.*sp);
+               vec4 color=(f+1.0)*vec4(.1,.3,.5,0.0);
+               gl_FragColor=vec4(color);
+	       return;
+	}
+	gl_FragColor = vec4(color, 1.0); 
+}
+------------------------------------------------------------------------------------------------------------------------------
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+//---------------------------------------------------------
+vec3 rotatex(in vec3 p, float ang) { return vec3(p.x, p.y*cos(ang) - p.z*sin(ang), p.y*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatey(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.z*sin(ang), p.y, p.x*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatez(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.y*sin(ang), p.x*sin(ang) + p.y*cos(ang), p.z); }
+
+float scene(vec3 p)
+{
+  p = rotatex(p, 0.18*time - 2.0);
+  p = rotatez(p, 0.20*time - 2.0);
+  p = rotatey(p, 0.22*time);
+
+  float d0 = length(max(abs(p) - 0.5, 0.0))- 0.01 + clamp(sin((p.x+p.y+p.z)*20.0)*0.03, 0.0, 1.0); 
+  float d1 = length(p) - 0.5; 
+  return sin(max(d0,-d1)); 
+  //return length(p) - 0.85;   // test sphere
+}
+
+vec3 get_normal(vec3 p)
+{
+	vec3 eps = vec3(0.01, 0.0, 0.0); 
+	float nx = scene(p + eps.xyy) - scene(p - eps.xyy); 
+	float ny = scene(p + eps.yxy) - scene(p - eps.yxy); 
+	float nz = scene(p + eps.yyx) - scene(p - eps.yyx); 
+	return normalize(vec3(nx,ny,nz)); 
+}
+
+
+
+vec2 noise(vec2 t)
+{
+return t=vec2(dot(t,vec2(127.1,311.7)),dot(t,vec2(269.5,183.3))),fract(sin(t)*43758.5);
+}
+float voronoi(vec2 v)
+	{
+	vec2 r=floor(v),e=fract(v);
+	float f=8.;
+	for(float u=-1.;u<=1.;u++)
+	for(float m=-1.;m<=1.;m++)
+	{
+	vec2 g=vec2(m,u),d=noise(r+g);
+	d=.1+.5*sin(time+4.2831*d);
+	vec2 s=g+d-e;
+	float o=dot(s,s);
+	f=min(f,o);
+	}
+	return f;
+}
+
+
+float getBorder( in vec2 p )
+{
+    float dis = voronoi( p );
+
+    return 1.0 - smoothstep( 0.0, 0.55, dis );
+}
+
+void main( void ) 
+{
+	vec2 p = 2.0 * gl_FragCoord.xy / resolution - 1.0; 
+	p.x *= resolution.x / resolution.y; 
+	 vec2 sp=gl_FragCoord.rg/resolution.rg;
+	vec3 ro = vec3(0.0, 0.0, 1.7); 
+	vec3 rd = normalize(vec3(p.x, p.y, -1.4)); 
+	vec3 color = (1.0 - vec3(length(p*0.5)))*0.2;   
+	vec3 pos = ro; 
+	float dist = 0.0; 
+
+	
+	for (int i = 0; i < 32; i++) 
+	{
+		float d = scene(pos); 
+		pos += rd*d; 
+		dist += d; 
+	}
+	
+	if (dist < 4.0) 
+	{
+		vec3 n = get_normal(pos);
+		vec3 r = reflect(normalize(pos - ro),n); 
+		vec3 h = -normalize(n + pos - ro ); 
+		float diff  = 1.0*clamp(dot(n, normalize(vec3(1,1,1))), 0.0, 1.0); 
+		float spec = pow(clamp(dot(r, normalize(vec3(1,1,1))), 0.0, 1.0), 10.0); 
+		float amb = 0.2 + pos.y; 
+		
+		
+		
+               float x=getBorder(10.*sp);
+	       vec4 color2=(x+1.0)*vec4(.1,.3,.5,0.0);
+		
+		color = diff*vec3(.1,.3,.5) + spec*vec3(1,1,1)  + amb*color2.rgb; 
+		color = diff*vec3(.1,.3,.5) +(color2.rgb*0.) + spec*vec3(1,1,1)  + amb*vec3(0.2); 
+		color /= dist ;
+		color*=x+0.7;
+		
+	}
+	else
+	{
+	      
+               float f=getBorder(5.*sp);
+               vec4 color=(f+1.0)*vec4(.1,.3,.5,0.0);
+               gl_FragColor=vec4(color);
+	       return;
+	}
+	gl_FragColor = vec4(color, 1.0); 
+}
+
+------------------------------------------------------------------------------------------------------------
+#ifdef GL_ES
+  precision mediump float;
+#endif
+
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+//---------------------------------------------------------
+vec3 rotatex(in vec3 p, float ang) { return vec3(p.x, p.y*cos(ang) - p.z*sin(ang), p.y*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatey(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.z*sin(ang), p.y, p.x*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatez(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.y*sin(ang), p.x*sin(ang) + p.y*cos(ang), p.z); }
+
+
+
+float sdTriPrism( vec3 p, vec2 h )
+{
+    vec3 q = abs(p);
+#if 0
+    return max(q.z-h.y,max(q.x*0.866025+p.y*0.5,-p.y)-h.x*0.5);
+#else
+    float d1 = q.z-h.y;
+    float d2 = max(q.x*0.866025+p.y*0.5,-p.y)-h.x*0.5;
+    return length(max(vec2(d1,d2),0.0)) + min(max(d1,d2), 0.);
+#endif
+}
+
+float opS( float d1, float d2 )
+{
+    return max(-d2,d1);
+}
+
+float opU( float d1, float d2 )
+{
+	return (d1<d2) ? d1 : d2;
+}
+
+vec3 opRep( vec3 p, vec3 c )
+{
+    return mod(p,c)-0.5*c;
+}
+
+vec3 opTwist( vec3 p )
+{
+    float  c = cos(10.0*p.y+10.0);
+    float  s = sin(10.0*p.y+10.0);
+    mat2   m = mat2(c,-s,s,c);
+    return vec3(m*p.xz,p.y);
+}
+
+float scene(vec3 p)
+{
+  p = rotatex(p, 0.18*time - 2.0);
+  p = rotatez(p, 0.20*time - 2.0);
+  p = rotatey(p, 0.22*time);
+        
+	float d0 = length(max(abs(p) - 0.5, 0.0))- 0.01 + clamp(sin((p.x+p.y+p.z)*20.0)*0.03, 0.0, 1.0); 
+        float d1 = length(p) - 0.64; 
+	
+	
+	float cage = max(d0,-d1);
+	
+	
+	
+	float d4 = length(max(abs(p) - 0.4, 0.0))- 0.01 + clamp(sin((p.x+p.y+p.z)*20.0)*0.03, 0.0, 1.0); 
+	float d2 = length(p) - 0.4;
+	float ball = opS(d2,d4);
+  return opU(cage,ball); 
+}
+
+vec3 get_normal(vec3 p)
+{
+	vec3 eps = vec3(0.01, 0.0, 0.0); 
+	float nx = scene(p + eps.xyy) - scene(p - eps.xyy); 
+	float ny = scene(p + eps.yxy) - scene(p - eps.yxy); 
+	float nz = scene(p + eps.yyx) - scene(p - eps.yyx); 
+	return normalize(vec3(nx,ny,nz)); 
+}
+
+
+
+vec2 noise(vec2 t)
+{
+return t=vec2(dot(t,vec2(127.1,311.7)),dot(t,vec2(269.5,183.3))),fract(sin(t)*43758.5);
+}
+float voronoi(vec2 v)
+	{
+	vec2 r=floor(v),e=fract(v);
+	float f=8.;
+	for(float u=-1.;u<=1.;u++)
+	for(float m=-1.;m<=1.;m++)
+	{
+	vec2 g=vec2(m,u),d=noise(r+g);
+	d=.1+.5*sin(time+4.2831*d);
+	vec2 s=g+d-e;
+	float o=dot(s,s);
+	f=min(f,o);
+	}
+	return f;
+}
+
+
+float getBorder( in vec2 p )
+{
+    float dis = voronoi( p );
+
+    return 1.0 - smoothstep( 0.0, 0.55, dis );
+}
+
+void main( void ) 
+{
+	vec2 p = 2.0 * gl_FragCoord.xy / resolution - 1.0; 
+	p.x *= resolution.x / resolution.y; 
+	 vec2 sp=gl_FragCoord.rg/resolution.rg;
+	vec3 ro = vec3(0.0, 0.0, 1.7); 
+	vec3 rd = normalize(vec3(p.x, p.y, -1.4)); 
+	vec3 color = (1.0 - vec3(length(p*0.5)))*0.2;   
+	vec3 pos = ro; 
+	float dist = 0.0; 
+
+	
+	for (int i = 0; i < 32; i++) 
+	{
+		float d = scene(pos); 
+		pos += rd*d; 
+		dist += d; 
+	}
+	
+	if (dist < 5.0) 
+	{
+		vec3 n = get_normal(pos);
+		vec3 r = reflect(normalize(pos - ro),n); 
+		vec3 h = -normalize(n + pos - ro ); 
+		float diff  = 1.0*clamp(dot(n, normalize(vec3(1,1,1))), 0.0, 1.0); 
+		float spec = pow(clamp(dot(r, normalize(vec3(1,1,1))), 0.0, 1.0), 10.0); 
+		float amb = 0.2 + pos.y; 
+               float x=getBorder(10.*sp);
+	       vec4 color2=(x+1.0)*vec4(.1,.3,.5,0.0);
+		color = diff*vec3(.1,.3,.5) +(color2.rgb*0.) + spec*vec3(1,1,1)  + amb*vec3(0.2); 
+		color /= dist ;
+		color*=x+0.7;
+		
+	}
+	else
+	{
+	      
+               float f=getBorder(5.*sp);
+               vec4 color=(f+1.0)*vec4(.1,.3,.5,0.0);
+               gl_FragColor=vec4(color);
+	       return;
+	}
+	gl_FragColor = vec4(color, 1.0); 
+}
+-------------------------------------------------------------------------------------------------------------
+
+#ifdef GL_ES
+  precision mediump float;
+#endif
+
+#ifdef GL_ES
+  precision mediump float;
+#endif
+
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+uniform sampler2D backbuffer;
+
+//---------------------------------------------------------
+vec3 rotatex(in vec3 p, float ang) { return vec3(p.x, p.y*cos(ang) - p.z*sin(ang), p.y*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatey(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.z*sin(ang), p.y, p.x*sin(ang) + p.z*cos(ang)); }
+
+vec3 rotatez(in vec3 p, float ang) { return vec3(p.x*cos(ang) - p.y*sin(ang), p.x*sin(ang) + p.y*cos(ang), p.z); }
+
+
+
+float sdTriPrism( vec3 p, vec2 h )
+{
+    vec3 q = abs(p);
+#if 0
+    return max(q.z-h.y,max(q.x*0.866025+p.y*0.5,-p.y)-h.x*0.5);
+#else
+    float d1 = q.z-h.y;
+    float d2 = max(q.x*0.866025+p.y*0.5,-p.y)-h.x*0.5;
+    return length(max(vec2(d1,d2),0.0)) + min(max(d1,d2), 0.);
+#endif
+}
+
+float opS( float d1, float d2 )
+{
+    return max(-d2,d1);
+}
+
+float opU( float d1, float d2 )
+{
+	return (d1<d2) ? d1 : d2;
+}
+
+vec3 opRep( vec3 p, vec3 c )
+{
+    return mod(p,c)-0.5*c;
+}
+
+vec3 opTwist( vec3 p )
+{
+    float  c = cos(10.0*p.y+10.0);
+    float  s = sin(10.0*p.y+10.0);
+    mat2   m = mat2(c,-s,s,c);
+    return vec3(m*p.xz,p.y);
+}
+
+float scene(vec3 p)
+{
+  p = rotatex(p, 0.18*time - 2.0);
+  p = rotatez(p, 0.20*time - 2.0);
+  p = rotatey(p, 0.22*time);
+        
+	float d0 = length(max(abs(p) - 0.55, 0.0))- 0.01 + clamp(sin((p.x+p.x+p.z)*40.0)*0.01, 0.0, 1.0); 
+        float d1 = length(p) - 0.64; 
+	
+	
+	float cage = max(d0,-d1);
+	
+	
+	
+	float d4 = length(max(abs(p) - 0.4, 0.0))- 0.01 + clamp(sin((p.x+p.y+p.z)*20.0)*0.01, 0.0, 1.0); 
+	float d2 = length(p) - 0.4;
+	float ball = opS(d2,d4);
+  return opU(cage,ball); 
+}
+
+vec3 get_normal(vec3 p)
+{
+	vec3 eps = vec3(0.01, 0.0, 0.0); 
+	float nx = scene(p + eps.xyy) - scene(p - eps.xyy); 
+	float ny = scene(p + eps.yxy) - scene(p - eps.yxy); 
+	float nz = scene(p + eps.yyx) - scene(p - eps.yyx); 
+	return normalize(vec3(nx,ny,nz)); 
+}
+
+
+
+vec2 noise(vec2 t)
+{
+return t=vec2(dot(t,vec2(127.1,311.7)),dot(t,vec2(269.5,183.3))),fract(sin(t)*43758.5);
+}
+float voronoi(vec2 v)
+	{
+	vec2 r=floor(v),e=fract(v);
+	float f=8.;
+	for(float u=-1.;u<=1.;u++)
+	for(float m=-1.;m<=1.;m++)
+	{
+	vec2 g=vec2(m,u),d=noise(r+g);
+	d=.1+.5*sin(time+4.2831*d);
+	vec2 s=g+d-e;
+	float o=dot(s,s);
+	f=min(f,o);
+	}
+	return f;
+}
+
+
+float getBorder( in vec2 p )
+{
+    float dis = voronoi( p );
+
+    return 1.0 - smoothstep( 0.0, 0.55, dis );
+}
+
+void main( void ) 
+{
+	vec2 p = 2.0 * gl_FragCoord.xy / resolution - 1.0; 
+	p.x *= resolution.x / resolution.y; 
+	 vec2 sp=gl_FragCoord.rg/resolution.rg;
+	vec3 ro = vec3(0.0, 0.0, 1.7); 
+	vec3 rd = normalize(vec3(p.x, p.y, -1.4)); 
+	vec3 color = (1.0 - vec3(length(p*0.5)))*0.2;   
+	vec3 pos = ro; 
+	float dist = 0.0; 
+
+	
+	for (int i = 0; i < 32; i++) 
+	{
+		float d = scene(pos); 
+		pos += rd*d; 
+		dist += d; 
+	}
+	
+	if (dist < 5.0) 
+	{
+		vec3 n = get_normal(pos);
+		vec3 r = reflect(normalize(pos - ro),n); 
+		vec3 h = -normalize(n + pos - ro ); 
+		float diff  = 1.0*clamp(dot(n, normalize(vec3(1,1,1))), 0.0, 1.0); 
+		float spec = pow(clamp(dot(r, normalize(vec3(1,1,1))), 0.0, 1.0), 10.0); 
+		float amb = 0.2 + pos.y; 
+                float x=getBorder(10.*sp);
+		color = diff*vec3(.1,.3,.5)+ spec*vec3(1,1,1)  + amb*vec3(0.2); 
+		color /= dist ;
+		color*=x+0.7;
+		
+	}
+	else
+	{
+		
+	vec2 sp = gl_FragCoord.xy/resolution.xy - 0.5;
+	vec2 p = sp*10.0 - vec2(20.0);
+	vec2 i = p;
+	float c = 1.0;
+	float inten = 0.001;
+	float t = time* (time*0.001 - (3.0 / float(0+1)));
+	i = p + vec2(cos(t - i.x) + cos(t + i.y + time*0.1), cos(t - i.y) + cos(t + i.x));
+	c += 1.2/length(vec2(p.x / (cos(i.x+t)/inten),p.y / (cos(i.y+t)/inten)));
+	c /= 20.0;
+	c = 1.2-sqrt(c);
+	gl_FragColor = vec4(vec3(c), 1.0) + vec4(0.1, 0.3, 0.5, 1.0);     
+	return;
+	}
+	gl_FragColor = vec4(color, 1.0); 
+}

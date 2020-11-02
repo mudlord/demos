@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="code\mod_data.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="code\screen.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="code\tinyptc_gdi.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="code\bottomscreen.h">
+      <Filter>code</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="framework64k.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="panda.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="code">
+      <UniqueIdentifier>{5f88962c-8c49-4e42-92c3-e2e1bceb9759}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\pt2play.c">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\tinyptc_gdi.c">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\intro.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\bottomscreen.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

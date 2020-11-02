@@ -1,0 +1,1954 @@
+ intro
+
+ Timestamp is 536db8da (Sat May 10 15:27:54 2014)
+
+ Preferred load address is 00600000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000e864H .text                   CODE
+ 0001:0000e864 00000024H .text$yc                CODE
+ 0001:0000e888 00000027H .text$yd                CODE
+ 0002:00000000 0000001cH .crtemui                CODE
+ 0003:00000000 0000003dH .g4kcod2                CODE
+ 0004:00000000 00000024H .g4kcod3                CODE
+ 0005:00000000 00000020H .g4kcod4                CODE
+ 0006:00000000 00000075H .g4kcoda                CODE
+ 0007:00000000 0000000dH .g4kcodp                CODE
+ 0008:00000000 00000013H .g4kcodt                CODE
+ 0009:00000000 0000000dH .g4kcods                CODE
+ 000a:00000000 000000b6H .g4kcodb                CODE
+ 000b:00000000 0000005eH .g4kcodc                CODE
+ 000c:00000000 0000003fH .g4kcodd                CODE
+ 000d:00000000 000000edH .g4kcodf                CODE
+ 000e:00000000 0000003cH .g4kcodg                CODE
+ 000f:00000000 0000001aH .g4kcodh                CODE
+ 0010:00000000 00000001H .g4kcodm                CODE
+ 0011:00000000 00000013H .g4kcodj                CODE
+ 0012:00000000 00000035H .g4kcodk                CODE
+ 0013:00000000 00000034H .g4kcodl                CODE
+ 0014:00000000 00000046H .g4kcodw                CODE
+ 0015:00000000 00000037H .g4kcodx                CODE
+ 0016:00000000 00000094H .g4kcody                CODE
+ 0017:00000000 00000023H .g4kcodz                CODE
+ 0018:00000000 079bf52cH .g4kbss1                DATA
+ 0019:00000000 00000154H .idata$5                DATA
+ 0019:00000160 00004a24H .rdata                  DATA
+ 0019:00004b84 00000078H .idata$2                DATA
+ 0019:00004bfc 00000014H .idata$3                DATA
+ 0019:00004c10 00000154H .idata$4                DATA
+ 0019:00004d64 000004c4H .idata$6                DATA
+ 0019:00005228 00000000H .edata                  DATA
+ 0019:00005228 00000058H .rdata$debug            DATA
+ 001a:00000000 000059e0H .data                   DATA
+ 001a:000059e0 12ef101cH .bss                    DATA
+ 001b:00000000 0000000cH .CRT$XCU                DATA
+ 001c:00000000 00002780H .g4kmuc1                DATA
+ 001d:00000000 000001a8H .g4kmuc2                DATA
+ 001e:00000000 00000070H .g4kmuc3                DATA
+ 001f:00000000 00000159H .g4kmuc4                DATA
+ 0020:00000000 0000002aH .g4kmuc5                DATA
+ 0021:00000000 00000030H .g4kdat1                DATA
+ 0022:00000000 00000028H .g4kdat2                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0001:00000000       _cosf                      00601000 f i intro.obj
+ 0001:00000013       _sinf                      00601013 f i intro.obj
+ 0001:00000026       _sqrtf                     00601026 f i intro.obj
+ 0001:00000039       _tanf                      00601039 f i intro.obj
+ 0001:0000004c       ?abs@@YANN@Z               0060104c f i intro.obj
+ 0001:00000056       ?cos@@YAMM@Z               00601056 f i intro.obj
+ 0001:00000069       ?sin@@YAMM@Z               00601069 f i intro.obj
+ 0001:0000007c       ?sqrt@@YAMM@Z              0060107c f i intro.obj
+ 0001:0000008f       ?tan@@YAMM@Z               0060108f f i intro.obj
+ 0001:000000a2       ??2@YAPAXIPAX@Z            006010a2 f i intro.obj
+ 0001:000000aa       ?normalize@@YAXPAUVECTOR3D@@@Z 006010aa f   intro.obj
+ 0001:000002ae       ?init_sshape_postproc@@YAXXZ 006012ae f   intro.obj
+ 0001:00000413       ?init_postproc@@YAXXZ      00601413 f   intro.obj
+ 0001:000005cb       ?draw_postproc@@YAXMUFBOELEM@@I@Z 006015cb f   intro.obj
+ 0001:000006d9       ?init_bg@@YAXXZ            006016d9 f   intro.obj
+ 0001:00000873       ?draw_bg@@YAXM@Z           00601873 f   intro.obj
+ 0001:0000095b       ?intro_end@@YAXXZ          0060195b f   intro.obj
+ 0001:0000095c       ?DoCalc@@YAXMMMMMMMM@Z     0060195c f   intro.obj
+ 0001:00000f95       ?init_sshape@@YAXXZ        00601f95 f   intro.obj
+ 0001:000011a6       ?draw_sshape@@YAXM@Z       006021a6 f   intro.obj
+ 0001:00001742       ?draw_sshape_postproc@@YAXM@Z 00602742 f   intro.obj
+ 0001:0000189e       ?intro_init@@YAHHHHPAUIntroProgressDelegate@@@Z 0060289e f   intro.obj
+ 0001:00001a43       ?intro_do@@YAHXZ           00602a43 f   intro.obj
+ 0001:00001c63       ??0?$CBuffer@U?$tvec3@M@detail@glm@@@@QAE@XZ 00602c63 f i intro.obj
+ 0001:00001c70       ?size@?$CBuffer@U?$tvec3@M@detail@glm@@@@QAEHXZ 00602c70 f i intro.obj
+ 0001:00001c73       ??A?$CBuffer@U?$tvec3@M@detail@glm@@@@QAEAAU?$tvec3@M@detail@glm@@I@Z 00602c73 f i intro.obj
+ 0001:00001c83       ?allocate@?$CBuffer@U?$tvec3@M@detail@glm@@@@CAPAU?$tvec3@M@detail@glm@@I@Z 00602c83 f i intro.obj
+ 0001:00001c95       ?deleteRange@?$CBuffer@U?$tvec3@M@detail@glm@@@@CAXPAU?$tvec3@M@detail@glm@@0@Z 00602c95 f i intro.obj
+ 0001:00001c96       ??0?$tvec3@M@detail@glm@@QAE@ABM00@Z 00602c96 f i intro.obj
+ 0001:00001cb6       ??0?$tvec3@M@detail@glm@@QAE@ABU012@@Z 00602cb6 f i intro.obj
+ 0001:00001cd2       ??0?$tvec4@M@detail@glm@@QAE@ABM000@Z 00602cd2 f i intro.obj
+ 0001:00001cfa       ??$?DM@detail@glm@@YA?AU?$tvec4@M@01@ABU201@ABM@Z 00602cfa f i intro.obj
+ 0001:00001d26       ??_H@YGXPAXIHP6EPAX0@Z@Z   00602d26 f i intro.obj
+ 0001:00001d44       ??0?$tvec4@M@detail@glm@@QAE@ABU012@@Z 00602d44 f i intro.obj
+ 0001:00001d66       ??0?$tvec4@M@detail@glm@@QAE@XZ 00602d66 f i intro.obj
+ 0001:00001d76       ??4?$tvec4@M@detail@glm@@QAEAAU012@ABU012@@Z 00602d76 f i intro.obj
+ 0001:00001d98       ??0?$tmat4x4@M@detail@glm@@QAE@W4ctor@012@@Z 00602d98 f i intro.obj
+ 0001:00001db8       ??$radians@M@glm@@YAMABM@Z 00602db8 f i intro.obj
+ 0001:00001dce       ??$tan@M@glm@@YAMABM@Z     00602dce f i intro.obj
+ 0001:00001de3       ??$?HM@detail@glm@@YA?AU?$tvec4@M@01@ABU201@0@Z 00602de3 f i intro.obj
+ 0001:00001e12       ??$cos@M@glm@@YAMABM@Z     00602e12 f i intro.obj
+ 0001:00001e27       ??$sin@M@glm@@YAMABM@Z     00602e27 f i intro.obj
+ 0001:00001e3c       ??$?DM@detail@glm@@YA?AU?$tvec3@M@01@ABMABU201@@Z 00602e3c f i intro.obj
+ 0001:00001e60       ?length@?$tvec3@M@detail@glm@@QBEIXZ 00602e60 f i intro.obj
+ 0001:00001e64       ?length@?$tvec4@M@detail@glm@@QBEIXZ 00602e64 f i intro.obj
+ 0001:00001e68       ?length@?$tmat4x4@M@detail@glm@@QBEIXZ 00602e68 f i intro.obj
+ 0001:00001e6c       ??$inversesqrt@M@glm@@YAMABM@Z 00602e6c f i intro.obj
+ 0001:00001e8b       ??$?DM@detail@glm@@YA?AU?$tvec3@M@01@ABU201@ABM@Z 00602e8b f i intro.obj
+ 0001:00001eaf       ??1?$CBuffer@U?$tvec3@M@detail@glm@@@@QAE@XZ 00602eaf f i intro.obj
+ 0001:00001eb9       ?clear@?$CBuffer@U?$tvec3@M@detail@glm@@@@QAEXXZ 00602eb9 f i intro.obj
+ 0001:00001ed1       ?copyRange@?$CBuffer@U?$tvec3@M@detail@glm@@@@CAXPAU?$tvec3@M@detail@glm@@00@Z 00602ed1 f i intro.obj
+ 0001:00001f00       ??0?$tmat4x4@M@detail@glm@@QAE@ABM@Z 00602f00 f i intro.obj
+ 0001:00001f73       ??0?$tmat4x4@M@detail@glm@@QAE@ABU012@@Z 00602f73 f i intro.obj
+ 0001:00001ffa       ??$?0N@?$tmat4x4@M@detail@glm@@QAE@ABN@Z 00602ffa f i intro.obj
+ 0001:0000206d       ??A?$tvec3@M@detail@glm@@QBEABMI@Z 0060306d f i intro.obj
+ 0001:00002099       ??A?$tvec3@M@detail@glm@@QAEAAMI@Z 00603099 f i intro.obj
+ 0001:000020c5       ??A?$tvec4@M@detail@glm@@QBEABMI@Z 006030c5 f i intro.obj
+ 0001:000020f1       ??A?$tvec4@M@detail@glm@@QAEAAMI@Z 006030f1 f i intro.obj
+ 0001:0000211d       ??A?$tmat4x4@M@detail@glm@@QBEABU?$tvec4@M@12@I@Z 0060311d f i intro.obj
+ 0001:0000214a       ??A?$tmat4x4@M@detail@glm@@QAEAAU?$tvec4@M@12@I@Z 0060314a f i intro.obj
+ 0001:00002177       ??$normalize@M@glm@@YA?AU?$tvec3@M@detail@0@ABU120@@Z 00603177 f i intro.obj
+ 0001:000021cf       ?push_back@?$CBuffer@U?$tvec3@M@detail@glm@@@@QAEXABU?$tvec3@M@detail@glm@@@Z 006031cf f i intro.obj
+ 0001:00002268       ??4?$tmat4x4@M@detail@glm@@QAEAAU012@ABU012@@Z 00603268 f i intro.obj
+ 0001:000022d2       ??$perspective@M@glm@@YA?AU?$tmat4x4@M@detail@0@ABM000@Z 006032d2 f i intro.obj
+ 0001:0000238c       ??$translate@M@glm@@YA?AU?$tmat4x4@M@detail@0@ABU120@ABU?$tvec3@M@20@@Z 0060338c f i intro.obj
+ 0001:00002427       ??$rotate@M@glm@@YA?AU?$tmat4x4@M@detail@0@ABU120@ABMABU?$tvec3@M@20@@Z 00603427 f i intro.obj
+ 0001:000026c9       ??$?DM@detail@glm@@YA?AU?$tmat4x4@M@01@ABU201@0@Z 006036c9 f i intro.obj
+ 0001:00002a33       ??$value_ptr@M@glm@@YAPAMAAU?$tmat4x4@M@detail@0@@Z 00603a33 f i intro.obj
+ 0001:00002a3b       _sync_data_deinit          00603a3b f   data.obj
+ 0001:00002a82       _sync_create_track         00603a82 f   data.obj
+ 0001:00002b66       _sync_set_io_cb            00603b66 f   device.obj
+ 0001:00002b82       _sync_create_device        00603b82 f   device.obj
+ 0001:00002bd2       _sync_destroy_device       00603bd2 f   device.obj
+ 0001:00002ca4       _sync_get_track            00603ca4 f   device.obj
+ 0001:00002e2a       _sync_get_track_mem        00603e2a f   device.obj
+ 0001:00002f02       _sync_find_key             00603f02 f   track.obj
+ 0001:00002f5e       _sync_get_val              00603f5e f   track.obj
+ 0001:0000306e       _gl3wIsSupported           0060406e f   gl3w.obj
+ 0001:000030a1       _gl3wGetProcAddress        006040a1 f   gl3w.obj
+ 0001:000058c6       _gl3wInit                  006068c6 f   gl3w.obj
+ 0001:000058da       ?rand_range@@YAHHH@Z       006068da f   msys.obj
+ 0001:000058f3       ?rand_rangef@@YAMMM@Z      006068f3 f   msys.obj
+ 0001:0000591b       ?msys_init@@YAH_K@Z        0060691b f   msys.obj
+ 0001:00005927       ?msys_end@@YAXXZ           00606927 f   msys.obj
+ 0001:00005928       ?GetTime@@YAJXZ            00606928 f   msys.obj
+ 0001:0000598f       ?msys_glextInit@@YAHXZ     0060698f f   msys_glext.obj
+ 0001:0000599a       ?loadTexGenTexMemory@@YAIPAEHHH@Z 0060699a f   msys_glext.obj
+ 0001:00005a3d       ?loadTexGenTex@@YAIPADHH@Z 00606a3d f   msys_glext.obj
+ 0001:00005add       ?readShaderFile@@YAPAEPBD@Z 00606add f   msys_glext.obj
+ 0001:00005b55       ?initShader@@YAXPAHPBD1@Z  00606b55 f   msys_glext.obj
+ 0001:00005c6b       ?init_fbo@@YA?AUFBOELEM@@HH_N@Z 00606c6b f   msys_glext.obj
+ 0001:00005dd9       _fabsf                     00606dd9 f i msys_texgen.obj
+ 0001:00005de9       _atanf                     00606de9 f i msys_texgen.obj
+ 0001:00005dfc       _fmodf                     00606dfc f i msys_texgen.obj
+ 0001:00005e12       ?atan@@YAMM@Z              00606e12 f i msys_texgen.obj
+ 0001:00005e25       ?fabs@@YAMM@Z              00606e25 f i msys_texgen.obj
+ 0001:00005e35       ?errorExit@@YAXPAD@Z       00606e35 f   msys_texgen.obj
+ 0001:00005e4f       ??0TextureGenerator@@QAE@XZ 00606e4f f   msys_texgen.obj
+ 0001:00005e60       ?initLayers@TextureGenerator@@QAEXHH@Z 00606e60 f   msys_texgen.obj
+ 0001:00005eec       ?deInitLayers@TextureGenerator@@QAEXXZ 00606eec f   msys_texgen.obj
+ 0001:00005f33       ?getLayer@TextureGenerator@@QAEPAURGBA@@E@Z 00606f33 f   msys_texgen.obj
+ 0001:00005f47       ?myRandom@TextureGenerator@@AAEJXZ 00606f47 f   msys_texgen.obj
+ 0001:00005f5d       ?cosineInterpolate@TextureGenerator@@AAE?AURGBA@@PAU2@MM@Z 00606f5d f   msys_texgen.obj
+ 0001:000060ae       ?mySqrtInt@TextureGenerator@@AAEJJ@Z 006070ae f   msys_texgen.obj
+ 0001:000060ed       ?hsv2rgb@TextureGenerator@@AAEXMMMPAM00@Z 006070ed f   msys_texgen.obj
+ 0001:0000623d       ?rgb2hsv@TextureGenerator@@AAEXMMMPAM00@Z 0060723d f   msys_texgen.obj
+ 0001:000063f1       ?getBilerpPixel@TextureGenerator@@AAE?AURGBA@@EMM@Z 006073f1 f   msys_texgen.obj
+ 0001:000064ad       ?subPlasma@TextureGenerator@@AAEXEJJJ_N@Z 006074ad f   msys_texgen.obj
+ 0001:00006715       ?sinePlasma@TextureGenerator@@AAEXEMMM@Z 00607715 f   msys_texgen.obj
+ 0001:00006815       ?perlinNoise@TextureGenerator@@AAEXEJJJJJ_N@Z 00607815 f   msys_texgen.obj
+ 0001:00006972       ?particle@TextureGenerator@@AAEXEM@Z 00607972 f   msys_texgen.obj
+ 0001:00006aa3       ?colorLayer@TextureGenerator@@AAEXEEEE@Z 00607aa3 f   msys_texgen.obj
+ 0001:00006af8       ?checkerBoardLayer@TextureGenerator@@AAEXEJJEEEEEE@Z 00607af8 f   msys_texgen.obj
+ 0001:00006b8f       ?blobsLayer@TextureGenerator@@AAEXEJE_N@Z 00607b8f f   msys_texgen.obj
+ 0001:00006e8e       ?scaleLayerRGB@TextureGenerator@@AAEXEEMMM@Z 00607e8e f   msys_texgen.obj
+ 0001:00007006       ?scaleLayerHSV@TextureGenerator@@AAEXEEMMM@Z 00608006 f   msys_texgen.obj
+ 0001:0000717b       ?adjustLayerRGB@TextureGenerator@@AAEXEEMMM@Z 0060817b f   msys_texgen.obj
+ 0001:000072f3       ?adjustLayerHSV@TextureGenerator@@AAEXEEMMM@Z 006082f3 f   msys_texgen.obj
+ 0001:00007468       ?sineLayerRGB@TextureGenerator@@AAEXEEMMM@Z 00608468 f   msys_texgen.obj
+ 0001:000075b7       ?equalizeRGB@TextureGenerator@@AAEXEE@Z 006085b7 f   msys_texgen.obj
+ 0001:00007740       ?stretchRGB@TextureGenerator@@AAEXEE@Z 00608740 f   msys_texgen.obj
+ 0001:00007972       ?invertLayer@TextureGenerator@@AAEXEE@Z 00608972 f   msys_texgen.obj
+ 0001:000079c0       ?matrixLayer@TextureGenerator@@AAEXEE_NQAY02M@Z 006089c0 f   msys_texgen.obj
+ 0001:00007c01       ?embossLayer@TextureGenerator@@AAEXEE@Z 00608c01 f   msys_texgen.obj
+ 0001:00007fd3       ?woodLayer@TextureGenerator@@AAEXEEE@Z 00608fd3 f   msys_texgen.obj
+ 0001:000080b5       ?blurLayer@TextureGenerator@@AAEXEE@Z 006090b5 f   msys_texgen.obj
+ 0001:00008101       ?edgeHLayer@TextureGenerator@@AAEXEE@Z 00609101 f   msys_texgen.obj
+ 0001:00008151       ?edgeVLayer@TextureGenerator@@AAEXEE@Z 00609151 f   msys_texgen.obj
+ 0001:000081a7       ?sharpenLayer@TextureGenerator@@AAEXEE@Z 006091a7 f   msys_texgen.obj
+ 0001:000081f3       ?motionBlur@TextureGenerator@@AAEXEEE@Z 006091f3 f   msys_texgen.obj
+ 0001:00008362       ?makeTileable@TextureGenerator@@AAEXEEJ@Z 00609362 f   msys_texgen.obj
+ 0001:00008635       ?median@TextureGenerator@@AAEEPAE@Z 00609635 f   msys_texgen.obj
+ 0001:00008682       ?medianLayer@TextureGenerator@@AAEXEE@Z 00609682 f   msys_texgen.obj
+ 0001:00008816       ?erodeLayer@TextureGenerator@@AAEXEE@Z 00609816 f   msys_texgen.obj
+ 0001:0000a59f       ?dilateLayer@TextureGenerator@@AAEXEE@Z 0060b59f f   msys_texgen.obj
+ 0001:0000c328       ?sineDistort@TextureGenerator@@AAEXEEMMMM@Z 0060d328 f   msys_texgen.obj
+ 0001:0000c42d       ?twirlLayer@TextureGenerator@@AAEXEEMM@Z 0060d42d f   msys_texgen.obj
+ 0001:0000c690       ?tileLayer@TextureGenerator@@AAEXEE@Z 0060d690 f   msys_texgen.obj
+ 0001:0000c82d       ?noiseDistort@TextureGenerator@@AAEXEEJE@Z 0060d82d f   msys_texgen.obj
+ 0001:0000c938       ?moveDistort@TextureGenerator@@AAEXEEHH@Z 0060d938 f   msys_texgen.obj
+ 0001:0000c9ec       ?kaleidLayer@TextureGenerator@@AAEXEEE@Z 0060d9ec f   msys_texgen.obj
+ 0001:0000c9f7       ?tunnelDistort@TextureGenerator@@AAEXEEM@Z 0060d9f7 f   msys_texgen.obj
+ 0001:0000cbfe       ?sculptureLayer@TextureGenerator@@AAEXEE@Z 0060dbfe f   msys_texgen.obj
+ 0001:0000cc09       ?mapDistort@TextureGenerator@@AAEXEEEMM@Z 0060dc09 f   msys_texgen.obj
+ 0001:0000cd4a       ?addLayers@TextureGenerator@@AAEXEEEMM@Z 0060dd4a f   msys_texgen.obj
+ 0001:0000ced9       ?mulLayers@TextureGenerator@@AAEXEEEMM@Z 0060ded9 f   msys_texgen.obj
+ 0001:0000d066       ?xorLayers@TextureGenerator@@AAEXEEEMM@Z 0060e066 f   msys_texgen.obj
+ 0001:0000d0d6       ?andLayers@TextureGenerator@@AAEXEEEMM@Z 0060e0d6 f   msys_texgen.obj
+ 0001:0000d146       ?orLayers@TextureGenerator@@AAEXEEEMM@Z 0060e146 f   msys_texgen.obj
+ 0001:0000d1b6       ?randCombineLayers@TextureGenerator@@AAEXEEEMM@Z 0060e1b6 f   msys_texgen.obj
+ 0001:0000d21d       ?maxCombineLayers@TextureGenerator@@AAEXEEEMM@Z 0060e21d f   msys_texgen.obj
+ 0001:0000d322       ?minCombineLayers@TextureGenerator@@AAEXEEEMM@Z 0060e322 f   msys_texgen.obj
+ 0001:0000d427       ?getTextureGenerator@@YAPAVTextureGenerator@@XZ 0060e427 f   msys_texgen.obj
+ 0001:0000d457       ??1TextureGenerator@@QAE@XZ 0060e457 f   msys_texgen.obj
+ 0001:0000d483       ?doOneStuff@TextureGenerator@@QAEXJPAM@Z 0060e483 f   msys_texgen.obj
+ 0001:0000dd99       ?tex2mem@TextureGenerator@@QAEXPAPAURGBA@@PAEHHH_N@Z 0060ed99 f   msys_texgen.obj
+ 0001:0000dea9       ?tex2mem@TextureGenerator@@QAEXPAPAURGBA@@PADHH_N@Z 0060eea9 f   msys_texgen.obj
+ 0001:0000dfe1       ??_GTextureGenerator@@QAEPAXI@Z 0060efe1 f i msys_texgen.obj
+ 0001:0000e000       _wglCreateContextAttribsARB 0060f000 f   WGL_ARB_create_context.obj
+ 0001:0000e0bb       _wglGetExtensionsStringARB 0060f0bb f   WGL_ARB_extensions_string.obj
+ 0001:0000e167       _main                      0060f167 f   main_rel.obj
+ 0001:0000e4f6       __wassert                  0060f4f6 f   main_rel.obj
+ 0001:0000e4f7       ?entrypoint@@YAXXZ         0060f4f7 f   main_rel.obj
+ 0001:0000e650       _wglGetProcAddress@4       0060f650 f   opengl32:OPENGL32.dll
+ 0001:0000e656       _wglDeleteContext@4        0060f656 f   opengl32:OPENGL32.dll
+ 0001:0000e65c       _wglMakeCurrent@8          0060f65c f   opengl32:OPENGL32.dll
+ 0001:0000e662       _wglCreateContext@4        0060f662 f   opengl32:OPENGL32.dll
+ 0001:0000e668       _wglGetCurrentContext@0    0060f668 f   opengl32:OPENGL32.dll
+ 0001:0000e66e       _waveOutWrite@12           0060f66e f   winmm:WINMM.dll
+ 0001:0000e674       _waveOutPrepareHeader@12   0060f674 f   winmm:WINMM.dll
+ 0001:0000e67a       _waveOutOpen@24            0060f67a f   winmm:WINMM.dll
+ 0001:0000e680       _timeGetTime@0             0060f680 f   winmm:WINMM.dll
+ 0001:0000e686       _waveOutGetPosition@12     0060f686 f   winmm:WINMM.dll
+ 0001:0000e68c       _timeEndPeriod@4           0060f68c f   winmm:WINMM.dll
+ 0001:0000e692       _timeBeginPeriod@4         0060f692 f   winmm:WINMM.dll
+ 0001:0000e698       _timeGetDevCaps@8          0060f698 f   winmm:WINMM.dll
+ 0001:0000e6a0       __CIcos                    0060f6a0 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6a6       __CIsin                    0060f6a6 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6ac       __CIsqrt                   0060f6ac f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6b2       __CItan                    0060f6b2 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6b8       __CIpow                    0060f6b8 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6be       _malloc                    0060f6be f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6c4       _free                      0060f6c4 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6ca       _memcpy                    0060f6ca f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6d0       _srand                     0060f6d0 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e6d6       __onexit                   0060f6d6 f   msvcrt_vc6:atonexit.obj
+ 0001:0000e702       _atexit                    0060f702 f   msvcrt_vc6:atonexit.obj
+ 0001:0000e714       _realloc                   0060f714 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e71a       __strdup                   0060f71a f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e720       _strncat                   0060f720 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e726       _strncpy                   0060f726 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e72c       _fclose                    0060f72c f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e732       _fread                     0060f732 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e738       _fopen                     0060f738 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e73e       _floor                     0060f73e f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e744       _rand                      0060f744 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e74a       _calloc                    0060f74a f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e750       ??2@YAPAXI@Z               0060f750 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e756       _ftell                     0060f756 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e75c       _fseek                     0060f75c f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e762       _printf                    0060f762 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e768       __CIatan                   0060f768 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e76e       __CIfmod                   0060f76e f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e774       _exit                      0060f774 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e77a       _memset                    0060f77a f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e780       ??3@YAXPAX@Z               0060f780 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e786       ___dllonexit               0060f786 f   msvcrt_vc6:MSVCRT.dll
+ 0001:0000e78c       _LoadLibraryA@4            0060f78c f   kernel32:KERNEL32.dll
+ 0001:0000e792       _FreeLibrary@4             0060f792 f   kernel32:KERNEL32.dll
+ 0001:0000e798       _GetProcAddress@8          0060f798 f   kernel32:KERNEL32.dll
+ 0001:0000e79e       _GetTickCount@0            0060f79e f   kernel32:KERNEL32.dll
+ 0001:0000e7a4       _QueryPerformanceCounter@4 0060f7a4 f   kernel32:KERNEL32.dll
+ 0001:0000e7aa       _QueryPerformanceFrequency@4 0060f7aa f   kernel32:KERNEL32.dll
+ 0001:0000e7b0       _GetModuleHandleA@4        0060f7b0 f   kernel32:KERNEL32.dll
+ 0001:0000e7b6       _Sleep@4                   0060f7b6 f   kernel32:KERNEL32.dll
+ 0001:0000e7bc       _ExitProcess@4             0060f7bc f   kernel32:KERNEL32.dll
+ 0001:0000e7c2       _MessageBoxA@16            0060f7c2 f   user32:USER32.dll
+ 0001:0000e7c8       _PostQuitMessage@4         0060f7c8 f   user32:USER32.dll
+ 0001:0000e7ce       _DefWindowProcA@16         0060f7ce f   user32:USER32.dll
+ 0001:0000e7d4       _ShowCursor@4              0060f7d4 f   user32:USER32.dll
+ 0001:0000e7da       _ChangeDisplaySettingsA@8  0060f7da f   user32:USER32.dll
+ 0001:0000e7e0       _UnregisterClassA@8        0060f7e0 f   user32:USER32.dll
+ 0001:0000e7e6       _DestroyWindow@4           0060f7e6 f   user32:USER32.dll
+ 0001:0000e7ec       _ReleaseDC@8               0060f7ec f   user32:USER32.dll
+ 0001:0000e7f2       _SetFocus@4                0060f7f2 f   user32:USER32.dll
+ 0001:0000e7f8       _SetForegroundWindow@4     0060f7f8 f   user32:USER32.dll
+ 0001:0000e7fe       _GetDC@4                   0060f7fe f   user32:USER32.dll
+ 0001:0000e804       _CreateWindowExA@48        0060f804 f   user32:USER32.dll
+ 0001:0000e80a       _GetSystemMetrics@4        0060f80a f   user32:USER32.dll
+ 0001:0000e810       _AdjustWindowRect@12       0060f810 f   user32:USER32.dll
+ 0001:0000e816       _RegisterClassA@4          0060f816 f   user32:USER32.dll
+ 0001:0000e81c       _PeekMessageA@20           0060f81c f   user32:USER32.dll
+ 0001:0000e822       _DispatchMessageA@4        0060f822 f   user32:USER32.dll
+ 0001:0000e828       _TextOutA@20               0060f828 f   gdi32:GDI32.dll
+ 0001:0000e82e       _CreateFontA@56            0060f82e f   gdi32:GDI32.dll
+ 0001:0000e834       _SetTextColor@8            0060f834 f   gdi32:GDI32.dll
+ 0001:0000e83a       _SetBkMode@8               0060f83a f   gdi32:GDI32.dll
+ 0001:0000e840       _Rectangle@20              0060f840 f   gdi32:GDI32.dll
+ 0001:0000e846       _SelectObject@8            0060f846 f   gdi32:GDI32.dll
+ 0001:0000e84c       _CreateSolidBrush@4        0060f84c f   gdi32:GDI32.dll
+ 0001:0000e852       _SetPixelFormat@12         0060f852 f   gdi32:GDI32.dll
+ 0001:0000e858       _ChoosePixelFormat@8       0060f858 f   gdi32:GDI32.dll
+ 0001:0000e85e       _SwapBuffers@4             0060f85e f   gdi32:GDI32.dll
+ 0002:00000000       _FloatRandomNumber@0       00610000     purplebreak.obj
+ 0005:0000000b       _Power@0                   0061300b     purplebreak.obj
+ 0006:00000000       _go4kENV_func@0            00614000     purplebreak.obj
+ 000a:00000000       _go4kVCO_func@0            00618000     purplebreak.obj
+ 000b:00000000       _go4kVCF_func@0            00619000     purplebreak.obj
+ 000c:00000000       _go4kDST_func@0            0061a000     purplebreak.obj
+ 000d:00000000       _go4kDLL_func@0            0061b000     purplebreak.obj
+ 000e:00000000       _go4kFOP_func@0            0061c000     purplebreak.obj
+ 000f:00000000       _go4kFST_func@0            0061d000     purplebreak.obj
+ 0010:00000000       _go4kFLD_func@0            0061e000     purplebreak.obj
+ 0011:00000000       _go4kPAN_func@0            0061f000     purplebreak.obj
+ 0012:00000000       _go4kOUT_func@0            00620000     purplebreak.obj
+ 0013:00000000       _go4kACC_func@0            00621000     purplebreak.obj
+ 0016:00000000       __4klang_render@4          00624000     purplebreak.obj
+ 0018:00002518       _go4k_delay_buffer_ofs     00628518     purplebreak.obj
+ 0018:0000251c       _go4k_delay_buffer         0062851c     purplebreak.obj
+ 0018:075049ac       __4klang_envelope_buffer   07b2a9ac     purplebreak.obj
+ 0018:07761f6c       __4klang_note_buffer       07d87f6c     purplebreak.obj
+ 0019:00000000       __imp__SwapBuffers@4       07fe6000     gdi32:GDI32.dll
+ 0019:00000004       __imp__ChoosePixelFormat@8 07fe6004     gdi32:GDI32.dll
+ 0019:00000008       __imp__SetPixelFormat@12   07fe6008     gdi32:GDI32.dll
+ 0019:0000000c       __imp__CreateSolidBrush@4  07fe600c     gdi32:GDI32.dll
+ 0019:00000010       __imp__SelectObject@8      07fe6010     gdi32:GDI32.dll
+ 0019:00000014       __imp__Rectangle@20        07fe6014     gdi32:GDI32.dll
+ 0019:00000018       __imp__SetBkMode@8         07fe6018     gdi32:GDI32.dll
+ 0019:0000001c       __imp__SetTextColor@8      07fe601c     gdi32:GDI32.dll
+ 0019:00000020       __imp__CreateFontA@56      07fe6020     gdi32:GDI32.dll
+ 0019:00000024       __imp__TextOutA@20         07fe6024     gdi32:GDI32.dll
+ 0019:00000028       \177GDI32_NULL_THUNK_DATA  07fe6028     gdi32:GDI32.dll
+ 0019:0000002c       __imp__ExitProcess@4       07fe602c     kernel32:KERNEL32.dll
+ 0019:00000030       __imp__Sleep@4             07fe6030     kernel32:KERNEL32.dll
+ 0019:00000034       __imp__GetModuleHandleA@4  07fe6034     kernel32:KERNEL32.dll
+ 0019:00000038       __imp__QueryPerformanceCounter@4 07fe6038     kernel32:KERNEL32.dll
+ 0019:0000003c       __imp__GetTickCount@0      07fe603c     kernel32:KERNEL32.dll
+ 0019:00000040       __imp__GetProcAddress@8    07fe6040     kernel32:KERNEL32.dll
+ 0019:00000044       __imp__FreeLibrary@4       07fe6044     kernel32:KERNEL32.dll
+ 0019:00000048       __imp__LoadLibraryA@4      07fe6048     kernel32:KERNEL32.dll
+ 0019:0000004c       __imp__QueryPerformanceFrequency@4 07fe604c     kernel32:KERNEL32.dll
+ 0019:00000050       \177KERNEL32_NULL_THUNK_DATA 07fe6050     kernel32:KERNEL32.dll
+ 0019:00000054       __imp__free                07fe6054     msvcrt_vc6:MSVCRT.dll
+ 0019:00000058       __imp__memcpy              07fe6058     msvcrt_vc6:MSVCRT.dll
+ 0019:0000005c       __imp__srand               07fe605c     msvcrt_vc6:MSVCRT.dll
+ 0019:00000060       __imp__realloc             07fe6060     msvcrt_vc6:MSVCRT.dll
+ 0019:00000064       __imp___strdup             07fe6064     msvcrt_vc6:MSVCRT.dll
+ 0019:00000068       __imp__malloc              07fe6068     msvcrt_vc6:MSVCRT.dll
+ 0019:0000006c       __imp__strncpy             07fe606c     msvcrt_vc6:MSVCRT.dll
+ 0019:00000070       __imp__fclose              07fe6070     msvcrt_vc6:MSVCRT.dll
+ 0019:00000074       __imp__fread               07fe6074     msvcrt_vc6:MSVCRT.dll
+ 0019:00000078       __imp__fopen               07fe6078     msvcrt_vc6:MSVCRT.dll
+ 0019:0000007c       __imp__floor               07fe607c     msvcrt_vc6:MSVCRT.dll
+ 0019:00000080       __imp__rand                07fe6080     msvcrt_vc6:MSVCRT.dll
+ 0019:00000084       __imp__calloc              07fe6084     msvcrt_vc6:MSVCRT.dll
+ 0019:00000088       __imp_??2@YAPAXI@Z         07fe6088     msvcrt_vc6:MSVCRT.dll
+ 0019:0000008c       __imp__ftell               07fe608c     msvcrt_vc6:MSVCRT.dll
+ 0019:00000090       __imp__fseek               07fe6090     msvcrt_vc6:MSVCRT.dll
+ 0019:00000094       __imp__printf              07fe6094     msvcrt_vc6:MSVCRT.dll
+ 0019:00000098       __imp___CIatan             07fe6098     msvcrt_vc6:MSVCRT.dll
+ 0019:0000009c       __imp___CIfmod             07fe609c     msvcrt_vc6:MSVCRT.dll
+ 0019:000000a0       __imp__exit                07fe60a0     msvcrt_vc6:MSVCRT.dll
+ 0019:000000a4       __imp__memset              07fe60a4     msvcrt_vc6:MSVCRT.dll
+ 0019:000000a8       __imp_??3@YAXPAX@Z         07fe60a8     msvcrt_vc6:MSVCRT.dll
+ 0019:000000ac       __imp____dllonexit         07fe60ac     msvcrt_vc6:MSVCRT.dll
+ 0019:000000b0       __imp___onexit             07fe60b0     msvcrt_vc6:MSVCRT.dll
+ 0019:000000b4       __imp___CIpow              07fe60b4     msvcrt_vc6:MSVCRT.dll
+ 0019:000000b8       __imp___CItan              07fe60b8     msvcrt_vc6:MSVCRT.dll
+ 0019:000000bc       __imp___CIsqrt             07fe60bc     msvcrt_vc6:MSVCRT.dll
+ 0019:000000c0       __imp___CIsin              07fe60c0     msvcrt_vc6:MSVCRT.dll
+ 0019:000000c4       __imp___CIcos              07fe60c4     msvcrt_vc6:MSVCRT.dll
+ 0019:000000c8       __imp__strncat             07fe60c8     msvcrt_vc6:MSVCRT.dll
+ 0019:000000cc       \177MSVCRT_NULL_THUNK_DATA 07fe60cc     msvcrt_vc6:MSVCRT.dll
+ 0019:000000d0       __imp__wglGetProcAddress@4 07fe60d0     opengl32:OPENGL32.dll
+ 0019:000000d4       __imp__wglDeleteContext@4  07fe60d4     opengl32:OPENGL32.dll
+ 0019:000000d8       __imp__wglMakeCurrent@8    07fe60d8     opengl32:OPENGL32.dll
+ 0019:000000dc       __imp__wglCreateContext@4  07fe60dc     opengl32:OPENGL32.dll
+ 0019:000000e0       __imp__wglGetCurrentContext@0 07fe60e0     opengl32:OPENGL32.dll
+ 0019:000000e4       \177OPENGL32_NULL_THUNK_DATA 07fe60e4     opengl32:OPENGL32.dll
+ 0019:000000e8       __imp__DefWindowProcA@16   07fe60e8     user32:USER32.dll
+ 0019:000000ec       __imp__ShowCursor@4        07fe60ec     user32:USER32.dll
+ 0019:000000f0       __imp__ChangeDisplaySettingsA@8 07fe60f0     user32:USER32.dll
+ 0019:000000f4       __imp__UnregisterClassA@8  07fe60f4     user32:USER32.dll
+ 0019:000000f8       __imp__DestroyWindow@4     07fe60f8     user32:USER32.dll
+ 0019:000000fc       __imp__ReleaseDC@8         07fe60fc     user32:USER32.dll
+ 0019:00000100       __imp__PostQuitMessage@4   07fe6100     user32:USER32.dll
+ 0019:00000104       __imp__SetForegroundWindow@4 07fe6104     user32:USER32.dll
+ 0019:00000108       __imp__GetDC@4             07fe6108     user32:USER32.dll
+ 0019:0000010c       __imp__CreateWindowExA@48  07fe610c     user32:USER32.dll
+ 0019:00000110       __imp__GetSystemMetrics@4  07fe6110     user32:USER32.dll
+ 0019:00000114       __imp__AdjustWindowRect@12 07fe6114     user32:USER32.dll
+ 0019:00000118       __imp__RegisterClassA@4    07fe6118     user32:USER32.dll
+ 0019:0000011c       __imp__PeekMessageA@20     07fe611c     user32:USER32.dll
+ 0019:00000120       __imp__DispatchMessageA@4  07fe6120     user32:USER32.dll
+ 0019:00000124       __imp__MessageBoxA@16      07fe6124     user32:USER32.dll
+ 0019:00000128       __imp__SetFocus@4          07fe6128     user32:USER32.dll
+ 0019:0000012c       \177USER32_NULL_THUNK_DATA 07fe612c     user32:USER32.dll
+ 0019:00000130       __imp__waveOutOpen@24      07fe6130     winmm:WINMM.dll
+ 0019:00000134       __imp__waveOutPrepareHeader@12 07fe6134     winmm:WINMM.dll
+ 0019:00000138       __imp__waveOutWrite@12     07fe6138     winmm:WINMM.dll
+ 0019:0000013c       __imp__timeGetTime@0       07fe613c     winmm:WINMM.dll
+ 0019:00000140       __imp__waveOutGetPosition@12 07fe6140     winmm:WINMM.dll
+ 0019:00000144       __imp__timeEndPeriod@4     07fe6144     winmm:WINMM.dll
+ 0019:00000148       __imp__timeBeginPeriod@4   07fe6148     winmm:WINMM.dll
+ 0019:0000014c       __imp__timeGetDevCaps@8    07fe614c     winmm:WINMM.dll
+ 0019:00000150       \177WINMM_NULL_THUNK_DATA  07fe6150     winmm:WINMM.dll
+ 0019:0000017c       ?has_denorm@_Num_base@std@@2W4float_denorm_style@2@B 07fe617c     intro.obj
+ 0019:00000180       ?has_denorm_loss@_Num_base@std@@2_NB 07fe6180     intro.obj
+ 0019:00000181       ?has_infinity@_Num_base@std@@2_NB 07fe6181     intro.obj
+ 0019:00000182       ?has_quiet_NaN@_Num_base@std@@2_NB 07fe6182     intro.obj
+ 0019:00000183       ?has_signaling_NaN@_Num_base@std@@2_NB 07fe6183     intro.obj
+ 0019:00000184       ?is_bounded@_Num_base@std@@2_NB 07fe6184     intro.obj
+ 0019:00000185       ?is_exact@_Num_base@std@@2_NB 07fe6185     intro.obj
+ 0019:00000186       ?is_iec559@_Num_base@std@@2_NB 07fe6186     intro.obj
+ 0019:00000187       ?is_integer@_Num_base@std@@2_NB 07fe6187     intro.obj
+ 0019:00000188       ?is_modulo@_Num_base@std@@2_NB 07fe6188     intro.obj
+ 0019:00000189       ?is_signed@_Num_base@std@@2_NB 07fe6189     intro.obj
+ 0019:0000018a       ?is_specialized@_Num_base@std@@2_NB 07fe618a     intro.obj
+ 0019:0000018b       ?tinyness_before@_Num_base@std@@2_NB 07fe618b     intro.obj
+ 0019:0000018c       ?traps@_Num_base@std@@2_NB 07fe618c     intro.obj
+ 0019:00000190       ?round_style@_Num_base@std@@2W4float_round_style@2@B 07fe6190     intro.obj
+ 0019:00000194       ?digits@_Num_base@std@@2HB 07fe6194     intro.obj
+ 0019:00000198       ?digits10@_Num_base@std@@2HB 07fe6198     intro.obj
+ 0019:0000019c       ?max_digits10@_Num_base@std@@2HB 07fe619c     intro.obj
+ 0019:000001a0       ?max_exponent@_Num_base@std@@2HB 07fe61a0     intro.obj
+ 0019:000001a4       ?max_exponent10@_Num_base@std@@2HB 07fe61a4     intro.obj
+ 0019:000001a8       ?min_exponent@_Num_base@std@@2HB 07fe61a8     intro.obj
+ 0019:000001ac       ?min_exponent10@_Num_base@std@@2HB 07fe61ac     intro.obj
+ 0019:000001b0       ?radix@_Num_base@std@@2HB  07fe61b0     intro.obj
+ 0019:000001b4       ?is_bounded@_Num_int_base@std@@2_NB 07fe61b4     intro.obj
+ 0019:000001b5       ?is_exact@_Num_int_base@std@@2_NB 07fe61b5     intro.obj
+ 0019:000001b6       ?is_integer@_Num_int_base@std@@2_NB 07fe61b6     intro.obj
+ 0019:000001b7       ?is_modulo@_Num_int_base@std@@2_NB 07fe61b7     intro.obj
+ 0019:000001b8       ?is_specialized@_Num_int_base@std@@2_NB 07fe61b8     intro.obj
+ 0019:000001bc       ?radix@_Num_int_base@std@@2HB 07fe61bc     intro.obj
+ 0019:000001c0       ?has_denorm@_Num_float_base@std@@2W4float_denorm_style@2@B 07fe61c0     intro.obj
+ 0019:000001c4       ?has_denorm_loss@_Num_float_base@std@@2_NB 07fe61c4     intro.obj
+ 0019:000001c5       ?has_infinity@_Num_float_base@std@@2_NB 07fe61c5     intro.obj
+ 0019:000001c6       ?has_quiet_NaN@_Num_float_base@std@@2_NB 07fe61c6     intro.obj
+ 0019:000001c7       ?has_signaling_NaN@_Num_float_base@std@@2_NB 07fe61c7     intro.obj
+ 0019:000001c8       ?is_bounded@_Num_float_base@std@@2_NB 07fe61c8     intro.obj
+ 0019:000001c9       ?is_exact@_Num_float_base@std@@2_NB 07fe61c9     intro.obj
+ 0019:000001ca       ?is_iec559@_Num_float_base@std@@2_NB 07fe61ca     intro.obj
+ 0019:000001cb       ?is_integer@_Num_float_base@std@@2_NB 07fe61cb     intro.obj
+ 0019:000001cc       ?is_modulo@_Num_float_base@std@@2_NB 07fe61cc     intro.obj
+ 0019:000001cd       ?is_signed@_Num_float_base@std@@2_NB 07fe61cd     intro.obj
+ 0019:000001ce       ?is_specialized@_Num_float_base@std@@2_NB 07fe61ce     intro.obj
+ 0019:000001cf       ?tinyness_before@_Num_float_base@std@@2_NB 07fe61cf     intro.obj
+ 0019:000001d0       ?traps@_Num_float_base@std@@2_NB 07fe61d0     intro.obj
+ 0019:000001d4       ?round_style@_Num_float_base@std@@2W4float_round_style@2@B 07fe61d4     intro.obj
+ 0019:000001d8       ?radix@_Num_float_base@std@@2HB 07fe61d8     intro.obj
+ 0019:000001dc       ?is_signed@?$numeric_limits@D@std@@2_NB 07fe61dc     intro.obj
+ 0019:000001e0       ?digits@?$numeric_limits@D@std@@2HB 07fe61e0     intro.obj
+ 0019:000001e4       ?digits10@?$numeric_limits@D@std@@2HB 07fe61e4     intro.obj
+ 0019:000001e8       ?max_digits10@?$numeric_limits@D@std@@2HB 07fe61e8     intro.obj
+ 0019:000001ec       ?is_signed@?$numeric_limits@_W@std@@2_NB 07fe61ec     intro.obj
+ 0019:000001f0       ?digits@?$numeric_limits@_W@std@@2HB 07fe61f0     intro.obj
+ 0019:000001f4       ?digits10@?$numeric_limits@_W@std@@2HB 07fe61f4     intro.obj
+ 0019:000001f8       ?max_digits10@?$numeric_limits@_W@std@@2HB 07fe61f8     intro.obj
+ 0019:000001fc       ?is_modulo@?$numeric_limits@_N@std@@2_NB 07fe61fc     intro.obj
+ 0019:000001fd       ?is_signed@?$numeric_limits@_N@std@@2_NB 07fe61fd     intro.obj
+ 0019:00000200       ?digits@?$numeric_limits@_N@std@@2HB 07fe6200     intro.obj
+ 0019:00000204       ?digits10@?$numeric_limits@_N@std@@2HB 07fe6204     intro.obj
+ 0019:00000208       ?max_digits10@?$numeric_limits@_N@std@@2HB 07fe6208     intro.obj
+ 0019:0000020c       ?is_signed@?$numeric_limits@C@std@@2_NB 07fe620c     intro.obj
+ 0019:00000210       ?digits@?$numeric_limits@C@std@@2HB 07fe6210     intro.obj
+ 0019:00000214       ?digits10@?$numeric_limits@C@std@@2HB 07fe6214     intro.obj
+ 0019:00000218       ?max_digits10@?$numeric_limits@C@std@@2HB 07fe6218     intro.obj
+ 0019:0000021c       ?is_signed@?$numeric_limits@E@std@@2_NB 07fe621c     intro.obj
+ 0019:00000220       ?digits@?$numeric_limits@E@std@@2HB 07fe6220     intro.obj
+ 0019:00000224       ?digits10@?$numeric_limits@E@std@@2HB 07fe6224     intro.obj
+ 0019:00000228       ?max_digits10@?$numeric_limits@E@std@@2HB 07fe6228     intro.obj
+ 0019:0000022c       ?is_signed@?$numeric_limits@F@std@@2_NB 07fe622c     intro.obj
+ 0019:00000230       ?digits@?$numeric_limits@F@std@@2HB 07fe6230     intro.obj
+ 0019:00000234       ?digits10@?$numeric_limits@F@std@@2HB 07fe6234     intro.obj
+ 0019:00000238       ?max_digits10@?$numeric_limits@F@std@@2HB 07fe6238     intro.obj
+ 0019:0000023c       ?is_signed@?$numeric_limits@G@std@@2_NB 07fe623c     intro.obj
+ 0019:00000240       ?digits@?$numeric_limits@G@std@@2HB 07fe6240     intro.obj
+ 0019:00000244       ?digits10@?$numeric_limits@G@std@@2HB 07fe6244     intro.obj
+ 0019:00000248       ?max_digits10@?$numeric_limits@G@std@@2HB 07fe6248     intro.obj
+ 0019:0000024c       ?is_signed@?$numeric_limits@H@std@@2_NB 07fe624c     intro.obj
+ 0019:00000250       ?digits@?$numeric_limits@H@std@@2HB 07fe6250     intro.obj
+ 0019:00000254       ?digits10@?$numeric_limits@H@std@@2HB 07fe6254     intro.obj
+ 0019:00000258       ?max_digits10@?$numeric_limits@H@std@@2HB 07fe6258     intro.obj
+ 0019:0000025c       ?is_signed@?$numeric_limits@I@std@@2_NB 07fe625c     intro.obj
+ 0019:00000260       ?digits@?$numeric_limits@I@std@@2HB 07fe6260     intro.obj
+ 0019:00000264       ?digits10@?$numeric_limits@I@std@@2HB 07fe6264     intro.obj
+ 0019:00000268       ?max_digits10@?$numeric_limits@I@std@@2HB 07fe6268     intro.obj
+ 0019:0000026c       ?is_signed@?$numeric_limits@J@std@@2_NB 07fe626c     intro.obj
+ 0019:00000270       ?digits@?$numeric_limits@J@std@@2HB 07fe6270     intro.obj
+ 0019:00000274       ?digits10@?$numeric_limits@J@std@@2HB 07fe6274     intro.obj
+ 0019:00000278       ?max_digits10@?$numeric_limits@J@std@@2HB 07fe6278     intro.obj
+ 0019:0000027c       ?is_signed@?$numeric_limits@K@std@@2_NB 07fe627c     intro.obj
+ 0019:00000280       ?digits@?$numeric_limits@K@std@@2HB 07fe6280     intro.obj
+ 0019:00000284       ?digits10@?$numeric_limits@K@std@@2HB 07fe6284     intro.obj
+ 0019:00000288       ?max_digits10@?$numeric_limits@K@std@@2HB 07fe6288     intro.obj
+ 0019:0000028c       ?is_signed@?$numeric_limits@_J@std@@2_NB 07fe628c     intro.obj
+ 0019:00000290       ?digits@?$numeric_limits@_J@std@@2HB 07fe6290     intro.obj
+ 0019:00000294       ?digits10@?$numeric_limits@_J@std@@2HB 07fe6294     intro.obj
+ 0019:00000298       ?max_digits10@?$numeric_limits@_J@std@@2HB 07fe6298     intro.obj
+ 0019:0000029c       ?is_signed@?$numeric_limits@_K@std@@2_NB 07fe629c     intro.obj
+ 0019:000002a0       ?digits@?$numeric_limits@_K@std@@2HB 07fe62a0     intro.obj
+ 0019:000002a4       ?digits10@?$numeric_limits@_K@std@@2HB 07fe62a4     intro.obj
+ 0019:000002a8       ?max_digits10@?$numeric_limits@_K@std@@2HB 07fe62a8     intro.obj
+ 0019:000002ac       ?digits@?$numeric_limits@M@std@@2HB 07fe62ac     intro.obj
+ 0019:000002b0       ?digits10@?$numeric_limits@M@std@@2HB 07fe62b0     intro.obj
+ 0019:000002b4       ?max_digits10@?$numeric_limits@M@std@@2HB 07fe62b4     intro.obj
+ 0019:000002b8       ?max_exponent@?$numeric_limits@M@std@@2HB 07fe62b8     intro.obj
+ 0019:000002bc       ?max_exponent10@?$numeric_limits@M@std@@2HB 07fe62bc     intro.obj
+ 0019:000002c0       ?min_exponent@?$numeric_limits@M@std@@2HB 07fe62c0     intro.obj
+ 0019:000002c4       ?min_exponent10@?$numeric_limits@M@std@@2HB 07fe62c4     intro.obj
+ 0019:000002c8       ?digits@?$numeric_limits@N@std@@2HB 07fe62c8     intro.obj
+ 0019:000002cc       ?digits10@?$numeric_limits@N@std@@2HB 07fe62cc     intro.obj
+ 0019:000002d0       ?max_digits10@?$numeric_limits@N@std@@2HB 07fe62d0     intro.obj
+ 0019:000002d4       ?max_exponent@?$numeric_limits@N@std@@2HB 07fe62d4     intro.obj
+ 0019:000002d8       ?max_exponent10@?$numeric_limits@N@std@@2HB 07fe62d8     intro.obj
+ 0019:000002dc       ?min_exponent@?$numeric_limits@N@std@@2HB 07fe62dc     intro.obj
+ 0019:000002e0       ?min_exponent10@?$numeric_limits@N@std@@2HB 07fe62e0     intro.obj
+ 0019:000002e4       ?digits@?$numeric_limits@O@std@@2HB 07fe62e4     intro.obj
+ 0019:000002e8       ?digits10@?$numeric_limits@O@std@@2HB 07fe62e8     intro.obj
+ 0019:000002ec       ?max_digits10@?$numeric_limits@O@std@@2HB 07fe62ec     intro.obj
+ 0019:000002f0       ?max_exponent@?$numeric_limits@O@std@@2HB 07fe62f0     intro.obj
+ 0019:000002f4       ?max_exponent10@?$numeric_limits@O@std@@2HB 07fe62f4     intro.obj
+ 0019:000002f8       ?min_exponent@?$numeric_limits@O@std@@2HB 07fe62f8     intro.obj
+ 0019:000002fc       ?min_exponent10@?$numeric_limits@O@std@@2HB 07fe62fc     intro.obj
+ 0019:00000300       __real@3f800000            07fe6300     intro.obj
+ 0019:00000304       __real@00000000            07fe6304     intro.obj
+ 0019:00000308       __real@3ff0000000000000    07fe6308     intro.obj
+ 0019:00000310       __real@0000000000000000    07fe6310     intro.obj
+ 0019:00000318       __real@3fd0000000000000    07fe6318     intro.obj
+ 0019:00000320       __real@bf800000            07fe6320     intro.obj
+ 0019:00000328       ??_C@_0BKN@EHHLGND@?$CDversion?5330?6in?5vec2?5vertexuv?$DL?6l@ 07fe6328     intro.obj
+ 0019:000004d8       ??_C@_0NI@DKNLLCLE@?$CDversion?5330?6uniform?5mat4?5ViewPr@ 07fe64d8     intro.obj
+ 0019:000005b0       ??_C@_0KM@JACCPOEM@?$CDversion?5330?6layout?$CIlocation?5?$DN?50@ 07fe65b0     intro.obj
+ 0019:00000660       ??_C@_0NJ@IDGAPFDP@?$CDversion?5330?6in?5vec2?5vertexuv?$DLun@ 07fe6660     intro.obj
+ 0019:00000740       ??_C@_0GNI@JEMNCCCA@?$CDversion?5330?6in?5vec2?5vertexuv?$DLun@ 07fe6740     intro.obj
+ 0019:00000e18       __real@44a00000            07fe6e18     intro.obj
+ 0019:00000e1c       __real@44340000            07fe6e1c     intro.obj
+ 0019:00000e20       ??_C@_0L@CAGNKJED@resolution?$AA@ 07fe6e20     intro.obj
+ 0019:00000e2c       ??_C@_09PLMBBMBC@snarehit2?$AA@ 07fe6e2c     intro.obj
+ 0019:00000e38       ??_C@_08NNIHCGNP@snarehit?$AA@ 07fe6e38     intro.obj
+ 0019:00000e44       ??_C@_04CLCEDBPF@time?$AA@ 07fe6e44     intro.obj
+ 0019:00000e4c       ??_C@_03JDBMONBN@tex?$AA@  07fe6e4c     intro.obj
+ 0019:00000e50       ??_C@_0BB@GMHOEICK@myTextureSampler?$AA@ 07fe6e50     intro.obj
+ 0019:00000e68       ??_C@_0CLJ@KEHIPMHJ@?$CDversion?5330?6in?5vec2?5vertexuv?$DL?6l@ 07fe6e68     intro.obj
+ 0019:00001128       ??_C@_0LH@CGMIKFIO@?$CDversion?5330?6layout?$CIlocation?5?$DN?50@ 07fe7128     intro.obj
+ 0019:000011e0       __real@3f91df46aaaaaaab    07fe71e0     intro.obj
+ 0019:000011e8       ??_C@_1CG@KOFHLCJL@?$AAi?$AA?5?$AA?$DM?$AA?5?$AAt?$AAh?$AAi?$AAs?$AA?9?$AA?$DO?$AAl?$AAe?$AAn?$AAg?$AAt?$AAh?$AA?$CI?$AA?$CJ?$AA?$AA@ 07fe71e8     intro.obj
+ 0019:00001210       ??_C@_1GO@JELFBPKP@?$AAc?$AA?3?$AA?2?$AAc?$AAo?$AAd?$AAe?$AAc?$AAr?$AAa?$AAc?$AAk?$AA?2?$AAs?$AAr?$AAc?$AA?2?$AAf?$AAb?$AA2?$AA0?$AA1?$AA4?$AA_?$AA6?$AA4?$AAk?$AA?2?$AAs?$AAr?$AAc?$AA?2@ 07fe7210     intro.obj
+ 0019:00001280       ??_C@_1GO@OACNPGCA@?$AAc?$AA?3?$AA?2?$AAc?$AAo?$AAd?$AAe?$AAc?$AAr?$AAa?$AAc?$AAk?$AA?2?$AAs?$AAr?$AAc?$AA?2?$AAf?$AAb?$AA2?$AA0?$AA1?$AA4?$AA_?$AA6?$AA4?$AAk?$AA?2?$AAs?$AAr?$AAc?$AA?2@ 07fe7280     intro.obj
+ 0019:000012f0       ??_C@_1HC@NBLOJAHD@?$AAc?$AA?3?$AA?2?$AAc?$AAo?$AAd?$AAe?$AAc?$AAr?$AAa?$AAc?$AAk?$AA?2?$AAs?$AAr?$AAc?$AA?2?$AAf?$AAb?$AA2?$AA0?$AA1?$AA4?$AA_?$AA6?$AA4?$AAk?$AA?2?$AAs?$AAr?$AAc?$AA?2@ 07fe72f0     intro.obj
+ 0019:00001368       __real@4000000000000000    07fe7368     intro.obj
+ 0019:00001370       __real@3fe0000000000000    07fe7370     intro.obj
+ 0019:00001378       __real@406fe00000000000    07fe7378     intro.obj
+ 0019:00001380       __real@bfc90fdb            07fe7380     intro.obj
+ 0019:00001388       __real@400921fb60000000    07fe7388     intro.obj
+ 0019:00001390       __real@401921fb60000000    07fe7390     intro.obj
+ 0019:00001398       __real@c0490fdb            07fe7398     intro.obj
+ 0019:0000139c       __real@42200000            07fe739c     intro.obj
+ 0019:000013a0       __real@41400000            07fe73a0     intro.obj
+ 0019:000013a8       ??_C@_0BAA@DNDLPKJI@?$CDversion?5330?6in?5vec4?5fcolor?$DL?6in?5@ 07fe73a8     intro.obj
+ 0019:000014a8       ??_C@_0BMP@LPPOLCJG@?$CDversion?5330?6uniform?5mat4?5MVP?$DL?6u@ 07fe74a8     intro.obj
+ 0019:00001678       __real@3fe70a3d70a3d70a    07fe7678     intro.obj
+ 0019:00001680       __real@3fe5c28f5c28f5c3    07fe7680     intro.obj
+ 0019:00001688       __real@3fd3d70a3d70a3d7    07fe7688     intro.obj
+ 0019:00001690       __real@3fd3333333333333    07fe7690     intro.obj
+ 0019:00001698       __real@3faacee9f37bebd5    07fe7698     intro.obj
+ 0019:000016a0       __real@401c000000000000    07fe76a0     intro.obj
+ 0019:000016a8       __real@4098380000000000    07fe76a8     intro.obj
+ 0019:000016b0       __real@4084f00000000000    07fe76b0     intro.obj
+ 0019:000016b8       __real@408f400000000000    07fe76b8     intro.obj
+ 0019:000016c0       __real@4014000000000000    07fe76c0     intro.obj
+ 0019:000016c8       ??_C@_0BA@JOPILLJL@modelviewMatrix?$AA@ 07fe76c8     intro.obj
+ 0019:000016d8       __real@4056800000000000    07fe76d8     intro.obj
+ 0019:000016e0       __real@c0400000            07fe76e0     intro.obj
+ 0019:000016e4       __real@42340000            07fe76e4     intro.obj
+ 0019:000016e8       __real@3fe38e39            07fe76e8     intro.obj
+ 0019:000016ec       __real@3dcccccd            07fe76ec     intro.obj
+ 0019:000016f0       __real@42c80000            07fe76f0     intro.obj
+ 0019:000016f4       ??_C@_03GFEPKPFF@MVP?$AA@  07fe76f4     intro.obj
+ 0019:000016f8       ??_C@_05FAFFBDKK@choir?$AA@ 07fe76f8     intro.obj
+ 0019:00001700       ??_C@_0P@IFOONAE@ViewProjection?$AA@ 07fe7700     intro.obj
+ 0019:00001710       ??_C@_0M@GJKCJODK@sshape_blue?$AA@ 07fe7710     intro.obj
+ 0019:0000171c       ??_C@_0N@OCBPNCMK@sshape_green?$AA@ 07fe771c     intro.obj
+ 0019:0000172c       ??_C@_0L@JFJFBOEE@sshape_red?$AA@ 07fe772c     intro.obj
+ 0019:00001738       ??_C@_09JJFGMDEP@sshape_n3?$AA@ 07fe7738     intro.obj
+ 0019:00001744       ??_C@_09IAENPCAO@sshape_n2?$AA@ 07fe7744     intro.obj
+ 0019:00001750       ??_C@_09KLGAKBMN@sshape_n1?$AA@ 07fe7750     intro.obj
+ 0019:0000175c       ??_C@_08MLGPMHNG@sshape_m?$AA@ 07fe775c     intro.obj
+ 0019:00001768       ??_C@_08EMPHNLBJ@sshape_b?$AA@ 07fe7768     intro.obj
+ 0019:00001774       ??_C@_08GHNKIINK@sshape_a?$AA@ 07fe7774     intro.obj
+ 0019:00001780       ??_C@_04JNABKDKF@sync?$AA@ 07fe7780     intro.obj
+ 0019:00001788       __real@405c800000000000    07fe7788     intro.obj
+ 0019:00001790       ??_C@_06KBLCMJEL@?4track?$AA@ 07fe7790     device.obj
+ 0019:00001798       ??_C@_01IDAFKMJL@_?$AA@    07fe7798     device.obj
+ 0019:0000179c       ??_C@_02JDPG@rb?$AA@       07fe779c     device.obj
+ 0019:000017a0       __real@4008000000000000    07fe77a0     track.obj
+ 0019:000017a8       ??_C@_0N@DOKAJOHF@opengl32?4dll?$AA@ 07fe77a8     gl3w.obj
+ 0019:000017b8       ??_C@_0CB@NNPCIIJ@glTextureStorage3DMultisampleEXT@ 07fe77b8     gl3w.obj
+ 0019:000017dc       ??_C@_0CB@IKHJODMK@glTextureStorage2DMultisampleEXT@ 07fe77dc     gl3w.obj
+ 0019:00001800       ??_C@_0BK@GOJPECNJ@glTexStorage3DMultisample?$AA@ 07fe7800     gl3w.obj
+ 0019:0000181c       ??_C@_0BK@PDJAKDKP@glTexStorage2DMultisample?$AA@ 07fe781c     gl3w.obj
+ 0019:00001838       ??_C@_0BI@HEDPMLB@glTextureBufferRangeEXT?$AA@ 07fe7838     gl3w.obj
+ 0019:00001850       ??_C@_0BB@DPMGLFNI@glTexBufferRange?$AA@ 07fe7850     gl3w.obj
+ 0019:00001864       ??_C@_0BM@GDDCNIBO@glShaderStorageBlockBinding?$AA@ 07fe7864     gl3w.obj
+ 0019:00001880       ??_C@_0CC@GHECGAIH@glGetProgramResourceLocationInde@ 07fe7880     gl3w.obj
+ 0019:000018a4       ??_C@_0BN@BIJNENLC@glGetProgramResourceLocation?$AA@ 07fe78a4     gl3w.obj
+ 0019:000018c4       ??_C@_0BH@LEDFEPHI@glGetProgramResourceiv?$AA@ 07fe78c4     gl3w.obj
+ 0019:000018dc       ??_C@_0BJ@OHCPEAGJ@glGetProgramResourceName?$AA@ 07fe78dc     gl3w.obj
+ 0019:000018f8       ??_C@_0BK@DBDCONKB@glGetProgramResourceIndex?$AA@ 07fe78f8     gl3w.obj
+ 0019:00001914       ??_C@_0BI@ICGPDPK@glGetProgramInterfaceiv?$AA@ 07fe7914     gl3w.obj
+ 0019:0000192c       ??_C@_0BM@KHEEFMKO@glMultiDrawElementsIndirect?$AA@ 07fe792c     gl3w.obj
+ 0019:00001948       ??_C@_0BK@IKGAIKOP@glMultiDrawArraysIndirect?$AA@ 07fe7948     gl3w.obj
+ 0019:00001964       ??_C@_0BL@IHGLAPPE@glInvalidateSubFramebuffer?$AA@ 07fe7964     gl3w.obj
+ 0019:00001980       ??_C@_0BI@OAJPOHIP@glInvalidateFramebuffer?$AA@ 07fe7980     gl3w.obj
+ 0019:00001998       ??_C@_0BH@OGIFIBHA@glInvalidateBufferData?$AA@ 07fe7998     gl3w.obj
+ 0019:000019b0       ??_C@_0BK@HOHOHNAC@glInvalidateBufferSubData?$AA@ 07fe79b0     gl3w.obj
+ 0019:000019cc       ??_C@_0BF@KHIECPKG@glInvalidateTexImage?$AA@ 07fe79cc     gl3w.obj
+ 0019:000019e4       ??_C@_0BI@FJDKFLGL@glInvalidateTexSubImage?$AA@ 07fe79e4     gl3w.obj
+ 0019:000019fc       ??_C@_0BI@PHNNEGBD@glGetInternalformati64v?$AA@ 07fe79fc     gl3w.obj
+ 0019:00001a14       ??_C@_0CE@EMNKOBNO@glGetNamedFramebufferParameteriv@ 07fe7a14     gl3w.obj
+ 0019:00001a38       ??_C@_0CA@KNLMGFIL@glNamedFramebufferParameteriEXT?$AA@ 07fe7a38     gl3w.obj
+ 0019:00001a58       ??_C@_0BM@BFEEFCMK@glGetFramebufferParameteriv?$AA@ 07fe7a58     gl3w.obj
+ 0019:00001a74       ??_C@_0BI@MLACHGDK@glFramebufferParameteri?$AA@ 07fe7a74     gl3w.obj
+ 0019:00001a8c       ??_C@_0CF@LAAOPNKA@glVertexArrayVertexBindingDiviso@ 07fe7a8c     gl3w.obj
+ 0019:00001ab4       ??_C@_0CE@PLJLPNAP@glVertexArrayVertexAttribBinding@ 07fe7ab4     gl3w.obj
+ 0019:00001ad8       ??_C@_0CE@JIENNJCP@glVertexArrayVertexAttribLFormat@ 07fe7ad8     gl3w.obj
+ 0019:00001afc       ??_C@_0CE@OJBKHFGN@glVertexArrayVertexAttribIFormat@ 07fe7afc     gl3w.obj
+ 0019:00001b20       ??_C@_0CD@JDLJFCCB@glVertexArrayVertexAttribFormatE@ 07fe7b20     gl3w.obj
+ 0019:00001b44       ??_C@_0CB@BDCLHICB@glVertexArrayBindVertexBufferEXT@ 07fe7b44     gl3w.obj
+ 0019:00001b68       ??_C@_0BH@GNGCLGOI@glVertexBindingDivisor?$AA@ 07fe7b68     gl3w.obj
+ 0019:00001b80       ??_C@_0BG@MLFHCGE@glVertexAttribBinding?$AA@ 07fe7b80     gl3w.obj
+ 0019:00001b98       ??_C@_0BG@OBOHAJFM@glVertexAttribLFormat?$AA@ 07fe7b98     gl3w.obj
+ 0019:00001bb0       ??_C@_0BG@KJAHAHDI@glVertexAttribIFormat?$AA@ 07fe7bb0     gl3w.obj
+ 0019:00001bc8       ??_C@_0BF@JEIPPBFE@glVertexAttribFormat?$AA@ 07fe7bc8     gl3w.obj
+ 0019:00001be0       ??_C@_0BD@FCGJAOHG@glBindVertexBuffer?$AA@ 07fe7be0     gl3w.obj
+ 0019:00001bf4       ??_C@_0O@BNFDGIMP@glTextureView?$AA@ 07fe7bf4     gl3w.obj
+ 0019:00001c04       ??_C@_0BD@BNCHOBBL@glCopyImageSubData?$AA@ 07fe7c04     gl3w.obj
+ 0019:00001c18       ??_C@_0BK@EJMOGMMI@glDispatchComputeIndirect?$AA@ 07fe7c18     gl3w.obj
+ 0019:00001c34       ??_C@_0BC@DKKFFIGC@glDispatchCompute?$AA@ 07fe7c34     gl3w.obj
+ 0019:00001c48       ??_C@_0BN@CNJAFGHD@glClearNamedBufferSubDataEXT?$AA@ 07fe7c48     gl3w.obj
+ 0019:00001c68       ??_C@_0BK@JIPEFNFB@glClearNamedBufferDataEXT?$AA@ 07fe7c68     gl3w.obj
+ 0019:00001c84       ??_C@_0BF@FDHIBCMD@glClearBufferSubData?$AA@ 07fe7c84     gl3w.obj
+ 0019:00001c9c       ??_C@_0BC@FCMBBKMP@glClearBufferData?$AA@ 07fe7c9c     gl3w.obj
+ 0019:00001cb0       ??_C@_0BE@MIJFJOHM@glGetObjectPtrLabel?$AA@ 07fe7cb0     gl3w.obj
+ 0019:00001cc4       ??_C@_0BB@FBABGDIL@glObjectPtrLabel?$AA@ 07fe7cc4     gl3w.obj
+ 0019:00001cd8       ??_C@_0BB@MOEDHKDB@glGetObjectLabel?$AA@ 07fe7cd8     gl3w.obj
+ 0019:00001cec       ??_C@_0O@EFJDECDM@glObjectLabel?$AA@ 07fe7cec     gl3w.obj
+ 0019:00001cfc       ??_C@_0BA@PMJBDENK@glPopDebugGroup?$AA@ 07fe7cfc     gl3w.obj
+ 0019:00001d0c       ??_C@_0BB@DEFFBEGJ@glPushDebugGroup?$AA@ 07fe7d0c     gl3w.obj
+ 0019:00001d20       ??_C@_0BF@FGBMJKND@glGetDebugMessageLog?$AA@ 07fe7d20     gl3w.obj
+ 0019:00001d38       ??_C@_0BH@IGFENJCI@glDebugMessageCallback?$AA@ 07fe7d38     gl3w.obj
+ 0019:00001d50       ??_C@_0BF@DGOJNFDO@glDebugMessageInsert?$AA@ 07fe7d50     gl3w.obj
+ 0019:00001d68       ??_C@_0BG@MNBDCEEP@glDebugMessageControl?$AA@ 07fe7d68     gl3w.obj
+ 0019:00001d80       ??_C@_0BG@PFDMCJGI@glTextureStorage3DEXT?$AA@ 07fe7d80     gl3w.obj
+ 0019:00001d98       ??_C@_0BG@DOGAPKMN@glTextureStorage2DEXT?$AA@ 07fe7d98     gl3w.obj
+ 0019:00001db0       ??_C@_0BG@LIPEIIGD@glTextureStorage1DEXT?$AA@ 07fe7db0     gl3w.obj
+ 0019:00001dc8       ??_C@_0P@LBDCCAHA@glTexStorage3D?$AA@ 07fe7dc8     gl3w.obj
+ 0019:00001dd8       ??_C@_0P@LAPAEKEH@glTexStorage2D?$AA@ 07fe7dd8     gl3w.obj
+ 0019:00001de8       ??_C@_0P@LCLGPEBO@glTexStorage1D?$AA@ 07fe7de8     gl3w.obj
+ 0019:00001df8       ??_C@_0BA@HIHPNLBJ@glMemoryBarrier?$AA@ 07fe7df8     gl3w.obj
+ 0019:00001e08       ??_C@_0BD@GAKEPNGD@glBindImageTexture?$AA@ 07fe7e08     gl3w.obj
+ 0019:00001e1c       ??_C@_0CB@CEHFMJFN@glGetActiveAtomicCounterBufferiv@ 07fe7e1c     gl3w.obj
+ 0019:00001e40       ??_C@_0BG@BAOCDJPF@glGetInternalformativ?$AA@ 07fe7e40     gl3w.obj
+ 0019:00001e58       ??_C@_0CH@OMPFKBLK@glDrawTransformFeedbackStreamIns@ 07fe7e58     gl3w.obj
+ 0019:00001e80       ??_C@_0CB@NDMLCEF@glDrawTransformFeedbackInstanced@ 07fe7e80     gl3w.obj
+ 0019:00001ea4       ??_C@_0CO@GCMNEAOA@glDrawElementsInstancedBaseVerte@ 07fe7ea4     gl3w.obj
+ 0019:00001ed4       ??_C@_0CE@NGNINKJD@glDrawElementsInstancedBaseInsta@ 07fe7ed4     gl3w.obj
+ 0019:00001ef8       ??_C@_0CC@FBJBJHCN@glDrawArraysInstancedBaseInstanc@ 07fe7ef8     gl3w.obj
+ 0019:00001f1c       ??_C@_0BD@MEJNBIJE@glGetnUniformdvARB?$AA@ 07fe7f1c     gl3w.obj
+ 0019:00001f30       ??_C@_0BE@ELELPPGB@glGetnUniformuivARB?$AA@ 07fe7f30     gl3w.obj
+ 0019:00001f44       ??_C@_0BD@HIADALEK@glGetnUniformivARB?$AA@ 07fe7f44     gl3w.obj
+ 0019:00001f58       ??_C@_0BD@IJFFLJJP@glGetnUniformfvARB?$AA@ 07fe7f58     gl3w.obj
+ 0019:00001f6c       ??_C@_0BM@IEIHGHHI@glGetnCompressedTexImageARB?$AA@ 07fe7f6c     gl3w.obj
+ 0019:00001f88       ??_C@_0BB@IPICMDNC@glReadnPixelsARB?$AA@ 07fe7f88     gl3w.obj
+ 0019:00001f9c       ??_C@_0BC@PIJGCEFC@glGetnTexImageARB?$AA@ 07fe7f9c     gl3w.obj
+ 0019:00001fb0       ??_C@_0BM@HDJJPNDL@glGetGraphicsResetStatusARB?$AA@ 07fe7fb0     gl3w.obj
+ 0019:00001fcc       ??_C@_0BI@JOLPFNOB@glGetDebugMessageLogARB?$AA@ 07fe7fcc     gl3w.obj
+ 0019:00001fe4       ??_C@_0BK@IEHNBEGE@glDebugMessageCallbackARB?$AA@ 07fe7fe4     gl3w.obj
+ 0019:00002000       ??_C@_0BI@IFLDELCL@glDebugMessageInsertARB?$AA@ 07fe8000     gl3w.obj
+ 0019:00002018       ??_C@_0BJ@IAEPICEJ@glDebugMessageControlARB?$AA@ 07fe8018     gl3w.obj
+ 0019:00002034       ??_C@_0BL@FGCKKDPG@glCreateSyncFromCLeventARB?$AA@ 07fe8034     gl3w.obj
+ 0019:00002050       ??_C@_0P@PDJCBGIA@glGetDoublei_v?$AA@ 07fe8050     gl3w.obj
+ 0019:00002060       ??_C@_0O@JKEOHGC@glGetFloati_v?$AA@ 07fe8060     gl3w.obj
+ 0019:00002070       ??_C@_0BE@FMCFIJBP@glDepthRangeIndexed?$AA@ 07fe8070     gl3w.obj
+ 0019:00002084       ??_C@_0BD@JLCIOMKN@glDepthRangeArrayv?$AA@ 07fe8084     gl3w.obj
+ 0019:00002098       ??_C@_0BC@OOKOHKNA@glScissorIndexedv?$AA@ 07fe8098     gl3w.obj
+ 0019:000020ac       ??_C@_0BB@BJHNCIAL@glScissorIndexed?$AA@ 07fe80ac     gl3w.obj
+ 0019:000020c0       ??_C@_0BA@BMNFINIA@glScissorArrayv?$AA@ 07fe80c0     gl3w.obj
+ 0019:000020d0       ??_C@_0BE@OKPEDJOC@glViewportIndexedfv?$AA@ 07fe80d0     gl3w.obj
+ 0019:000020e4       ??_C@_0BD@JIBIAPIN@glViewportIndexedf?$AA@ 07fe80e4     gl3w.obj
+ 0019:000020f8       ??_C@_0BB@JIDIDPIB@glViewportArrayv?$AA@ 07fe80f8     gl3w.obj
+ 0019:0000210c       ??_C@_0BF@JADLCNLO@glGetVertexAttribLdv?$AA@ 07fe810c     gl3w.obj
+ 0019:00002124       ??_C@_0BH@JBHDDPGM@glVertexAttribLPointer?$AA@ 07fe8124     gl3w.obj
+ 0019:0000213c       ??_C@_0BD@BJHCGDCF@glVertexAttribL4dv?$AA@ 07fe813c     gl3w.obj
+ 0019:00002150       ??_C@_0BD@IEKFFLJM@glVertexAttribL3dv?$AA@ 07fe8150     gl3w.obj
+ 0019:00002164       ??_C@_0BD@DMBJDMPJ@glVertexAttribL2dv?$AA@ 07fe8164     gl3w.obj
+ 0019:00002178       ??_C@_0BD@COKMJDBH@glVertexAttribL1dv?$AA@ 07fe8178     gl3w.obj
+ 0019:0000218c       ??_C@_0BC@KHDDIAJP@glVertexAttribL4d?$AA@ 07fe818c     gl3w.obj
+ 0019:000021a0       ??_C@_0BC@KCHMJGBK@glVertexAttribL3d?$AA@ 07fe81a0     gl3w.obj
+ 0019:000021b4       ??_C@_0BC@KDLOPMCN@glVertexAttribL2d?$AA@ 07fe81b4     gl3w.obj
+ 0019:000021c8       ??_C@_0BC@KBPIECHE@glVertexAttribL1d?$AA@ 07fe81c8     gl3w.obj
+ 0019:000021dc       ??_C@_0BM@BFFCFFFG@glGetProgramPipelineInfoLog?$AA@ 07fe81dc     gl3w.obj
+ 0019:000021f8       ??_C@_0BK@HHHCKEGH@glValidateProgramPipeline?$AA@ 07fe81f8     gl3w.obj
+ 0019:00002214       ??_C@_0BM@OEIPHGOA@glProgramUniformMatrix4x3dv?$AA@ 07fe8214     gl3w.obj
+ 0019:00002230       ??_C@_0BM@GEFNHOOB@glProgramUniformMatrix3x4dv?$AA@ 07fe8230     gl3w.obj
+ 0019:0000224c       ??_C@_0BM@FMDDBBIF@glProgramUniformMatrix4x2dv?$AA@ 07fe824c     gl3w.obj
+ 0019:00002268       ??_C@_0BM@KPABKNEE@glProgramUniformMatrix2x4dv?$AA@ 07fe8268     gl3w.obj
+ 0019:00002284       ??_C@_0BM@EBDGCBDN@glProgramUniformMatrix3x2dv?$AA@ 07fe8284     gl3w.obj
+ 0019:000022a0       ??_C@_0BM@DCNGJFPN@glProgramUniformMatrix2x3dv?$AA@ 07fe82a0     gl3w.obj
+ 0019:000022bc       ??_C@_0BM@OHALKCIO@glProgramUniformMatrix4x3fv?$AA@ 07fe82bc     gl3w.obj
+ 0019:000022d8       ??_C@_0BM@GHNJKKIP@glProgramUniformMatrix3x4fv?$AA@ 07fe82d8     gl3w.obj
+ 0019:000022f4       ??_C@_0BM@FPLHMFOL@glProgramUniformMatrix4x2fv?$AA@ 07fe82f4     gl3w.obj
+ 0019:00002310       ??_C@_0BM@KMIFHJCK@glProgramUniformMatrix2x4fv?$AA@ 07fe8310     gl3w.obj
+ 0019:0000232c       ??_C@_0BM@ECLCPFFD@glProgramUniformMatrix3x2fv?$AA@ 07fe832c     gl3w.obj
+ 0019:00002348       ??_C@_0BM@DBFCEBJD@glProgramUniformMatrix2x3fv?$AA@ 07fe8348     gl3w.obj
+ 0019:00002364       ??_C@_0BK@NFBAAFLH@glProgramUniformMatrix4dv?$AA@ 07fe8364     gl3w.obj
+ 0019:00002380       ??_C@_0BK@EIMHDNAO@glProgramUniformMatrix3dv?$AA@ 07fe8380     gl3w.obj
+ 0019:0000239c       ??_C@_0BK@PAHLFKGL@glProgramUniformMatrix2dv?$AA@ 07fe839c     gl3w.obj
+ 0019:000023b8       ??_C@_0BK@NGJENBNJ@glProgramUniformMatrix4fv?$AA@ 07fe83b8     gl3w.obj
+ 0019:000023d4       ??_C@_0BK@ELEDOJGA@glProgramUniformMatrix3fv?$AA@ 07fe83d4     gl3w.obj
+ 0019:000023f0       ??_C@_0BK@PDPPIOAF@glProgramUniformMatrix2fv?$AA@ 07fe83f0     gl3w.obj
+ 0019:0000240c       ??_C@_0BF@JHNNHGB@glProgramUniform4uiv?$AA@ 07fe840c     gl3w.obj
+ 0019:00002424       ??_C@_0BE@HCPNJOAF@glProgramUniform4ui?$AA@ 07fe8424     gl3w.obj
+ 0019:00002438       ??_C@_0BE@KCEDFJNM@glProgramUniform4dv?$AA@ 07fe8438     gl3w.obj
+ 0019:0000244c       ??_C@_0BD@JNEOHKCK@glProgramUniform4d?$AA@ 07fe844c     gl3w.obj
+ 0019:00002460       ??_C@_0BE@KBMHINLC@glProgramUniform4fv?$AA@ 07fe8460     gl3w.obj
+ 0019:00002474       ??_C@_0BD@KPHIBIKI@glProgramUniform4f?$AA@ 07fe8474     gl3w.obj
+ 0019:00002488       ??_C@_0BE@KKJLMKIP@glProgramUniform4iv?$AA@ 07fe8488     gl3w.obj
+ 0019:0000249c       ??_C@_0BD@CIOAAEGH@glProgramUniform4i?$AA@ 07fe849c     gl3w.obj
+ 0019:000024b0       ??_C@_0BF@LLFNALHB@glProgramUniform3uiv?$AA@ 07fe84b0     gl3w.obj
+ 0019:000024c8       ??_C@_0BE@OPCKKGLM@glProgramUniform3ui?$AA@ 07fe84c8     gl3w.obj
+ 0019:000024dc       ??_C@_0BE@DPJEGBGF@glProgramUniform3dv?$AA@ 07fe84dc     gl3w.obj
+ 0019:000024f0       ??_C@_0BD@JIABGMKP@glProgramUniform3d?$AA@ 07fe84f0     gl3w.obj
+ 0019:00002504       ??_C@_0BE@DMBALFAL@glProgramUniform3fv?$AA@ 07fe8504     gl3w.obj
+ 0019:00002518       ??_C@_0BD@KKDHAOCN@glProgramUniform3f?$AA@ 07fe8518     gl3w.obj
+ 0019:0000252c       ??_C@_0BE@DHEMPCDG@glProgramUniform3iv?$AA@ 07fe852c     gl3w.obj
+ 0019:00002540       ??_C@_0BD@CNKPBCOC@glProgramUniform3i?$AA@ 07fe8540     gl3w.obj
+ 0019:00002554       ??_C@_0BF@IGDNCCMB@glProgramUniform2uiv?$AA@ 07fe8554     gl3w.obj
+ 0019:0000256c       ??_C@_0BE@FHJGMBNJ@glProgramUniform2ui?$AA@ 07fe856c     gl3w.obj
+ 0019:00002580       ??_C@_0BE@IHCIAGAA@glProgramUniform2dv?$AA@ 07fe8580     gl3w.obj
+ 0019:00002594       ??_C@_0BD@JJMDAGJI@glProgramUniform2d?$AA@ 07fe8594     gl3w.obj
+ 0019:000025a8       ??_C@_0BE@IEKMNCGO@glProgramUniform2fv?$AA@ 07fe85a8     gl3w.obj
+ 0019:000025bc       ??_C@_0BD@KLPFGEBK@glProgramUniform2f?$AA@ 07fe85bc     gl3w.obj
+ 0019:000025d0       ??_C@_0BE@IPPAJFFD@glProgramUniform2iv?$AA@ 07fe85d0     gl3w.obj
+ 0019:000025e4       ??_C@_0BD@CMGNHINF@glProgramUniform2i?$AA@ 07fe85e4     gl3w.obj
+ 0019:000025f8       ??_C@_0BF@MBJNFIBB@glProgramUniform1uiv?$AA@ 07fe85f8     gl3w.obj
+ 0019:00002610       ??_C@_0BE@EFCDGODH@glProgramUniform1ui?$AA@ 07fe8610     gl3w.obj
+ 0019:00002624       ??_C@_0BE@JFJNKJOO@glProgramUniform1dv?$AA@ 07fe8624     gl3w.obj
+ 0019:00002638       ??_C@_0BD@JLIFLIMB@glProgramUniform1d?$AA@ 07fe8638     gl3w.obj
+ 0019:0000264c       ??_C@_0BE@JGBJHNIA@glProgramUniform1fv?$AA@ 07fe864c     gl3w.obj
+ 0019:00002660       ??_C@_0BD@KJLDNKED@glProgramUniform1f?$AA@ 07fe8660     gl3w.obj
+ 0019:00002674       ??_C@_0BE@JNEFDKLN@glProgramUniform1iv?$AA@ 07fe8674     gl3w.obj
+ 0019:00002688       ??_C@_0BD@COCLMGIM@glProgramUniform1i?$AA@ 07fe8688     gl3w.obj
+ 0019:0000269c       ??_C@_0BH@DNOPNJMO@glGetProgramPipelineiv?$AA@ 07fe869c     gl3w.obj
+ 0019:000026b4       ??_C@_0BE@DLHPDHCH@glIsProgramPipeline?$AA@ 07fe86b4     gl3w.obj
+ 0019:000026c8       ??_C@_0BG@CCBKOCA@glGenProgramPipelines?$AA@ 07fe86c8     gl3w.obj
+ 0019:000026e0       ??_C@_0BJ@CHBGABHE@glDeleteProgramPipelines?$AA@ 07fe86e0     gl3w.obj
+ 0019:000026fc       ??_C@_0BG@GLPOKNCG@glBindProgramPipeline?$AA@ 07fe86fc     gl3w.obj
+ 0019:00002714       ??_C@_0BH@BOJGDFJN@glCreateShaderProgramv?$AA@ 07fe8714     gl3w.obj
+ 0019:0000272c       ??_C@_0BG@IAIOGMEB@glActiveShaderProgram?$AA@ 07fe872c     gl3w.obj
+ 0019:00002744       ??_C@_0BD@CADKHDMH@glUseProgramStages?$AA@ 07fe8744     gl3w.obj
+ 0019:00002758       ??_C@_0BE@EELDBEME@glProgramParameteri?$AA@ 07fe8758     gl3w.obj
+ 0019:0000276c       ??_C@_0BA@MIIDHOO@glProgramBinary?$AA@ 07fe876c     gl3w.obj
+ 0019:0000277c       ??_C@_0BD@JBCEHKON@glGetProgramBinary?$AA@ 07fe877c     gl3w.obj
+ 0019:00002790       ??_C@_0O@FMBMCDIL@glClearDepthf?$AA@ 07fe8790     gl3w.obj
+ 0019:000027a0       ??_C@_0O@JDFJDNND@glDepthRangef?$AA@ 07fe87a0     gl3w.obj
+ 0019:000027b0       ??_C@_0BL@MLAOOHPD@glGetShaderPrecisionFormat?$AA@ 07fe87b0     gl3w.obj
+ 0019:000027cc       ??_C@_0P@IMINELFB@glShaderBinary?$AA@ 07fe87cc     gl3w.obj
+ 0019:000027dc       ??_C@_0BI@HGKABJPJ@glReleaseShaderCompiler?$AA@ 07fe87dc     gl3w.obj
+ 0019:000027f4       ??_C@_0BE@CCFJPMFI@glGetQueryIndexediv?$AA@ 07fe87f4     gl3w.obj
+ 0019:00002808       ??_C@_0BC@DPMHMNME@glEndQueryIndexed?$AA@ 07fe8808     gl3w.obj
+ 0019:0000281c       ??_C@_0BE@BDKPJDEE@glBeginQueryIndexed?$AA@ 07fe881c     gl3w.obj
+ 0019:00002830       ??_C@_0BO@IGLFNCDG@glDrawTransformFeedbackStream?$AA@ 07fe8830     gl3w.obj
+ 0019:00002850       ??_C@_0BI@LEOILCPN@glDrawTransformFeedback?$AA@ 07fe8850     gl3w.obj
+ 0019:00002868       ??_C@_0BK@JMHONFHF@glResumeTransformFeedback?$AA@ 07fe8868     gl3w.obj
+ 0019:00002884       ??_C@_0BJ@FFNLKBCB@glPauseTransformFeedback?$AA@ 07fe8884     gl3w.obj
+ 0019:000028a0       ??_C@_0BG@BGFLKHBM@glIsTransformFeedback?$AA@ 07fe88a0     gl3w.obj
+ 0019:000028b8       ??_C@_0BI@KANKBGAE@glGenTransformFeedbacks?$AA@ 07fe88b8     gl3w.obj
+ 0019:000028d0       ??_C@_0BL@DIGEBFBK@glDeleteTransformFeedbacks?$AA@ 07fe88d0     gl3w.obj
+ 0019:000028ec       ??_C@_0BI@BPJKLMIG@glBindTransformFeedback?$AA@ 07fe88ec     gl3w.obj
+ 0019:00002904       ??_C@_0BD@LJKINJKN@glPatchParameterfv?$AA@ 07fe8904     gl3w.obj
+ 0019:00002918       ??_C@_0BC@PAPDGMLA@glPatchParameteri?$AA@ 07fe8918     gl3w.obj
+ 0019:0000292c       ??_C@_0BE@LOKJCDFH@glGetProgramStageiv?$AA@ 07fe892c     gl3w.obj
+ 0019:00002940       ??_C@_0BK@BLMOFAGJ@glGetUniformSubroutineuiv?$AA@ 07fe8940     gl3w.obj
+ 0019:0000295c       ??_C@_0BI@CDPOBBHI@glUniformSubroutinesuiv?$AA@ 07fe895c     gl3w.obj
+ 0019:00002974       ??_C@_0BK@JPHEACLL@glGetActiveSubroutineName?$AA@ 07fe8974     gl3w.obj
+ 0019:00002990       ??_C@_0CB@KCFFPCGJ@glGetActiveSubroutineUniformName@ 07fe8990     gl3w.obj
+ 0019:000029b4       ??_C@_0BP@FAPFAJFP@glGetActiveSubroutineUniformiv?$AA@ 07fe89b4     gl3w.obj
+ 0019:000029d4       ??_C@_0BF@ONDIGCJG@glGetSubroutineIndex?$AA@ 07fe89d4     gl3w.obj
+ 0019:000029ec       ??_C@_0BP@IBIPLDOA@glGetSubroutineUniformLocation?$AA@ 07fe89ec     gl3w.obj
+ 0019:00002a0c       ??_C@_0P@NGEMHI@glGetUniformdv?$AA@ 07fe8a0c     gl3w.obj
+ 0019:00002a1c       ??_C@_0BF@HGOEPFEJ@glUniformMatrix4x3dv?$AA@ 07fe8a1c     gl3w.obj
+ 0019:00002a34       ??_C@_0BF@MOFIJCCM@glUniformMatrix4x2dv?$AA@ 07fe8a34     gl3w.obj
+ 0019:00002a4c       ??_C@_0BF@PGDGPNEI@glUniformMatrix3x4dv?$AA@ 07fe8a4c     gl3w.obj
+ 0019:00002a64       ??_C@_0BF@NDFNKCJE@glUniformMatrix3x2dv?$AA@ 07fe8a64     gl3w.obj
+ 0019:00002a7c       ??_C@_0BF@DNGKCOON@glUniformMatrix2x4dv?$AA@ 07fe8a7c     gl3w.obj
+ 0019:00002a94       ??_C@_0BF@KALNBGFE@glUniformMatrix2x3dv?$AA@ 07fe8a94     gl3w.obj
+ 0019:00002aac       ??_C@_0BD@LOPGMAMB@glUniformMatrix4dv?$AA@ 07fe8aac     gl3w.obj
+ 0019:00002ac0       ??_C@_0BD@CDCBPIHI@glUniformMatrix3dv?$AA@ 07fe8ac0     gl3w.obj
+ 0019:00002ad4       ??_C@_0BD@JLJNJPBN@glUniformMatrix2dv?$AA@ 07fe8ad4     gl3w.obj
+ 0019:00002ae8       ??_C@_0N@JNJEGONE@glUniform4dv?$AA@ 07fe8ae8     gl3w.obj
+ 0019:00002af8       ??_C@_0N@EDFGGN@glUniform3dv?$AA@ 07fe8af8     gl3w.obj
+ 0019:00002b08       ??_C@_0N@LIPPDBAI@glUniform2dv?$AA@ 07fe8b08     gl3w.obj
+ 0019:00002b18       ??_C@_0N@KKEKJOOG@glUniform1dv?$AA@ 07fe8b18     gl3w.obj
+ 0019:00002b28       ??_C@_0M@PPHPKPIM@glUniform4d?$AA@ 07fe8b28     gl3w.obj
+ 0019:00002b34       ??_C@_0M@PKDALJAJ@glUniform3d?$AA@ 07fe8b34     gl3w.obj
+ 0019:00002b40       ??_C@_0M@PLPCNDDO@glUniform2d?$AA@ 07fe8b40     gl3w.obj
+ 0019:00002b4c       ??_C@_0M@PJLEGNGH@glUniform1d?$AA@ 07fe8b4c     gl3w.obj
+ 0019:00002b58       ??_C@_0BH@LJJDOEDH@glDrawElementsIndirect?$AA@ 07fe8b58     gl3w.obj
+ 0019:00002b70       ??_C@_0BF@BGDCPAEP@glDrawArraysIndirect?$AA@ 07fe8b70     gl3w.obj
+ 0019:00002b88       ??_C@_0BE@LJLDGOAD@glVertexAttribP4uiv?$AA@ 07fe8b88     gl3w.obj
+ 0019:00002b9c       ??_C@_0BD@GMNMNOHP@glVertexAttribP4ui?$AA@ 07fe8b9c     gl3w.obj
+ 0019:00002bb0       ??_C@_0BE@LJDLCBD@glVertexAttribP3uiv?$AA@ 07fe8bb0     gl3w.obj
+ 0019:00002bc4       ??_C@_0BD@PBALOGMG@glVertexAttribP3ui?$AA@ 07fe8bc4     gl3w.obj
+ 0019:00002bd8       ??_C@_0BE@DGPDJLKD@glVertexAttribP2uiv?$AA@ 07fe8bd8     gl3w.obj
+ 0019:00002bec       ??_C@_0BD@EJLHIBKD@glVertexAttribP2ui?$AA@ 07fe8bec     gl3w.obj
+ 0019:00002c00       ??_C@_0BE@HBFDOBHD@glVertexAttribP1uiv?$AA@ 07fe8c00     gl3w.obj
+ 0019:00002c14       ??_C@_0BD@FLACCOEN@glVertexAttribP1ui?$AA@ 07fe8c14     gl3w.obj
+ 0019:00002c28       ??_C@_0BG@DPPPFGBG@glSecondaryColorP3uiv?$AA@ 07fe8c28     gl3w.obj
+ 0019:00002c40       ??_C@_0BF@PDDGBPKP@glSecondaryColorP3ui?$AA@ 07fe8c40     gl3w.obj
+ 0019:00002c58       ??_C@_0N@DDNDANIE@glColorP4uiv?$AA@ 07fe8c58     gl3w.obj
+ 0019:00002c68       ??_C@_0M@GJHGLFGE@glColorP4ui?$AA@ 07fe8c68     gl3w.obj
+ 0019:00002c74       ??_C@_0N@IBPDNBJE@glColorP3uiv?$AA@ 07fe8c74     gl3w.obj
+ 0019:00002c84       ??_C@_0M@PEKBINNN@glColorP3ui?$AA@ 07fe8c84     gl3w.obj
+ 0019:00002c90       ??_C@_0O@MOCJMHFG@glNormalP3uiv?$AA@ 07fe8c90     gl3w.obj
+ 0019:00002ca0       ??_C@_0N@PBEFBNHO@glNormalP3ui?$AA@ 07fe8ca0     gl3w.obj
+ 0019:00002cb0       ??_C@_0BF@IONACAHK@glMultiTexCoordP4uiv?$AA@ 07fe8cb0     gl3w.obj
+ 0019:00002cc8       ??_C@_0BE@NHKJFHJE@glMultiTexCoordP4ui?$AA@ 07fe8cc8     gl3w.obj
+ 0019:00002cdc       ??_C@_0BF@DMPAPMGK@glMultiTexCoordP3uiv?$AA@ 07fe8cdc     gl3w.obj
+ 0019:00002cf4       ??_C@_0BE@EKHOGPCN@glMultiTexCoordP3ui?$AA@ 07fe8cf4     gl3w.obj
+ 0019:00002d08       ??_C@_0BF@BJANFNK@glMultiTexCoordP2uiv?$AA@ 07fe8d08     gl3w.obj
+ 0019:00002d20       ??_C@_0BE@PCMCAIEI@glMultiTexCoordP2ui?$AA@ 07fe8d20     gl3w.obj
+ 0019:00002d34       ??_C@_0BF@EGDAKPAK@glMultiTexCoordP1uiv?$AA@ 07fe8d34     gl3w.obj
+ 0019:00002d4c       ??_C@_0BE@OAHHKHKG@glMultiTexCoordP1ui?$AA@ 07fe8d4c     gl3w.obj
+ 0019:00002d60       ??_C@_0BA@JILHAPCD@glTexCoordP4uiv?$AA@ 07fe8d60     gl3w.obj
+ 0019:00002d70       ??_C@_0P@NMEJELEL@glTexCoordP4ui?$AA@ 07fe8d70     gl3w.obj
+ 0019:00002d80       ??_C@_0BA@CKJHNDDD@glTexCoordP3uiv?$AA@ 07fe8d80     gl3w.obj
+ 0019:00002d90       ??_C@_0P@EBJOHDPC@glTexCoordP3ui?$AA@ 07fe8d90     gl3w.obj
+ 0019:00002da0       ??_C@_0BA@BHPHPKID@glTexCoordP2uiv?$AA@ 07fe8da0     gl3w.obj
+ 0019:00002db0       ??_C@_0P@PJCCBEJH@glTexCoordP2ui?$AA@ 07fe8db0     gl3w.obj
+ 0019:00002dc0       ??_C@_0BA@FAFHIAFD@glTexCoordP1uiv?$AA@ 07fe8dc0     gl3w.obj
+ 0019:00002dd0       ??_C@_0P@OLJHLLHJ@glTexCoordP1ui?$AA@ 07fe8dd0     gl3w.obj
+ 0019:00002de0       ??_C@_0O@IDAKJKMN@glVertexP4uiv?$AA@ 07fe8de0     gl3w.obj
+ 0019:00002df0       ??_C@_0N@GAHJNOBO@glVertexP4ui?$AA@ 07fe8df0     gl3w.obj
+ 0019:00002e00       ??_C@_0O@DBCKEGNN@glVertexP3uiv?$AA@ 07fe8e00     gl3w.obj
+ 0019:00002e10       ??_C@_0N@PNKOOGKH@glVertexP3ui?$AA@ 07fe8e10     gl3w.obj
+ 0019:00002e20       ??_C@_0O@MEKGPGN@glVertexP2uiv?$AA@ 07fe8e20     gl3w.obj
+ 0019:00002e30       ??_C@_0N@EFBCIBMC@glVertexP2ui?$AA@ 07fe8e30     gl3w.obj
+ 0019:00002e40       ??_C@_0BG@NEGGOMJO@glGetQueryObjectui64v?$AA@ 07fe8e40     gl3w.obj
+ 0019:00002e58       ??_C@_0BF@JDAPDEPE@glGetQueryObjecti64v?$AA@ 07fe8e58     gl3w.obj
+ 0019:00002e70       ??_C@_0P@KALICDIM@glQueryCounter?$AA@ 07fe8e70     gl3w.obj
+ 0019:00002e80       ??_C@_0BK@CMBGFHDA@glGetSamplerParameterIuiv?$AA@ 07fe8e80     gl3w.obj
+ 0019:00002e9c       ??_C@_0BI@FPHMKMKC@glGetSamplerParameterfv?$AA@ 07fe8e9c     gl3w.obj
+ 0019:00002eb4       ??_C@_0BJ@KOMJDLDN@glGetSamplerParameterIiv?$AA@ 07fe8eb4     gl3w.obj
+ 0019:00002ed0       ??_C@_0BI@FECAOLJP@glGetSamplerParameteriv?$AA@ 07fe8ed0     gl3w.obj
+ 0019:00002ee8       ??_C@_0BH@FEMFBPPB@glSamplerParameterIuiv?$AA@ 07fe8ee8     gl3w.obj
+ 0019:00002f00       ??_C@_0BG@HKEIFIHF@glSamplerParameterIiv?$AA@ 07fe8f00     gl3w.obj
+ 0019:00002f18       ??_C@_0BF@GFCPAGMB@glSamplerParameterfv?$AA@ 07fe8f18     gl3w.obj
+ 0019:00002f30       ??_C@_0BE@CGLJNDFB@glSamplerParameterf?$AA@ 07fe8f30     gl3w.obj
+ 0019:00002f44       ??_C@_0BF@GOHDEBPM@glSamplerParameteriv?$AA@ 07fe8f44     gl3w.obj
+ 0019:00002f5c       ??_C@_0BE@KBCBMPJO@glSamplerParameteri?$AA@ 07fe8f5c     gl3w.obj
+ 0019:00002f70       ??_C@_0O@PDEILAPG@glBindSampler?$AA@ 07fe8f70     gl3w.obj
+ 0019:00002f80       ??_C@_0M@LAJKHOKJ@glIsSampler?$AA@ 07fe8f80     gl3w.obj
+ 0019:00002f8c       ??_C@_0BB@FLPAOEOO@glDeleteSamplers?$AA@ 07fe8f8c     gl3w.obj
+ 0019:00002fa0       ??_C@_0O@EMMLGGLG@glGenSamplers?$AA@ 07fe8fa0     gl3w.obj
+ 0019:00002fb0       ??_C@_0BD@COCJFEOH@glGetFragDataIndex?$AA@ 07fe8fb0     gl3w.obj
+ 0019:00002fc4       ??_C@_0BO@POJBGCGG@glBindFragDataLocationIndexed?$AA@ 07fe8fc4     gl3w.obj
+ 0019:00002fe4       ??_C@_0BG@MPGNLJCM@glGetNamedStringivARB?$AA@ 07fe8fe4     gl3w.obj
+ 0019:00002ffc       ??_C@_0BE@NFONNCFF@glGetNamedStringARB?$AA@ 07fe8ffc     gl3w.obj
+ 0019:00003010       ??_C@_0BD@ICFECEJF@glIsNamedStringARB?$AA@ 07fe9010     gl3w.obj
+ 0019:00003024       ??_C@_0BK@EDOCLMLD@glCompileShaderIncludeARB?$AA@ 07fe9024     gl3w.obj
+ 0019:00003040       ??_C@_0BH@NCMBPFNK@glDeleteNamedStringARB?$AA@ 07fe9040     gl3w.obj
+ 0019:00003058       ??_C@_0BB@EMHJCPKC@glNamedStringARB?$AA@ 07fe9058     gl3w.obj
+ 0019:0000306c       ??_C@_0BG@KHPHHIHH@glMinSampleShadingARB?$AA@ 07fe906c     gl3w.obj
+ 0019:00003084       ??_C@_0BI@EJDLCHDA@glBlendFuncSeparateiARB?$AA@ 07fe9084     gl3w.obj
+ 0019:0000309c       ??_C@_0BA@IINKCNIC@glBlendFunciARB?$AA@ 07fe909c     gl3w.obj
+ 0019:000030ac       ??_C@_0BM@DHGCGJJC@glBlendEquationSeparateiARB?$AA@ 07fe90ac     gl3w.obj
+ 0019:000030c8       ??_C@_0BE@MKEGJKA@glBlendEquationiARB?$AA@ 07fe90c8     gl3w.obj
+ 0019:000030dc       ??_C@_0O@JNHBCHMB@glSampleMaski?$AA@ 07fe90dc     gl3w.obj
+ 0019:000030ec       ??_C@_0BD@DHLIMGN@glGetMultisamplefv?$AA@ 07fe90ec     gl3w.obj
+ 0019:00003100       ??_C@_0BI@JIHMLKCG@glTexImage3DMultisample?$AA@ 07fe9100     gl3w.obj
+ 0019:00003118       ??_C@_0BI@FHDFLFA@glTexImage2DMultisample?$AA@ 07fe9118     gl3w.obj
+ 0019:00003130       ??_C@_0M@MPEEOPIN@glGetSynciv?$AA@ 07fe9130     gl3w.obj
+ 0019:0000313c       ??_C@_0BA@INMBOHGL@glGetInteger64v?$AA@ 07fe913c     gl3w.obj
+ 0019:0000314c       ??_C@_0L@MHLOGHGO@glWaitSync?$AA@ 07fe914c     gl3w.obj
+ 0019:00003158       ??_C@_0BB@KDMPGJAC@glClientWaitSync?$AA@ 07fe9158     gl3w.obj
+ 0019:0000316c       ??_C@_0N@PIFDNDFG@glDeleteSync?$AA@ 07fe916c     gl3w.obj
+ 0019:0000317c       ??_C@_08JPIIHJEO@glIsSync?$AA@ 07fe917c     gl3w.obj
+ 0019:00003188       ??_C@_0M@EFGFPFLP@glFenceSync?$AA@ 07fe9188     gl3w.obj
+ 0019:00003194       ??_C@_0BC@ECOAPEBI@glProvokingVertex?$AA@ 07fe9194     gl3w.obj
+ 0019:000031a8       ??_C@_0BO@NAPFJEEK@glMultiDrawElementsBaseVertex?$AA@ 07fe91a8     gl3w.obj
+ 0019:000031c8       ??_C@_0CC@KLOIIKNA@glDrawElementsInstancedBaseVerte@ 07fe91c8     gl3w.obj
+ 0019:000031ec       ??_C@_0BO@KBDDBILP@glDrawRangeElementsBaseVertex?$AA@ 07fe91ec     gl3w.obj
+ 0019:0000320c       ??_C@_0BJ@LFMMIAHA@glDrawElementsBaseVertex?$AA@ 07fe920c     gl3w.obj
+ 0019:00003228       ??_C@_0BE@EPKABDOG@glCopyBufferSubData?$AA@ 07fe9228     gl3w.obj
+ 0019:0000323c       ??_C@_0BG@BOLEKKCP@glUniformBlockBinding?$AA@ 07fe923c     gl3w.obj
+ 0019:00003254       ??_C@_0BM@KEMCJPAJ@glGetActiveUniformBlockName?$AA@ 07fe9254     gl3w.obj
+ 0019:00003270       ??_C@_0BK@DMHOPJGL@glGetActiveUniformBlockiv?$AA@ 07fe9270     gl3w.obj
+ 0019:0000328c       ??_C@_0BH@CBDIMHHE@glGetUniformBlockIndex?$AA@ 07fe928c     gl3w.obj
+ 0019:000032a4       ??_C@_0BH@EGGFHKJJ@glGetActiveUniformName?$AA@ 07fe92a4     gl3w.obj
+ 0019:000032bc       ??_C@_0BG@JEHIMPCG@glGetActiveUniformsiv?$AA@ 07fe92bc     gl3w.obj
+ 0019:000032d4       ??_C@_0BE@MDPMIDEE@glGetUniformIndices?$AA@ 07fe92d4     gl3w.obj
+ 0019:000032e8       ??_C@_0BA@ODJEGGAE@glIsVertexArray?$AA@ 07fe92e8     gl3w.obj
+ 0019:000032f8       ??_C@_0BC@EPJLBJBJ@glGenVertexArrays?$AA@ 07fe92f8     gl3w.obj
+ 0019:0000330c       ??_C@_0BF@BMPCJLEF@glDeleteVertexArrays?$AA@ 07fe930c     gl3w.obj
+ 0019:00003324       ??_C@_0BC@LHBAHFAN@glBindVertexArray?$AA@ 07fe9324     gl3w.obj
+ 0019:00003338       ??_C@_0BJ@NCDMGHKF@glFlushMappedBufferRange?$AA@ 07fe9338     gl3w.obj
+ 0019:00003354       ??_C@_0BB@EOHJGBIO@glMapBufferRange?$AA@ 07fe9354     gl3w.obj
+ 0019:00003368       ??_C@_0BK@NIHIDBBO@glFramebufferTextureLayer?$AA@ 07fe9368     gl3w.obj
+ 0019:00003384       ??_C@_0CB@HNONLGJE@glRenderbufferStorageMultisample@ 07fe9384     gl3w.obj
+ 0019:000033a8       ??_C@_0BC@OANBDDEP@glBlitFramebuffer?$AA@ 07fe93a8     gl3w.obj
+ 0019:000033bc       ??_C@_0BB@BHNIMGDM@glGenerateMipmap?$AA@ 07fe93bc     gl3w.obj
+ 0019:000033d0       ??_C@_0CG@KLDGJEON@glGetFramebufferAttachmentParame@ 07fe93d0     gl3w.obj
+ 0019:000033f8       ??_C@_0BK@OJDINAOA@glFramebufferRenderbuffer?$AA@ 07fe93f8     gl3w.obj
+ 0019:00003414       ??_C@_0BH@JDEHAJHC@glFramebufferTexture3D?$AA@ 07fe9414     gl3w.obj
+ 0019:0000342c       ??_C@_0BH@JCIFGDEF@glFramebufferTexture2D?$AA@ 07fe942c     gl3w.obj
+ 0019:00003444       ??_C@_0BH@JAMDNNBM@glFramebufferTexture1D?$AA@ 07fe9444     gl3w.obj
+ 0019:0000345c       ??_C@_0BJ@GIOLHEAD@glCheckFramebufferStatus?$AA@ 07fe945c     gl3w.obj
+ 0019:00003478       ??_C@_0BC@FAPEBGID@glGenFramebuffers?$AA@ 07fe9478     gl3w.obj
+ 0019:0000348c       ??_C@_0BF@DJNJENP@glDeleteFramebuffers?$AA@ 07fe948c     gl3w.obj
+ 0019:000034a4       ??_C@_0BC@CJMIBNO@glBindFramebuffer?$AA@ 07fe94a4     gl3w.obj
+ 0019:000034b8       ??_C@_0BA@FGBIJCNH@glIsFramebuffer?$AA@ 07fe94b8     gl3w.obj
+ 0019:000034c8       ??_C@_0BN@FGKAECKO@glGetRenderbufferParameteriv?$AA@ 07fe94c8     gl3w.obj
+ 0019:000034e8       ??_C@_0BG@EOIILGMJ@glRenderbufferStorage?$AA@ 07fe94e8     gl3w.obj
+ 0019:00003500       ??_C@_0BD@MIGEDNGJ@glGenRenderbuffers?$AA@ 07fe9500     gl3w.obj
+ 0019:00003514       ??_C@_0BG@KKOKEJDE@glDeleteRenderbuffers?$AA@ 07fe9514     gl3w.obj
+ 0019:0000352c       ??_C@_0BD@EPOPJGFA@glBindRenderbuffer?$AA@ 07fe952c     gl3w.obj
+ 0019:00003540       ??_C@_0BB@DGGHKKOH@glIsRenderbuffer?$AA@ 07fe9540     gl3w.obj
+ 0019:00003554       ??_C@_0BF@PDDGKNBJ@glBlendFuncSeparatei?$AA@ 07fe9554     gl3w.obj
+ 0019:0000356c       ??_C@_0N@IKKELNNP@glBlendFunci?$AA@ 07fe956c     gl3w.obj
+ 0019:0000357c       ??_C@_0BJ@FNMBAGAC@glBlendEquationSeparatei?$AA@ 07fe957c     gl3w.obj
+ 0019:00003598       ??_C@_0BB@MKHLNEOM@glBlendEquationi?$AA@ 07fe9598     gl3w.obj
+ 0019:000035ac       ??_C@_0BD@EDGCEBP@glMinSampleShading?$AA@ 07fe95ac     gl3w.obj
+ 0019:000035c0       ??_C@_0BG@NEBMAEHM@glVertexAttribDivisor?$AA@ 07fe95c0     gl3w.obj
+ 0019:000035d8       ??_C@_0BF@ENLMLILA@glFramebufferTexture?$AA@ 07fe95d8     gl3w.obj
+ 0019:000035f0       ??_C@_0BJ@KKBIDGPP@glGetBufferParameteri64v?$AA@ 07fe95f0     gl3w.obj
+ 0019:0000360c       ??_C@_0BC@KOJILIEC@glGetInteger64i_v?$AA@ 07fe960c     gl3w.obj
+ 0019:00003620       ??_C@_0BI@LJDLNGAF@glPrimitiveRestartIndex?$AA@ 07fe9620     gl3w.obj
+ 0019:00003638       ??_C@_0M@IIMBBALL@glTexBuffer?$AA@ 07fe9638     gl3w.obj
+ 0019:00003644       ??_C@_0BI@CGJENFBH@glDrawElementsInstanced?$AA@ 07fe9644     gl3w.obj
+ 0019:0000365c       ??_C@_0BG@HIOFINAN@glDrawArraysInstanced?$AA@ 07fe965c     gl3w.obj
+ 0019:00003674       ??_C@_0N@PILJCBOD@glGetStringi?$AA@ 07fe9674     gl3w.obj
+ 0019:00003684       ??_C@_0BA@OACPENCO@glClearBufferfi?$AA@ 07fe9684     gl3w.obj
+ 0019:00003694       ??_C@_0BA@CNHFEDLA@glClearBufferfv?$AA@ 07fe9694     gl3w.obj
+ 0019:000036a4       ??_C@_0BB@OHPPAEID@glClearBufferuiv?$AA@ 07fe96a4     gl3w.obj
+ 0019:000036b8       ??_C@_0BA@CGCJAEIN@glClearBufferiv?$AA@ 07fe96b8     gl3w.obj
+ 0019:000036c8       ??_C@_0BG@MLODKKFL@glGetTexParameterIuiv?$AA@ 07fe96c8     gl3w.obj
+ 0019:000036e0       ??_C@_0BF@ODBJFHDD@glGetTexParameterIiv?$AA@ 07fe96e0     gl3w.obj
+ 0019:000036f8       ??_C@_0BD@FDBCMKBE@glTexParameterIuiv?$AA@ 07fe96f8     gl3w.obj
+ 0019:0000370c       ??_C@_0BC@MAFJKEHB@glTexParameterIiv?$AA@ 07fe970c     gl3w.obj
+ 0019:00003720       ??_C@_0O@HJJIIGE@glUniform4uiv?$AA@ 07fe9720     gl3w.obj
+ 0019:00003730       ??_C@_0O@LFLJFEHE@glUniform3uiv?$AA@ 07fe9730     gl3w.obj
+ 0019:00003740       ??_C@_0O@IINJHNME@glUniform2uiv?$AA@ 07fe9740     gl3w.obj
+ 0019:00003750       ??_C@_0O@MPHJAHBE@glUniform1uiv?$AA@ 07fe9750     gl3w.obj
+ 0019:00003760       ??_C@_0N@ENCKKJAN@glUniform4ui?$AA@ 07fe9760     gl3w.obj
+ 0019:00003770       ??_C@_0N@NAPNJBLE@glUniform3ui?$AA@ 07fe9770     gl3w.obj
+ 0019:00003780       ??_C@_0N@GIEBPGNB@glUniform2ui?$AA@ 07fe9780     gl3w.obj
+ 0019:00003790       ??_C@_0N@HKPEFJDP@glUniform1ui?$AA@ 07fe9790     gl3w.obj
+ 0019:000037a0       ??_C@_0BG@NDOIGAMC@glGetFragDataLocation?$AA@ 07fe97a0     gl3w.obj
+ 0019:000037b8       ??_C@_0BH@DLJLAGBA@glBindFragDataLocation?$AA@ 07fe97b8     gl3w.obj
+ 0019:000037d0       ??_C@_0BA@NIGECFIF@glGetUniformuiv?$AA@ 07fe97d0     gl3w.obj
+ 0019:000037e0       ??_C@_0BE@IMNLBLPG@glVertexAttribI4usv?$AA@ 07fe97e0     gl3w.obj
+ 0019:000037f4       ??_C@_0BE@JBDPNCLB@glVertexAttribI4ubv?$AA@ 07fe97f4     gl3w.obj
+ 0019:00003808       ??_C@_0BD@MIPLFJKA@glVertexAttribI4sv?$AA@ 07fe9808     gl3w.obj
+ 0019:0000381c       ??_C@_0BD@NFBPJAOH@glVertexAttribI4bv?$AA@ 07fe981c     gl3w.obj
+ 0019:00003830       ??_C@_0BE@JNGKDNFA@glVertexAttribI4uiv?$AA@ 07fe9830     gl3w.obj
+ 0019:00003844       ??_C@_0BE@CPEKOBEA@glVertexAttribI3uiv?$AA@ 07fe9844     gl3w.obj
+ 0019:00003858       ??_C@_0BE@BCCKMIPA@glVertexAttribI2uiv?$AA@ 07fe9858     gl3w.obj
+ 0019:0000386c       ??_C@_0BE@FFIKLCCA@glVertexAttribI1uiv?$AA@ 07fe986c     gl3w.obj
+ 0019:00003880       ??_C@_0BD@NJEKHPAG@glVertexAttribI4iv?$AA@ 07fe9880     gl3w.obj
+ 0019:00003894       ??_C@_0BD@EEJNEHLP@glVertexAttribI3iv?$AA@ 07fe9894     gl3w.obj
+ 0019:000038a8       ??_C@_0BD@PMCBCANK@glVertexAttribI2iv?$AA@ 07fe98a8     gl3w.obj
+ 0019:000038bc       ??_C@_0BD@OOJEIPDE@glVertexAttribI1iv?$AA@ 07fe98bc     gl3w.obj
+ 0019:000038d0       ??_C@_0BD@BCMCLIM@glVertexAttribI4ui?$AA@ 07fe98d0     gl3w.obj
+ 0019:000038e4       ??_C@_0BD@JMPLBDDF@glVertexAttribI3ui?$AA@ 07fe98e4     gl3w.obj
+ 0019:000038f8       ??_C@_0BD@CEEHHEFA@glVertexAttribI2ui?$AA@ 07fe98f8     gl3w.obj
+ 0019:0000390c       ??_C@_0BD@DGPCNLLO@glVertexAttribI1ui?$AA@ 07fe990c     gl3w.obj
+ 0019:00003920       ??_C@_0BC@CFEDAOOA@glVertexAttribI4i?$AA@ 07fe9920     gl3w.obj
+ 0019:00003934       ??_C@_0BC@CAAMBIGF@glVertexAttribI3i?$AA@ 07fe9934     gl3w.obj
+ 0019:00003948       ??_C@_0BC@CBMOHCFC@glVertexAttribI2i?$AA@ 07fe9948     gl3w.obj
+ 0019:0000395c       ??_C@_0BC@CDIIMMAL@glVertexAttribI1i?$AA@ 07fe995c     gl3w.obj
+ 0019:00003970       ??_C@_0BG@GCBDCABB@glGetVertexAttribIuiv?$AA@ 07fe9970     gl3w.obj
+ 0019:00003988       ??_C@_0BF@KPDNEONP@glGetVertexAttribIiv?$AA@ 07fe9988     gl3w.obj
+ 0019:000039a0       ??_C@_0BH@NLOEHKCD@glVertexAttribIPointer?$AA@ 07fe99a0     gl3w.obj
+ 0019:000039b8       ??_C@_0BH@KCIOLNMA@glEndConditionalRender?$AA@ 07fe99b8     gl3w.obj
+ 0019:000039d0       ??_C@_0BJ@EHEPIEPF@glBeginConditionalRender?$AA@ 07fe99d0     gl3w.obj
+ 0019:000039ec       ??_C@_0N@HLGAGIMI@glClampColor?$AA@ 07fe99ec     gl3w.obj
+ 0019:000039fc       ??_C@_0BO@ODFLPNG@glGetTransformFeedbackVarying?$AA@ 07fe99fc     gl3w.obj
+ 0019:00003a1c       ??_C@_0BM@IJFAKBEF@glTransformFeedbackVaryings?$AA@ 07fe9a1c     gl3w.obj
+ 0019:00003a38       ??_C@_0BB@LDPKOCJI@glBindBufferBase?$AA@ 07fe9a38     gl3w.obj
+ 0019:00003a4c       ??_C@_0BC@EEMMCHMB@glBindBufferRange?$AA@ 07fe9a4c     gl3w.obj
+ 0019:00003a60       ??_C@_0BH@LCFLNNBH@glEndTransformFeedback?$AA@ 07fe9a60     gl3w.obj
+ 0019:00003a78       ??_C@_0BJ@FHJKOECC@glBeginTransformFeedback?$AA@ 07fe9a78     gl3w.obj
+ 0019:00003a94       ??_C@_0N@IMGKGOKN@glIsEnabledi?$AA@ 07fe9a94     gl3w.obj
+ 0019:00003aa4       ??_C@_0L@BMJPGDDH@glDisablei?$AA@ 07fe9aa4     gl3w.obj
+ 0019:00003ab0       ??_C@_09IEGEGIEN@glEnablei?$AA@ 07fe9ab0     gl3w.obj
+ 0019:00003abc       ??_C@_0BA@FKCNNMFO@glGetIntegeri_v?$AA@ 07fe9abc     gl3w.obj
+ 0019:00003acc       ??_C@_0BA@OAKNOBP@glGetBooleani_v?$AA@ 07fe9acc     gl3w.obj
+ 0019:00003adc       ??_C@_0N@JHNNNJFG@glColorMaski?$AA@ 07fe9adc     gl3w.obj
+ 0019:00003aec       ??_C@_0BF@HFGACBCH@glUniformMatrix4x3fv?$AA@ 07fe9aec     gl3w.obj
+ 0019:00003b04       ??_C@_0BF@PFLCCJCG@glUniformMatrix3x4fv?$AA@ 07fe9b04     gl3w.obj
+ 0019:00003b1c       ??_C@_0BF@MNNMEGEC@glUniformMatrix4x2fv?$AA@ 07fe9b1c     gl3w.obj
+ 0019:00003b34       ??_C@_0BF@DOOOPKID@glUniformMatrix2x4fv?$AA@ 07fe9b34     gl3w.obj
+ 0019:00003b4c       ??_C@_0BF@NANJHGPK@glUniformMatrix3x2fv?$AA@ 07fe9b4c     gl3w.obj
+ 0019:00003b64       ??_C@_0BF@KDDJMCDK@glUniformMatrix2x3fv?$AA@ 07fe9b64     gl3w.obj
+ 0019:00003b7c       ??_C@_0BG@JPNNNPKG@glVertexAttribPointer?$AA@ 07fe9b7c     gl3w.obj
+ 0019:00003b94       ??_C@_0BD@OKBBECIG@glVertexAttrib4usv?$AA@ 07fe9b94     gl3w.obj
+ 0019:00003ba8       ??_C@_0BD@PLKAGECA@glVertexAttrib4uiv?$AA@ 07fe9ba8     gl3w.obj
+ 0019:00003bbc       ??_C@_0BD@PHPFILMB@glVertexAttrib4ubv?$AA@ 07fe9bbc     gl3w.obj
+ 0019:00003bd0       ??_C@_0BC@EJJODHK@glVertexAttrib4sv?$AA@ 07fe9bd0     gl3w.obj
+ 0019:00003be4       ??_C@_0BB@PLKDLLIP@glVertexAttrib4s?$AA@ 07fe9be4     gl3w.obj
+ 0019:00003bf8       ??_C@_0BC@BFCIMFNM@glVertexAttrib4iv?$AA@ 07fe9bf8     gl3w.obj
+ 0019:00003c0c       ??_C@_0BC@BOHEICOB@glVertexAttrib4fv?$AA@ 07fe9c0c     gl3w.obj
+ 0019:00003c20       ??_C@_0BB@MMBGFNJL@glVertexAttrib4f?$AA@ 07fe9c20     gl3w.obj
+ 0019:00003c34       ??_C@_0BC@BNPAFGIP@glVertexAttrib4dv?$AA@ 07fe9c34     gl3w.obj
+ 0019:00003c48       ??_C@_0BB@POCADPBJ@glVertexAttrib4d?$AA@ 07fe9c48     gl3w.obj
+ 0019:00003c5c       ??_C@_0BC@BJHNCKDN@glVertexAttrib4bv?$AA@ 07fe9c5c     gl3w.obj
+ 0019:00003c70       ??_C@_0BE@IIAFPNIH@glVertexAttrib4Nusv?$AA@ 07fe9c70     gl3w.obj
+ 0019:00003c84       ??_C@_0BE@JJLENLCB@glVertexAttrib4Nuiv?$AA@ 07fe9c84     gl3w.obj
+ 0019:00003c98       ??_C@_0BE@JFOBDEMA@glVertexAttrib4Nubv?$AA@ 07fe9c98     gl3w.obj
+ 0019:00003cac       ??_C@_0BD@OHBIJGMB@glVertexAttrib4Nub?$AA@ 07fe9cac     gl3w.obj
+ 0019:00003cc0       ??_C@_0BD@MNDLDNCG@glVertexAttrib4Nsv?$AA@ 07fe9cc0     gl3w.obj
+ 0019:00003cd4       ??_C@_0BD@NMIKBLIA@glVertexAttrib4Niv?$AA@ 07fe9cd4     gl3w.obj
+ 0019:00003ce8       ??_C@_0BD@NANPPEGB@glVertexAttrib4Nbv?$AA@ 07fe9ce8     gl3w.obj
+ 0019:00003cfc       ??_C@_0BC@JJEONLMD@glVertexAttrib3sv?$AA@ 07fe9cfc     gl3w.obj
+ 0019:00003d10       ??_C@_0BB@POOMKNAK@glVertexAttrib3s?$AA@ 07fe9d10     gl3w.obj
+ 0019:00003d24       ??_C@_0BC@IDKDLKFI@glVertexAttrib3fv?$AA@ 07fe9d24     gl3w.obj
+ 0019:00003d38       ??_C@_0BB@MJFJELBO@glVertexAttrib3f?$AA@ 07fe9d38     gl3w.obj
+ 0019:00003d4c       ??_C@_0BC@IACHGODG@glVertexAttrib3dv?$AA@ 07fe9d4c     gl3w.obj
+ 0019:00003d60       ??_C@_0BB@PLGPCJJM@glVertexAttrib3d?$AA@ 07fe9d60     gl3w.obj
+ 0019:00003d74       ??_C@_0BC@CBPCLMKG@glVertexAttrib2sv?$AA@ 07fe9d74     gl3w.obj
+ 0019:00003d88       ??_C@_0BB@PPCOMHDN@glVertexAttrib2s?$AA@ 07fe9d88     gl3w.obj
+ 0019:00003d9c       ??_C@_0BC@DLBPNNDN@glVertexAttrib2fv?$AA@ 07fe9d9c     gl3w.obj
+ 0019:00003db0       ??_C@_0BB@MIJLCBCJ@glVertexAttrib2f?$AA@ 07fe9db0     gl3w.obj
+ 0019:00003dc4       ??_C@_0BC@DIJLAJFD@glVertexAttrib2dv?$AA@ 07fe9dc4     gl3w.obj
+ 0019:00003dd8       ??_C@_0BB@PKKNEDKL@glVertexAttrib2d?$AA@ 07fe9dd8     gl3w.obj
+ 0019:00003dec       ??_C@_0BC@DDEHBDEI@glVertexAttrib1sv?$AA@ 07fe9dec     gl3w.obj
+ 0019:00003e00       ??_C@_0BB@PNGIHJGE@glVertexAttrib1s?$AA@ 07fe9e00     gl3w.obj
+ 0019:00003e14       ??_C@_0BC@CJKKHCND@glVertexAttrib1fv?$AA@ 07fe9e14     gl3w.obj
+ 0019:00003e28       ??_C@_0BB@MKNNJPHA@glVertexAttrib1f?$AA@ 07fe9e28     gl3w.obj
+ 0019:00003e3c       ??_C@_0BC@CKCOKGLN@glVertexAttrib1dv?$AA@ 07fe9e3c     gl3w.obj
+ 0019:00003e50       ??_C@_0BB@PIOLPNPC@glVertexAttrib1d?$AA@ 07fe9e50     gl3w.obj
+ 0019:00003e64       ??_C@_0BC@MAPGDLJK@glValidateProgram?$AA@ 07fe9e64     gl3w.obj
+ 0019:00003e78       ??_C@_0BD@LNHCBEKP@glUniformMatrix4fv?$AA@ 07fe9e78     gl3w.obj
+ 0019:00003e8c       ??_C@_0BD@CAKFCMBG@glUniformMatrix3fv?$AA@ 07fe9e8c     gl3w.obj
+ 0019:00003ea0       ??_C@_0BD@JIBJELHD@glUniformMatrix2fv?$AA@ 07fe9ea0     gl3w.obj
+ 0019:00003eb4       ??_C@_0N@JFEMPNIH@glUniform4iv?$AA@ 07fe9eb4     gl3w.obj
+ 0019:00003ec4       ??_C@_0N@IJLMFDO@glUniform3iv?$AA@ 07fe9ec4     gl3w.obj
+ 0019:00003ed4       ??_C@_0N@LACHKCFL@glUniform2iv?$AA@ 07fe9ed4     gl3w.obj
+ 0019:00003ee4       ??_C@_0N@KCJCANLF@glUniform1iv?$AA@ 07fe9ee4     gl3w.obj
+ 0019:00003ef4       ??_C@_0N@JOBALKLK@glUniform4fv?$AA@ 07fe9ef4     gl3w.obj
+ 0019:00003f04       ??_C@_0N@DMHICAD@glUniform3fv?$AA@ 07fe9f04     gl3w.obj
+ 0019:00003f14       ??_C@_0N@LLHLOFGG@glUniform2fv?$AA@ 07fe9f14     gl3w.obj
+ 0019:00003f24       ??_C@_0N@KJMOEKII@glUniform1fv?$AA@ 07fe9f24     gl3w.obj
+ 0019:00003f34       ??_C@_0M@EKNBNBMB@glUniform4i?$AA@ 07fe9f34     gl3w.obj
+ 0019:00003f40       ??_C@_0M@EPJOMHEE@glUniform3i?$AA@ 07fe9f40     gl3w.obj
+ 0019:00003f4c       ??_C@_0M@EOFMKNHD@glUniform2i?$AA@ 07fe9f4c     gl3w.obj
+ 0019:00003f58       ??_C@_0M@EMBKBDCK@glUniform1i?$AA@ 07fe9f58     gl3w.obj
+ 0019:00003f64       ??_C@_0M@MNEJMNAO@glUniform4f?$AA@ 07fe9f64     gl3w.obj
+ 0019:00003f70       ??_C@_0M@MIAGNLIL@glUniform3f?$AA@ 07fe9f70     gl3w.obj
+ 0019:00003f7c       ??_C@_0M@MJMELBLM@glUniform2f?$AA@ 07fe9f7c     gl3w.obj
+ 0019:00003f88       ??_C@_0M@MLICAPOF@glUniform1f?$AA@ 07fe9f88     gl3w.obj
+ 0019:00003f94       ??_C@_0N@ICBDHBI@glUseProgram?$AA@ 07fe9f94     gl3w.obj
+ 0019:00003fa4       ??_C@_0P@DFHCPFMO@glShaderSource?$AA@ 07fe9fa4     gl3w.obj
+ 0019:00003fb4       ??_C@_0O@PIOEEBPO@glLinkProgram?$AA@ 07fe9fb4     gl3w.obj
+ 0019:00003fc4       ??_C@_0L@MDDLFIHC@glIsShader?$AA@ 07fe9fc4     gl3w.obj
+ 0019:00003fd0       ??_C@_0M@INLOJDGO@glIsProgram?$AA@ 07fe9fd0     gl3w.obj
+ 0019:00003fdc       ??_C@_0BK@DOJMENLD@glGetVertexAttribPointerv?$AA@ 07fe9fdc     gl3w.obj
+ 0019:00003ff8       ??_C@_0BE@HLCEAPNO@glGetVertexAttribiv?$AA@ 07fe9ff8     gl3w.obj
+ 0019:0000400c       ??_C@_0BE@HAHIEIOD@glGetVertexAttribfv?$AA@ 07fea00c     gl3w.obj
+ 0019:00004020       ??_C@_0BE@HDPMJMIN@glGetVertexAttribdv?$AA@ 07fea020     gl3w.obj
+ 0019:00004034       ??_C@_0P@IAONPCL@glGetUniformiv?$AA@ 07fea034     gl3w.obj
+ 0019:00004044       ??_C@_0P@DFCJIBG@glGetUniformfv?$AA@ 07fea044     gl3w.obj
+ 0019:00004054       ??_C@_0BF@KIOPGICP@glGetUniformLocation?$AA@ 07fea054     gl3w.obj
+ 0019:0000406c       ??_C@_0BC@ELEIFJEL@glGetShaderSource?$AA@ 07fea06c     gl3w.obj
+ 0019:00004080       ??_C@_0BD@GIABBCMO@glGetShaderInfoLog?$AA@ 07fea080     gl3w.obj
+ 0019:00004094       ??_C@_0O@JBDFPDMG@glGetShaderiv?$AA@ 07fea094     gl3w.obj
+ 0019:000040a4       ??_C@_0BE@DHGHAJFL@glGetProgramInfoLog?$AA@ 07fea0a4     gl3w.obj
+ 0019:000040b8       ??_C@_0P@FMMDFLCO@glGetProgramiv?$AA@ 07fea0b8     gl3w.obj
+ 0019:000040c8       ??_C@_0BE@BEPGJDMM@glGetAttribLocation?$AA@ 07fea0c8     gl3w.obj
+ 0019:000040dc       ??_C@_0BF@GHMDGFEM@glGetAttachedShaders?$AA@ 07fea0dc     gl3w.obj
+ 0019:000040f4       ??_C@_0BD@NIMHLLKN@glGetActiveUniform?$AA@ 07fea0f4     gl3w.obj
+ 0019:00004108       ??_C@_0BC@MBALAOHF@glGetActiveAttrib?$AA@ 07fea108     gl3w.obj
+ 0019:0000411c       ??_C@_0BK@EHBAHNHE@glEnableVertexAttribArray?$AA@ 07fea11c     gl3w.obj
+ 0019:00004138       ??_C@_0BL@NKHLOFFF@glDisableVertexAttribArray?$AA@ 07fea138     gl3w.obj
+ 0019:00004154       ??_C@_0P@DJFJFCJL@glDetachShader?$AA@ 07fea154     gl3w.obj
+ 0019:00004164       ??_C@_0P@HHCDONAG@glDeleteShader?$AA@ 07fea164     gl3w.obj
+ 0019:00004174       ??_C@_0BA@NKGCDOPO@glDeleteProgram?$AA@ 07fea174     gl3w.obj
+ 0019:00004184       ??_C@_0P@HGHBNC@glCreateShader?$AA@ 07fea184     gl3w.obj
+ 0019:00004194       ??_C@_0BA@FLKLHNKP@glCreateProgram?$AA@ 07fea194     gl3w.obj
+ 0019:000041a4       ??_C@_0BA@DGIEGONF@glCompileShader?$AA@ 07fea1a4     gl3w.obj
+ 0019:000041b4       ??_C@_0BF@MHKEFIHM@glBindAttribLocation?$AA@ 07fea1b4     gl3w.obj
+ 0019:000041cc       ??_C@_0P@LDMLEABL@glAttachShader?$AA@ 07fea1cc     gl3w.obj
+ 0019:000041dc       ??_C@_0BG@MMKPIEJI@glStencilMaskSeparate?$AA@ 07fea1dc     gl3w.obj
+ 0019:000041f4       ??_C@_0BG@FCMNCEIA@glStencilFuncSeparate?$AA@ 07fea1f4     gl3w.obj
+ 0019:0000420c       ??_C@_0BE@GAPLDNGF@glStencilOpSeparate?$AA@ 07fea20c     gl3w.obj
+ 0019:00004220       ??_C@_0O@COHJKDBH@glDrawBuffers?$AA@ 07fea220     gl3w.obj
+ 0019:00004230       ??_C@_0BI@JNHDNJAG@glBlendEquationSeparate?$AA@ 07fea230     gl3w.obj
+ 0019:00004248       ??_C@_0BE@KNJEIFMC@glGetBufferPointerv?$AA@ 07fea248     gl3w.obj
+ 0019:0000425c       ??_C@_0BH@BMIEIFJP@glGetBufferParameteriv?$AA@ 07fea25c     gl3w.obj
+ 0019:00004274       ??_C@_0O@OFGHBLEO@glUnmapBuffer?$AA@ 07fea274     gl3w.obj
+ 0019:00004284       ??_C@_0M@NNHDPACA@glMapBuffer?$AA@ 07fea284     gl3w.obj
+ 0019:00004290       ??_C@_0BD@PNDAHMBO@glGetBufferSubData?$AA@ 07fea290     gl3w.obj
+ 0019:000042a4       ??_C@_0BA@GAJMDBBN@glBufferSubData?$AA@ 07fea2a4     gl3w.obj
+ 0019:000042b4       ??_C@_0N@JHHJMABP@glBufferData?$AA@ 07fea2b4     gl3w.obj
+ 0019:000042c4       ??_C@_0L@KFPDMKNG@glIsBuffer?$AA@ 07fea2c4     gl3w.obj
+ 0019:000042d0       ??_C@_0N@LAOHBIBA@glGenBuffers?$AA@ 07fea2d0     gl3w.obj
+ 0019:000042e0       ??_C@_0BA@DMNLADIO@glDeleteBuffers?$AA@ 07fea2e0     gl3w.obj
+ 0019:000042f0       ??_C@_0N@BONEPPLO@glBindBuffer?$AA@ 07fea2f0     gl3w.obj
+ 0019:00004300       ??_C@_0BE@MNBBKJ@glGetQueryObjectuiv?$AA@ 07fea300     gl3w.obj
+ 0019:00004314       ??_C@_0BD@KMBBCJID@glGetQueryObjectiv?$AA@ 07fea314     gl3w.obj
+ 0019:00004328       ??_C@_0N@BPACPFCI@glGetQueryiv?$AA@ 07fea328     gl3w.obj
+ 0019:00004338       ??_C@_0L@FLEBHIDM@glEndQuery?$AA@ 07fea338     gl3w.obj
+ 0019:00004344       ??_C@_0N@GIAGIGPA@glBeginQuery?$AA@ 07fea344     gl3w.obj
+ 0019:00004354       ??_C@_09CNNLCEBN@glIsQuery?$AA@ 07fea354     gl3w.obj
+ 0019:00004360       ??_C@_0BA@IOKEHMOH@glDeleteQueries?$AA@ 07fea360     gl3w.obj
+ 0019:00004370       ??_C@_0N@CJIGHHJ@glGenQueries?$AA@ 07fea370     gl3w.obj
+ 0019:00004380       ??_C@_0BD@LDFNOKAC@glPointParameteriv?$AA@ 07fea380     gl3w.obj
+ 0019:00004394       ??_C@_0BC@ICPGPIPB@glPointParameteri?$AA@ 07fea394     gl3w.obj
+ 0019:000043a8       ??_C@_0BD@LIABKNDP@glPointParameterfv?$AA@ 07fea3a8     gl3w.obj
+ 0019:000043bc       ??_C@_0BC@FGOOEDO@glPointParameterf?$AA@ 07fea3bc     gl3w.obj
+ 0019:000043d0       ??_C@_0BE@MPDFJJLL@glMultiDrawElements?$AA@ 07fea3d0     gl3w.obj
+ 0019:000043e4       ??_C@_0BC@IBABPJFA@glMultiDrawArrays?$AA@ 07fea3e4     gl3w.obj
+ 0019:000043f8       ??_C@_0BE@LLLCIIOO@glBlendFuncSeparate?$AA@ 07fea3f8     gl3w.obj
+ 0019:0000440c       ??_C@_0BI@MPANLPPL@glGetCompressedTexImage?$AA@ 07fea40c     gl3w.obj
+ 0019:00004424       ??_C@_0BK@ECBIPHJO@glCompressedTexSubImage1D?$AA@ 07fea424     gl3w.obj
+ 0019:00004440       ??_C@_0BK@EAFOEJMH@glCompressedTexSubImage2D?$AA@ 07fea440     gl3w.obj
+ 0019:0000445c       ??_C@_0BK@EBJMCDPA@glCompressedTexSubImage3D?$AA@ 07fea45c     gl3w.obj
+ 0019:00004478       ??_C@_0BH@GFPJBEAB@glCompressedTexImage1D?$AA@ 07fea478     gl3w.obj
+ 0019:00004490       ??_C@_0BH@GHLPKKFI@glCompressedTexImage2D?$AA@ 07fea490     gl3w.obj
+ 0019:000044a8       ??_C@_0BH@GGHNMAGP@glCompressedTexImage3D?$AA@ 07fea4a8     gl3w.obj
+ 0019:000044c0       ??_C@_0BB@BJGIPMOA@glSampleCoverage?$AA@ 07fea4c0     gl3w.obj
+ 0019:000044d4       ??_C@_0BA@KOBBIKOF@glActiveTexture?$AA@ 07fea4d4     gl3w.obj
+ 0019:000044e4       ??_C@_0BE@PJFGNMAG@glCopyTexSubImage3D?$AA@ 07fea4e4     gl3w.obj
+ 0019:000044f8       ??_C@_0BA@NGGKPOPN@glTexSubImage3D?$AA@ 07fea4f8     gl3w.obj
+ 0019:00004508       ??_C@_0N@JAEIBBBF@glTexImage3D?$AA@ 07fea508     gl3w.obj
+ 0019:00004518       ??_C@_0BE@IHNAGJGJ@glDrawRangeElements?$AA@ 07fea518     gl3w.obj
+ 0019:0000452c       ??_C@_0BA@PFHILPAN@glBlendEquation?$AA@ 07fea52c     gl3w.obj
+ 0019:0000453c       ??_C@_0N@PKBMFJDK@glBlendColor?$AA@ 07fea53c     gl3w.obj
+ 0019:0000454c       ??_C@_0M@NJHAEPDN@glIsTexture?$AA@ 07fea54c     gl3w.obj
+ 0019:00004558       ??_C@_0O@LLMANLNK@glGenTextures?$AA@ 07fea558     gl3w.obj
+ 0019:00004568       ??_C@_0BB@KMPLFJIC@glDeleteTextures?$AA@ 07fea568     gl3w.obj
+ 0019:0000457c       ??_C@_0O@JKKCIBGC@glBindTexture?$AA@ 07fea57c     gl3w.obj
+ 0019:0000458c       ??_C@_0BA@NHKIJEMK@glTexSubImage2D?$AA@ 07fea58c     gl3w.obj
+ 0019:0000459c       ??_C@_0BA@NFOOCKJD@glTexSubImage1D?$AA@ 07fea59c     gl3w.obj
+ 0019:000045ac       ??_C@_0BE@PIJELGDB@glCopyTexSubImage2D?$AA@ 07fea5ac     gl3w.obj
+ 0019:000045c0       ??_C@_0BE@PKNCAIGI@glCopyTexSubImage1D?$AA@ 07fea5c0     gl3w.obj
+ 0019:000045d4       ??_C@_0BB@MGAFKJKC@glCopyTexImage2D?$AA@ 07fea5d4     gl3w.obj
+ 0019:000045e8       ??_C@_0BB@MEEDBHPL@glCopyTexImage1D?$AA@ 07fea5e8     gl3w.obj
+ 0019:000045fc       ??_C@_0BA@FFBJGNC@glPolygonOffset?$AA@ 07fea5fc     gl3w.obj
+ 0019:0000460c       ??_C@_0O@LADEDGJO@glGetPointerv?$AA@ 07fea60c     gl3w.obj
+ 0019:0000461c       ??_C@_0P@MENFIFGE@glDrawElements?$AA@ 07fea61c     gl3w.obj
+ 0019:0000462c       ??_C@_0N@CMNPPOHA@glDrawArrays?$AA@ 07fea62c     gl3w.obj
+ 0019:0000463c       ??_C@_0L@KBLIPDFH@glViewport?$AA@ 07fea63c     gl3w.obj
+ 0019:00004648       ??_C@_0N@PEBDIKOA@glDepthRange?$AA@ 07fea648     gl3w.obj
+ 0019:00004658       ??_C@_0M@INHMIHKC@glIsEnabled?$AA@ 07fea658     gl3w.obj
+ 0019:00004664       ??_C@_0BJ@GLJHCPGI@glGetTexLevelParameteriv?$AA@ 07fea664     gl3w.obj
+ 0019:00004680       ??_C@_0BJ@GAMLGIFF@glGetTexLevelParameterfv?$AA@ 07fea680     gl3w.obj
+ 0019:0000469c       ??_C@_0BE@DGCNLNPP@glGetTexParameteriv?$AA@ 07fea69c     gl3w.obj
+ 0019:000046b0       ??_C@_0BE@DNHBPKMC@glGetTexParameterfv?$AA@ 07fea6b0     gl3w.obj
+ 0019:000046c4       ??_C@_0O@DOIIJLAD@glGetTexImage?$AA@ 07fea6c4     gl3w.obj
+ 0019:000046d4       ??_C@_0M@OPOBFDCB@glGetString?$AA@ 07fea6d4     gl3w.obj
+ 0019:000046e0       ??_C@_0O@DHHDCCLF@glGetIntegerv?$AA@ 07fea6e0     gl3w.obj
+ 0019:000046f0       ??_C@_0M@CKCOBONE@glGetFloatv?$AA@ 07fea6f0     gl3w.obj
+ 0019:000046fc       ??_C@_0L@FPKAMKHB@glGetError?$AA@ 07fea6fc     gl3w.obj
+ 0019:00004708       ??_C@_0N@OFBMMCDH@glGetDoublev?$AA@ 07fea708     gl3w.obj
+ 0019:00004718       ??_C@_0O@NLMELLCJ@glGetBooleanv?$AA@ 07fea718     gl3w.obj
+ 0019:00004728       ??_C@_0N@CKFNNHOO@glReadPixels?$AA@ 07fea728     gl3w.obj
+ 0019:00004738       ??_C@_0N@HFKHBECK@glReadBuffer?$AA@ 07fea738     gl3w.obj
+ 0019:00004748       ??_C@_0O@JCCIGLOF@glPixelStorei?$AA@ 07fea748     gl3w.obj
+ 0019:00004758       ??_C@_0O@BFLAHHCK@glPixelStoref?$AA@ 07fea758     gl3w.obj
+ 0019:00004768       ??_C@_0M@NEJABAEP@glDepthFunc?$AA@ 07fea768     gl3w.obj
+ 0019:00004774       ??_C@_0M@BILBNGF@glStencilOp?$AA@ 07fea774     gl3w.obj
+ 0019:00004780       ??_C@_0O@ENNLLOLN@glStencilFunc?$AA@ 07fea780     gl3w.obj
+ 0019:00004790       ??_C@_09GKGMNAKG@glLogicOp?$AA@ 07fea790     gl3w.obj
+ 0019:0000479c       ??_C@_0M@PFBKOKOH@glBlendFunc?$AA@ 07fea79c     gl3w.obj
+ 0019:000047a8       ??_C@_07COFELLJA@glFlush?$AA@ 07fea7a8     gl3w.obj
+ 0019:000047b0       ??_C@_08DFCPOKBK@glFinish?$AA@ 07fea7b0     gl3w.obj
+ 0019:000047bc       ??_C@_08OOEHEKOP@glEnable?$AA@ 07fea7bc     gl3w.obj
+ 0019:000047c8       ??_C@_09MHGMIMKN@glDisable?$AA@ 07fea7c8     gl3w.obj
+ 0019:000047d4       ??_C@_0M@KABMFLLN@glDepthMask?$AA@ 07fea7d4     gl3w.obj
+ 0019:000047e0       ??_C@_0M@DLGOAHPH@glColorMask?$AA@ 07fea7e0     gl3w.obj
+ 0019:000047ec       ??_C@_0O@DJFHPFEP@glStencilMask?$AA@ 07fea7ec     gl3w.obj
+ 0019:000047fc       ??_C@_0N@LJIELNG@glClearDepth?$AA@ 07fea7fc     gl3w.obj
+ 0019:0000480c       ??_C@_0P@KBLPBBFP@glClearStencil?$AA@ 07fea80c     gl3w.obj
+ 0019:0000481c       ??_C@_0N@OGLMDNKC@glClearColor?$AA@ 07fea81c     gl3w.obj
+ 0019:0000482c       ??_C@_07IBAPPAHJ@glClear?$AA@ 07fea82c     gl3w.obj
+ 0019:00004834       ??_C@_0N@EKCLGPL@glDrawBuffer?$AA@ 07fea834     gl3w.obj
+ 0019:00004844       ??_C@_0N@JBIKHLCC@glTexImage2D?$AA@ 07fea844     gl3w.obj
+ 0019:00004854       ??_C@_0N@JDMMMFHL@glTexImage1D?$AA@ 07fea854     gl3w.obj
+ 0019:00004864       ??_C@_0BB@KPLJEAAI@glTexParameteriv?$AA@ 07fea864     gl3w.obj
+ 0019:00004878       ??_C@_0BA@KDNJAKA@glTexParameteri?$AA@ 07fea878     gl3w.obj
+ 0019:00004888       ??_C@_0BB@KEOFAHDF@glTexParameterfv?$AA@ 07fea888     gl3w.obj
+ 0019:0000489c       ??_C@_0BA@INKFIMGP@glTexParameterf?$AA@ 07fea89c     gl3w.obj
+ 0019:000048ac       ??_C@_09ECGPAEPL@glScissor?$AA@ 07fea8ac     gl3w.obj
+ 0019:000048b8       ??_C@_0O@DKMNBFMB@glPolygonMode?$AA@ 07fea8b8     gl3w.obj
+ 0019:000048c8       ??_C@_0M@EEAPMMNM@glPointSize?$AA@ 07fea8c8     gl3w.obj
+ 0019:000048d4       ??_C@_0M@CFLGNFPG@glLineWidth?$AA@ 07fea8d4     gl3w.obj
+ 0019:000048e0       ??_C@_06HEADGMBC@glHint?$AA@ 07fea8e0     gl3w.obj
+ 0019:000048e8       ??_C@_0M@ILBMDJDA@glFrontFace?$AA@ 07fea8e8     gl3w.obj
+ 0019:000048f4       ??_C@_0L@BAPBLHME@glCullFace?$AA@ 07fea8f4     gl3w.obj
+ 0019:00004900       __real@40dfffc000000000    07fea900     msys.obj
+ 0019:00004908       ??_C@_0BJ@NALAIDJI@Cannot?5open?5shader?5file?$CB?$AA@ 07fea908     msys_glext.obj
+ 0019:00004924       ??_C@_05MBDEGLCK@ERROR?$AA@ 07fea924     msys_glext.obj
+ 0019:0000492c       ??_C@_01KDCPPGHE@r?$AA@    07fea92c     msys_glext.obj
+ 0019:00004930       ??_C@_03OFAPEBGM@?$CFs?6?$AA@ 07fea930     msys_texgen.obj
+ 0019:00004938       __real@400921fb54442d18    07fea938     msys_texgen.obj
+ 0019:00004940       __real@404e000000000000    07fea940     msys_texgen.obj
+ 0019:00004948       __real@43b40000            07fea948     msys_texgen.obj
+ 0019:00004950       __real@4076800000000000    07fea950     msys_texgen.obj
+ 0019:00004958       __real@4010000000000000    07fea958     msys_texgen.obj
+ 0019:00004960       __real@405fc00000000000    07fea960     msys_texgen.obj
+ 0019:00004968       __real@404fc00000000000    07fea968     msys_texgen.obj
+ 0019:00004970       __real@3f70000000000000    07fea970     msys_texgen.obj
+ 0019:00004978       __real@437f0000            07fea978     msys_texgen.obj
+ 0019:00004980       __real@4066800000000000    07fea980     msys_texgen.obj
+ 0019:00004988       __real@40038e38a0000000    07fea988     msys_texgen.obj
+ 0019:00004990       __real@3fdc71c540000000    07fea990     msys_texgen.obj
+ 0019:00004998       __real@3ffe38e2a0000000    07fea998     msys_texgen.obj
+ 0019:000049a0       __real@4062c00000000000    07fea9a0     msys_texgen.obj
+ 0019:000049a8       __real@3fb99999a0000000    07fea9a8     msys_texgen.obj
+ 0019:000049b0       __real@405fe00000000000    07fea9b0     msys_texgen.obj
+ 0019:000049b8       __real@4060000000000000    07fea9b8     msys_texgen.obj
+ 0019:000049c0       __real@3e800000            07fea9c0     msys_texgen.obj
+ 0019:000049c4       __real@3e000000            07fea9c4     msys_texgen.obj
+ 0019:000049c8       __real@3d800000            07fea9c8     msys_texgen.obj
+ 0019:000049cc       __real@c0800000            07fea9cc     msys_texgen.obj
+ 0019:000049d0       __real@c0000000            07fea9d0     msys_texgen.obj
+ 0019:000049d4       __real@40800000            07fea9d4     msys_texgen.obj
+ 0019:000049d8       __real@40000000            07fea9d8     msys_texgen.obj
+ 0019:000049dc       __real@40200000            07fea9dc     msys_texgen.obj
+ 0019:000049e0       __real@be800000            07fea9e0     msys_texgen.obj
+ 0019:000049e4       __real@be000000            07fea9e4     msys_texgen.obj
+ 0019:000049e8       __real@3f400000            07fea9e8     msys_texgen.obj
+ 0019:000049ec       __real@47927c00            07fea9ec     msys_texgen.obj
+ 0019:000049f0       __real@3fe8000000000000    07fea9f0     msys_texgen.obj
+ 0019:000049f8       ??_C@_0CB@FGLAMLC@kaleidLayer?5NOT?5IMPLEMENTED?5YET?$CB@ 07fea9f8     msys_texgen.obj
+ 0019:00004a1c       ??_C@_0CE@NHIJCPA@sculptureLayer?5NOT?5IMPLEMENTED?5Y@ 07feaa1c     msys_texgen.obj
+ 0019:00004a40       ??_C@_0BD@JFLBGBNJ@Tex?5file?5not?5found?$AA@ 07feaa40     msys_texgen.obj
+ 0019:00004a54       ??_C@_0BL@PDDHMPGF@wglCreateContextAttribsARB?$AA@ 07feaa54     WGL_ARB_create_context.obj
+ 0019:00004a70       ??_C@_0BK@JOBLJGNA@wglGetExtensionsStringARB?$AA@ 07feaa70     WGL_ARB_extensions_string.obj
+ 0019:00004b58       ??_C@_0BG@LCBPCBED@wait?5while?5loading?4?4?4?$AA@ 07feab58     main_rel.obj
+ 0019:00004b70       ??_C@_05MIPEAMDJ@arial?$AA@ 07feab70     main_rel.obj
+ 0019:00004b78       ??_C@_0M@CEGKMHFM@fullscreen?$DP?$AA@ 07feab78     main_rel.obj
+ 0019:00004b84       __IMPORT_DESCRIPTOR_OPENGL32 07feab84     opengl32:OPENGL32.dll
+ 0019:00004b98       __IMPORT_DESCRIPTOR_WINMM  07feab98     winmm:WINMM.dll
+ 0019:00004bac       __IMPORT_DESCRIPTOR_MSVCRT 07feabac     msvcrt_vc6:MSVCRT.dll
+ 0019:00004bc0       __IMPORT_DESCRIPTOR_KERNEL32 07feabc0     kernel32:KERNEL32.dll
+ 0019:00004bd4       __IMPORT_DESCRIPTOR_USER32 07feabd4     user32:USER32.dll
+ 0019:00004be8       __IMPORT_DESCRIPTOR_GDI32  07feabe8     gdi32:GDI32.dll
+ 0019:00004bfc       __NULL_IMPORT_DESCRIPTOR   07feabfc     opengl32:OPENGL32.dll
+ 001a:00000000       ?bg_tex_len@@3IA           07fec000     intro.obj
+ 001a:00000004       ?sync_sshape_n2_data@@3PAEA 07fec004     intro.obj
+ 001a:00000040       ?bg_tex@@3PAEA             07fec040     intro.obj
+ 001a:00005644       ?sync_sshape_a_data@@3PAEA 07ff1644     intro.obj
+ 001a:0000565c       ?sync_sshape_b_data@@3PAEA 07ff165c     intro.obj
+ 001a:00005674       ?sync_sshape_blue_data@@3PAEA 07ff1674     intro.obj
+ 001a:000056b0       ?sync_sshape_m_data@@3PAEA 07ff16b0     intro.obj
+ 001a:0000578c       ?sshape_red@@3MA           07ff178c     intro.obj
+ 001a:00005790       ?sync_sshape_n1_data@@3PAEA 07ff1790     intro.obj
+ 001a:00005824       ?sync_sshape_n3_data@@3PAEA 07ff1824     intro.obj
+ 001a:0000583c       ?sshape_green@@3MA         07ff183c     intro.obj
+ 001a:00005840       ?sync_sshape_red_data@@3PAEA 07ff1840     intro.obj
+ 001a:0000588c       ?sshape_blue@@3MA          07ff188c     intro.obj
+ 001a:00005890       ?sync_sshape_green_data@@3PAEA 07ff1890     intro.obj
+ 001a:000058f0       ?WaveFMT@@3UtWAVEFORMATEX@@A 07ff18f0     intro.obj
+ 001a:00005904       ?WaveHDR@@3Uwavehdr_tag@@A 07ff1904     intro.obj
+ 001a:00005924       ?MMTime@@3Ummtime_tag@@A   07ff1924     intro.obj
+ 001a:000059e0       ?bg_shader_program@@3IA    07ff19e0     intro.obj
+ 001a:000059e4       ?bg_vao@@3IA               07ff19e4     intro.obj
+ 001a:000059e8       ?postproc_stock_program@@3IA 07ff19e8     intro.obj
+ 001a:000059ec       ?sc1_n3@@3PBUsync_track@@B 07ff19ec     intro.obj
+ 001a:000059f0       ?ntsc_fbos@@3PAUFBOELEM@@A 07ff19f0     intro.obj
+ 001a:00005a40       ?rocket@@3PAUsync_device@@A 07ff1a40     intro.obj
+ 001a:00005a44       ?sshape_shader_program@@3IA 07ff1a44     intro.obj
+ 001a:00005a48       ?sshape_colourbuffer@@3IA  07ff1a48     intro.obj
+ 001a:00005a4c       ?sshape_a@@3MA             07ff1a4c     intro.obj
+ 001a:00005a50       ?sc1_green@@3PBUsync_track@@B 07ff1a50     intro.obj
+ 001a:00005a54       ?sc1_b@@3PBUsync_track@@B  07ff1a54     intro.obj
+ 001a:00005a58       ?sshape_postpoc_vao@@3IA   07ff1a58     intro.obj
+ 001a:00005a5c       ?sshape_vertexbuffer@@3IA  07ff1a5c     intro.obj
+ 001a:00005a60       ?sshape_vao@@3IA           07ff1a60     intro.obj
+ 001a:00005a64       ?sc1_red@@3PBUsync_track@@B 07ff1a64     intro.obj
+ 001a:00005a68       ?sshape_n3@@3MA            07ff1a68     intro.obj
+ 001a:00005a6c       ?hWaveOut@@3PAUHWAVEOUT__@@A 07ff1a6c     intro.obj
+ 001a:00005a70       ?noise_tex@@3IA            07ff1a70     intro.obj
+ 001a:00005a74       ?sc1_m@@3PBUsync_track@@B  07ff1a74     intro.obj
+ 001a:00005a78       ?bg_texture@@3IA           07ff1a78     intro.obj
+ 001a:00005a7c       ?postproc_vao@@3IA         07ff1a7c     intro.obj
+ 001a:00005a80       ?sc1_blue@@3PBUsync_track@@B 07ff1a80     intro.obj
+ 001a:00005a84       ?sshape_m@@3MA             07ff1a84     intro.obj
+ 001a:00005a88       ?choir@@3MA                07ff1a88     intro.obj
+ 001a:00005a8c       ?ntsc_shaders@@3PAIA       07ff1a8c     intro.obj
+ 001a:00005a98       ?sc1_n1@@3PBUsync_track@@B 07ff1a98     intro.obj
+ 001a:00005a9c       ?sshape_n1@@3MA            07ff1a9c     intro.obj
+ 001a:00005aa0       ?sc1_n2@@3PBUsync_track@@B 07ff1aa0     intro.obj
+ 001a:00005aa4       ?sshape_postpoc@@3IA       07ff1aa4     intro.obj
+ 001a:00005aa8       ?sshape_fbo@@3UFBOELEM@@A  07ff1aa8     intro.obj
+ 001a:00005abc       ?sshape_n2@@3MA            07ff1abc     intro.obj
+ 001a:00005ac0       ?sshape_normalbuffer@@3IA  07ff1ac0     intro.obj
+ 001a:00005ac4       ?sshape_b@@3MA             07ff1ac4     intro.obj
+ 001a:00005ac8       ?postproc_fbo@@3UFBOELEM@@A 07ff1ac8     intro.obj
+ 001a:00005adc       ?sc1_a@@3PBUsync_track@@B  07ff1adc     intro.obj
+ 001a:00005ae0       ?lpSoundBuffer@@3PAMA      07ff1ae0     intro.obj
+ 001a:12ef5ee0       ?postproc_shader_program@@3IA 1aee1ee0     intro.obj
+ 001a:12ef5ee8       ?postproc_compiled@@3HA    1aee1ee8     intro.obj
+ 001a:12ef5eec       ?bassdrumhit@@3MA          1aee1eec     intro.obj
+ 001a:12ef5ef0       ?snarehit@@3MA             1aee1ef0     intro.obj
+ 001a:12ef5ef4       ?sshape_colour@@3V?$CBuffer@U?$tvec3@M@detail@glm@@@@A 1aee1ef4     intro.obj
+ 001a:12ef5f00       ?sshape_normals@@3V?$CBuffer@U?$tvec3@M@detail@glm@@@@A 1aee1f00     intro.obj
+ 001a:12ef5f0c       ?sshape_vertices@@3V?$CBuffer@U?$tvec3@M@detail@glm@@@@A 1aee1f0c     intro.obj
+ 001a:12ef605c       ?textureGenerator@@3PAVTextureGenerator@@A 1aee205c     msys_texgen.obj
+ 001a:12ef6084       _gl3wProgramUniform2uiv    1aee2084     <common>
+ 001a:12ef6088       _gl3wVertexAttrib1s        1aee2088     <common>
+ 001a:12ef608c       _gl3wClear                 1aee208c     <common>
+ 001a:12ef6090       _gl3wTextureBufferRangeEXT 1aee2090     <common>
+ 001a:12ef6094       _gl3wVertexArrayBindVertexBufferEXT 1aee2094     <common>
+ 001a:12ef6098       _gl3wTexBuffer             1aee2098     <common>
+ 001a:12ef609c       _gl3wSampleCoverage        1aee209c     <common>
+ 001a:12ef60a0       _gl3wUniform4iv            1aee20a0     <common>
+ 001a:12ef60a4       _gl3wPointParameterfv      1aee20a4     <common>
+ 001a:12ef60a8       _gl3wStencilMask           1aee20a8     <common>
+ 001a:12ef60ac       _gl3wClearStencil          1aee20ac     <common>
+ 001a:12ef60b0       _gl3wDisableVertexAttribArray 1aee20b0     <common>
+ 001a:12ef60b4       _gl3wVertexAttribIFormat   1aee20b4     <common>
+ 001a:12ef60b8       _gl3wUniformBlockBinding   1aee20b8     <common>
+ 001a:12ef60bc       _gl3wUniform1uiv           1aee20bc     <common>
+ 001a:12ef60c0       _gl3wVertexAttribI2uiv     1aee20c0     <common>
+ 001a:12ef60c4       _gl3wNormalP3ui            1aee20c4     <common>
+ 001a:12ef60c8       _gl3wDeleteNamedStringARB  1aee20c8     <common>
+ 001a:12ef60cc       _gl3wProgramUniformMatrix2x4dv 1aee20cc     <common>
+ 001a:12ef60d0       _gl3wShaderBinary          1aee20d0     <common>
+ 001a:12ef60d4       _gl3wIsSync                1aee20d4     <common>
+ 001a:12ef60d8       _gl3wProvokingVertex       1aee20d8     <common>
+ 001a:12ef60dc       _gl3wReadBuffer            1aee20dc     <common>
+ 001a:12ef60e0       _gl3wBlendFunc             1aee20e0     <common>
+ 001a:12ef60e4       _gl3wDeleteQueries         1aee20e4     <common>
+ 001a:12ef60e8       _gl3wUniform2uiv           1aee20e8     <common>
+ 001a:12ef60ec       _gl3wBufferSubData         1aee20ec     <common>
+ 001a:12ef60f0       _gl3wUniform4dv            1aee20f0     <common>
+ 001a:12ef60f4       _gl3wBindFramebuffer       1aee20f4     <common>
+ 001a:12ef60f8       _gl3wVertexAttrib4Nubv     1aee20f8     <common>
+ 001a:12ef60fc       _gl3wVertexAttribIPointer  1aee20fc     <common>
+ 001a:12ef6100       _gl3wGetTexParameteriv     1aee2100     <common>
+ 001a:12ef6104       _gl3wDebugMessageControlARB 1aee2104     <common>
+ 001a:12ef6108       _gl3wVertexAttribDivisor   1aee2108     <common>
+ 001a:12ef610c       _gl3wUniformMatrix3fv      1aee210c     <common>
+ 001a:12ef6110       _gl3wProgramUniformMatrix4dv 1aee2110     <common>
+ 001a:12ef6114       _gl3wDrawTransformFeedbackStreamInstanced 1aee2114     <common>
+ 001a:12ef6118       _gl3wTexImage2D            1aee2118     <common>
+ 001a:12ef611c       _gl3wVertexAttrib4sv       1aee211c     <common>
+ 001a:12ef6120       _gl3wVertexAttrib4dv       1aee2120     <common>
+ 001a:12ef6124       _gl3wDeleteShader          1aee2124     <common>
+ 001a:12ef6128       _gl3wGetSubroutineIndex    1aee2128     <common>
+ 001a:12ef612c       _gl3wDrawRangeElementsBaseVertex 1aee212c     <common>
+ 001a:12ef6130       _gl3wDrawRangeElements     1aee2130     <common>
+ 001a:12ef6134       _gl3wBindVertexBuffer      1aee2134     <common>
+ 001a:12ef6138       _gl3wColorP4ui             1aee2138     <common>
+ 001a:12ef613c       _gl3wGetQueryIndexediv     1aee213c     <common>
+ 001a:12ef6140       _gl3wIsRenderbuffer        1aee2140     <common>
+ 001a:12ef6144       _gl3wProgramUniform2fv     1aee2144     <common>
+ 001a:12ef6148       _gl3wGetProgramResourceiv  1aee2148     <common>
+ 001a:12ef614c       _gl3wFlushMappedBufferRange 1aee214c     <common>
+ 001a:12ef6150       _gl3wVertexArrayVertexBindingDivisorEXT 1aee2150     <common>
+ 001a:12ef6154       _gl3wVertexArrayVertexAttribLFormatEXT 1aee2154     <common>
+ 001a:12ef6158       _gl3wGetUniformuiv         1aee2158     <common>
+ 001a:12ef615c       _gl3wUniform4i             1aee215c     <common>
+ 001a:12ef6160       _gl3wGetVertexAttribfv     1aee2160     <common>
+ 001a:12ef6164       _gl3wTexCoordP2ui          1aee2164     <common>
+ 001a:12ef6168       _gl3wVertexAttribI1uiv     1aee2168     <common>
+ 001a:12ef616c       _gl3wGetTexParameterIiv    1aee216c     <common>
+ 001a:12ef6170       _gl3wProgramUniformMatrix2x4fv 1aee2170     <common>
+ 001a:12ef6174       _gl3wDrawArrays            1aee2174     <common>
+ 001a:12ef6178       _gl3wColorMaski            1aee2178     <common>
+ 001a:12ef617c       _gl3wSamplerParameterfv    1aee217c     <common>
+ 001a:12ef6180       _gl3wMultiDrawElementsIndirect 1aee2180     <common>
+ 001a:12ef6184       _gl3wVertexAttribI3i       1aee2184     <common>
+ 001a:12ef6188       _gl3wGetProgramBinary      1aee2188     <common>
+ 001a:12ef618c       _gl3wVertexP4ui            1aee218c     <common>
+ 001a:12ef6190       _gl3wFramebufferTexture    1aee2190     <common>
+ 001a:12ef6194       _gl3wGetVertexAttribLdv    1aee2194     <common>
+ 001a:12ef6198       _gl3wProgramUniform2d      1aee2198     <common>
+ 001a:12ef619c       _gl3wProgramUniformMatrix4x3dv 1aee219c     <common>
+ 001a:12ef61a0       _gl3wClearNamedBufferSubDataEXT 1aee21a0     <common>
+ 001a:12ef61a4       _gl3wUniformMatrix3x2dv    1aee21a4     <common>
+ 001a:12ef61a8       _gl3wVertexAttribP2uiv     1aee21a8     <common>
+ 001a:12ef61ac       _gl3wBeginConditionalRender 1aee21ac     <common>
+ 001a:12ef61b0       _gl3wUniformMatrix2dv      1aee21b0     <common>
+ 001a:12ef61b4       _gl3wGetFramebufferParameteriv 1aee21b4     <common>
+ 001a:12ef61b8       _gl3wVertexAttribPointer   1aee21b8     <common>
+ 001a:12ef61bc       _gl3wUniform4ui            1aee21bc     <common>
+ 001a:12ef61c0       _gl3wPointSize             1aee21c0     <common>
+ 001a:12ef61c4       _gl3wProgramUniform4ui     1aee21c4     <common>
+ 001a:12ef61c8       _gl3wUniformSubroutinesuiv 1aee21c8     <common>
+ 001a:12ef61cc       _gl3wVertexAttribP3uiv     1aee21cc     <common>
+ 001a:12ef61d0       _gl3wGetError              1aee21d0     <common>
+ 001a:12ef61d4       _gl3wInvalidateBufferSubData 1aee21d4     <common>
+ 001a:12ef61d8       _gl3wVertexAttribFormat    1aee21d8     <common>
+ 001a:12ef61dc       _gl3wClearNamedBufferDataEXT 1aee21dc     <common>
+ 001a:12ef61e0       _gl3wReleaseShaderCompiler 1aee21e0     <common>
+ 001a:12ef61e4       _gl3wDeleteSamplers        1aee21e4     <common>
+ 001a:12ef61e8       _gl3wGenFramebuffers       1aee21e8     <common>
+ 001a:12ef61ec       _gl3wUniform3f             1aee21ec     <common>
+ 001a:12ef61f0       _gl3wClearColor            1aee21f0     <common>
+ 001a:12ef61f4       _gl3wGetQueryObjectui64v   1aee21f4     <common>
+ 001a:12ef61f8       _gl3wVertexAttrib4Nuiv     1aee21f8     <common>
+ 001a:12ef61fc       _gl3wGetBufferPointerv     1aee21fc     <common>
+ 001a:12ef6200       _gl3wGetInternalformati64v 1aee2200     <common>
+ 001a:12ef6204       _gl3wTexStorage1D          1aee2204     <common>
+ 001a:12ef6208       _gl3wClearDepth            1aee2208     <common>
+ 001a:12ef620c       _gl3wTexParameterIiv       1aee220c     <common>
+ 001a:12ef6210       _gl3wUniformMatrix2x4fv    1aee2210     <common>
+ 001a:12ef6214       _gl3wVertexP2ui            1aee2214     <common>
+ 001a:12ef6218       _gl3wIsBuffer              1aee2218     <common>
+ 001a:12ef621c       _gl3wVertexP3ui            1aee221c     <common>
+ 001a:12ef6220       _gl3wGetShaderInfoLog      1aee2220     <common>
+ 001a:12ef6224       _gl3wGetBufferSubData      1aee2224     <common>
+ 001a:12ef6228       _gl3wBeginTransformFeedback 1aee2228     <common>
+ 001a:12ef622c       _gl3wDepthFunc             1aee222c     <common>
+ 001a:12ef6230       _gl3wVertexAttrib4Nub      1aee2230     <common>
+ 001a:12ef6234       _gl3wGetDoublei_v          1aee2234     <common>
+ 001a:12ef6238       _gl3wUniform1i             1aee2238     <common>
+ 001a:12ef623c       _gl3wVertexAttribP2ui      1aee223c     <common>
+ 001a:12ef6240       _gl3wGetTexParameterIuiv   1aee2240     <common>
+ 001a:12ef6244       _gl3wBindBufferRange       1aee2244     <common>
+ 001a:12ef6248       _gl3wVertexAttrib2fv       1aee2248     <common>
+ 001a:12ef624c       _gl3wClearBufferfv         1aee224c     <common>
+ 001a:12ef6250       _gl3wClearBufferSubData    1aee2250     <common>
+ 001a:12ef6254       _gl3wTexImage1D            1aee2254     <common>
+ 001a:12ef6258       _gl3wProgramUniform1ui     1aee2258     <common>
+ 001a:12ef625c       _gl3wBlitFramebuffer       1aee225c     <common>
+ 001a:12ef6260       _gl3wVertexAttribI4uiv     1aee2260     <common>
+ 001a:12ef6264       _gl3wCreateShaderProgramv  1aee2264     <common>
+ 001a:12ef6268       _gl3wUniform3ui            1aee2268     <common>
+ 001a:12ef626c       _gl3wUniform3i             1aee226c     <common>
+ 001a:12ef6270       _gl3wVertexAttribL3dv      1aee2270     <common>
+ 001a:12ef6274       _gl3wPolygonMode           1aee2274     <common>
+ 001a:12ef6278       _gl3wGetActiveUniformBlockiv 1aee2278     <common>
+ 001a:12ef627c       _gl3wGetObjectLabel        1aee227c     <common>
+ 001a:12ef6280       _gl3wTexParameteri         1aee2280     <common>
+ 001a:12ef6284       _gl3wGetProgramPipelineiv  1aee2284     <common>
+ 001a:12ef6288       _gl3wProgramUniform3i      1aee2288     <common>
+ 001a:12ef628c       _gl3wIsTransformFeedback   1aee228c     <common>
+ 001a:12ef6290       _gl3wBlendEquationiARB     1aee2290     <common>
+ 001a:12ef6294       _gl3wUniformMatrix4dv      1aee2294     <common>
+ 001a:12ef6298       _gl3wRenderbufferStorageMultisample 1aee2298     <common>
+ 001a:12ef629c       _gl3wVertexAttrib3sv       1aee229c     <common>
+ 001a:12ef62a0       _gl3wDrawArraysInstancedBaseInstance 1aee22a0     <common>
+ 001a:12ef62a4       _gl3wUniformMatrix3x2fv    1aee22a4     <common>
+ 001a:12ef62a8       _gl3wVertexAttrib3dv       1aee22a8     <common>
+ 001a:12ef62ac       _gl3wTexStorage3DMultisample 1aee22ac     <common>
+ 001a:12ef62b0       _gl3wUniform1ui            1aee22b0     <common>
+ 001a:12ef62b4       _gl3wDispatchComputeIndirect 1aee22b4     <common>
+ 001a:12ef62b8       _gl3wGetProgramStageiv     1aee22b8     <common>
+ 001a:12ef62bc       _gl3wUniformMatrix4fv      1aee22bc     <common>
+ 001a:12ef62c0       _gl3wLineWidth             1aee22c0     <common>
+ 001a:12ef62c4       _gl3wGetDebugMessageLog    1aee22c4     <common>
+ 001a:12ef62c8       _gl3wGetVertexAttribdv     1aee22c8     <common>
+ 001a:12ef62cc       _gl3wColorP4uiv            1aee22cc     <common>
+ 001a:12ef62d0       _gl3wGetTransformFeedbackVarying 1aee22d0     <common>
+ 001a:12ef62d4       _gl3wUniform3fv            1aee22d4     <common>
+ 001a:12ef62d8       _gl3wUniform2f             1aee22d8     <common>
+ 001a:12ef62dc       _gl3wPatchParameteri       1aee22dc     <common>
+ 001a:12ef62e0       _gl3wDrawTransformFeedbackInstanced 1aee22e0     <common>
+ 001a:12ef62e4       _gl3wUniformMatrix2x4dv    1aee22e4     <common>
+ 001a:12ef62e8       _gl3wPointParameteri       1aee22e8     <common>
+ 001a:12ef62ec       _gl3wGetProgramInterfaceiv 1aee22ec     <common>
+ 001a:12ef62f0       _gl3wGetVertexAttribiv     1aee22f0     <common>
+ 001a:12ef62f4       _gl3wSecondaryColorP3uiv   1aee22f4     <common>
+ 001a:12ef62f8       _gl3wGetTexParameterfv     1aee22f8     <common>
+ 001a:12ef62fc       _gl3wTexParameteriv        1aee22fc     <common>
+ 001a:12ef6300       _gl3wGetProgramResourceIndex 1aee2300     <common>
+ 001a:12ef6304       _gl3wProgramUniformMatrix2fv 1aee2304     <common>
+ 001a:12ef6308       _gl3wVertexAttribP1uiv     1aee2308     <common>
+ 001a:12ef630c       _gl3wTextureStorage3DEXT   1aee230c     <common>
+ 001a:12ef6310       _gl3wColorP3ui             1aee2310     <common>
+ 001a:12ef6314       _gl3wUniformMatrix3x4dv    1aee2314     <common>
+ 001a:12ef6318       _gl3wGetVertexAttribIuiv   1aee2318     <common>
+ 001a:12ef631c       _gl3wDeleteBuffers         1aee231c     <common>
+ 001a:12ef6320       _gl3wTexCoordP1ui          1aee2320     <common>
+ 001a:12ef6324       _gl3wVertexAttrib4d        1aee2324     <common>
+ 001a:12ef6328       _gl3wMapBufferRange        1aee2328     <common>
+ 001a:12ef632c       _gl3wVertexArrayVertexAttribIFormatEXT 1aee232c     <common>
+ 001a:12ef6330       _gl3wUniform2ui            1aee2330     <common>
+ 001a:12ef6334       _gl3wVertexAttrib2s        1aee2334     <common>
+ 001a:12ef6338       _gl3wMultiDrawElements     1aee2338     <common>
+ 001a:12ef633c       _gl3wVertexAttribI1i       1aee233c     <common>
+ 001a:12ef6340       _gl3wDetachShader          1aee2340     <common>
+ 001a:12ef6344       _gl3wProgramUniform3fv     1aee2344     <common>
+ 001a:12ef6348       _gl3wGetQueryObjecti64v    1aee2348     <common>
+ 001a:12ef634c       _gl3wGetnUniformfvARB      1aee234c     <common>
+ 001a:12ef6350       _gl3wQueryCounter          1aee2350     <common>
+ 001a:12ef6354       _gl3wMultiTexCoordP3uiv    1aee2354     <common>
+ 001a:12ef6358       _gl3wCompileShader         1aee2358     <common>
+ 001a:12ef635c       _gl3wVertexAttrib1f        1aee235c     <common>
+ 001a:12ef6360       _gl3wVertexAttrib4s        1aee2360     <common>
+ 001a:12ef6364       _gl3wDebugMessageControl   1aee2364     <common>
+ 001a:12ef6368       _gl3wCreateSyncFromCLeventARB 1aee2368     <common>
+ 001a:12ef636c       _gl3wVertexAttribL3d       1aee236c     <common>
+ 001a:12ef6370       _gl3wMultiDrawElementsBaseVertex 1aee2370     <common>
+ 001a:12ef6374       _gl3wClientWaitSync        1aee2374     <common>
+ 001a:12ef6378       _gl3wClearBufferfi         1aee2378     <common>
+ 001a:12ef637c       _gl3wVertexAttribI1ui      1aee237c     <common>
+ 001a:12ef6380       _gl3wCheckFramebufferStatus 1aee2380     <common>
+ 001a:12ef6384       _gl3wGetTexLevelParameteriv 1aee2384     <common>
+ 001a:12ef6388       _gl3wGetBooleanv           1aee2388     <common>
+ 001a:12ef638c       _gl3wDispatchCompute       1aee238c     <common>
+ 001a:12ef6390       _gl3wGetBufferParameteriv  1aee2390     <common>
+ 001a:12ef6394       _gl3wProgramUniformMatrix2x3dv 1aee2394     <common>
+ 001a:12ef6398       _gl3wSampleMaski           1aee2398     <common>
+ 001a:12ef639c       _gl3wDebugMessageInsert    1aee239c     <common>
+ 001a:12ef63a0       _gl3wScissorIndexedv       1aee23a0     <common>
+ 001a:12ef63a4       _gl3wGetMultisamplefv      1aee23a4     <common>
+ 001a:12ef63a8       _gl3wCopyTexSubImage1D     1aee23a8     <common>
+ 001a:12ef63ac       _gl3wDeleteProgramPipelines 1aee23ac     <common>
+ 001a:12ef63b0       _gl3wFramebufferTexture3D  1aee23b0     <common>
+ 001a:12ef63b4       _gl3wHint                  1aee23b4     <common>
+ 001a:12ef63b8       _gl3wVertexAttribI1iv      1aee23b8     <common>
+ 001a:12ef63bc       _gl3wGetDoublev            1aee23bc     <common>
+ 001a:12ef63c0       _gl3wGetnUniformuivARB     1aee23c0     <common>
+ 001a:12ef63c4       _gl3wGetQueryiv            1aee23c4     <common>
+ 001a:12ef63c8       _gl3wColorP3uiv            1aee23c8     <common>
+ 001a:12ef63cc       _gl3wBindFragDataLocationIndexed 1aee23cc     <common>
+ 001a:12ef63d0       _gl3wMultiTexCoordP1uiv    1aee23d0     <common>
+ 001a:12ef63d4       _gl3wGetnCompressedTexImageARB 1aee23d4     <common>
+ 001a:12ef63d8       _gl3wDrawArraysIndirect    1aee23d8     <common>
+ 001a:12ef63dc       _gl3wGetSamplerParameterfv 1aee23dc     <common>
+ 001a:12ef63e0       _gl3wGetActiveUniformsiv   1aee23e0     <common>
+ 001a:12ef63e4       _gl3wUniform4fv            1aee23e4     <common>
+ 001a:12ef63e8       _gl3wProgramUniform2i      1aee23e8     <common>
+ 001a:12ef63ec       _gl3wClearDepthf           1aee23ec     <common>
+ 001a:12ef63f0       _gl3wProgramUniformMatrix3x2fv 1aee23f0     <common>
+ 001a:12ef63f4       _gl3wTexCoordP3uiv         1aee23f4     <common>
+ 001a:12ef63f8       _gl3wTexBufferRange        1aee23f8     <common>
+ 001a:12ef63fc       _gl3wProgramUniform3iv     1aee23fc     <common>
+ 001a:12ef6400       _gl3wUniform1d             1aee2400     <common>
+ 001a:12ef6404       _gl3wPixelStoref           1aee2404     <common>
+ 001a:12ef6408       _gl3wBlendEquation         1aee2408     <common>
+ 001a:12ef640c       _gl3wGetDebugMessageLogARB 1aee240c     <common>
+ 001a:12ef6410       _gl3wGetBooleani_v         1aee2410     <common>
+ 001a:12ef6414       _gl3wCompressedTexSubImage3D 1aee2414     <common>
+ 001a:12ef6418       _gl3wGetnUniformivARB      1aee2418     <common>
+ 001a:12ef641c       _gl3wDrawElementsInstancedBaseVertex 1aee241c     <common>
+ 001a:12ef6420       _gl3wGetSynciv             1aee2420     <common>
+ 001a:12ef6424       _gl3wCopyTexImage2D        1aee2424     <common>
+ 001a:12ef6428       _gl3wGetActiveSubroutineUniformName 1aee2428     <common>
+ 001a:12ef642c       _gl3wGetGraphicsResetStatusARB 1aee242c     <common>
+ 001a:12ef6430       _gl3wDeleteTextures        1aee2430     <common>
+ 001a:12ef6434       _gl3wProgramUniform1iv     1aee2434     <common>
+ 001a:12ef6438       _gl3wBlendFuncSeparateiARB 1aee2438     <common>
+ 001a:12ef643c       _gl3wBlendFuncSeparatei    1aee243c     <common>
+ 001a:12ef6440       _gl3wProgramUniform1f      1aee2440     <common>
+ 001a:12ef6444       _gl3wVertexAttribL4d       1aee2444     <common>
+ 001a:12ef6448       _gl3wReadPixels            1aee2448     <common>
+ 001a:12ef644c       _gl3wGetIntegeri_v         1aee244c     <common>
+ 001a:12ef6450       _gl3wProgramUniformMatrix4x2dv 1aee2450     <common>
+ 001a:12ef6454       _gl3wGetSamplerParameteriv 1aee2454     <common>
+ 001a:12ef6458       _gl3wDeleteFramebuffers    1aee2458     <common>
+ 001a:12ef645c       _gl3wAttachShader          1aee245c     <common>
+ 001a:12ef6460       _gl3wWaitSync              1aee2460     <common>
+ 001a:12ef6464       _gl3wInvalidateSubFramebuffer 1aee2464     <common>
+ 001a:12ef6468       _gl3wVertexAttribI3uiv     1aee2468     <common>
+ 001a:12ef646c       _gl3wVertexAttribI3iv      1aee246c     <common>
+ 001a:12ef6470       _gl3wUseProgramStages      1aee2470     <common>
+ 001a:12ef6474       _gl3wUniform4f             1aee2474     <common>
+ 001a:12ef6478       _gl3wStencilOpSeparate     1aee2478     <common>
+ 001a:12ef647c       _gl3wCopyTexImage1D        1aee247c     <common>
+ 001a:12ef6480       _gl3wProgramUniformMatrix3fv 1aee2480     <common>
+ 001a:12ef6484       _gl3wProgramUniform2ui     1aee2484     <common>
+ 001a:12ef6488       _gl3wProgramUniform2iv     1aee2488     <common>
+ 001a:12ef648c       _gl3wNormalP3uiv           1aee248c     <common>
+ 001a:12ef6490       _gl3wBlendEquationSeparateiARB 1aee2490     <common>
+ 001a:12ef6494       _gl3wPrimitiveRestartIndex 1aee2494     <common>
+ 001a:12ef6498       _gl3wTexImage3D            1aee2498     <common>
+ 001a:12ef649c       _gl3wProgramUniform4f      1aee249c     <common>
+ 001a:12ef64a0       _gl3wVertexAttrib4iv       1aee24a0     <common>
+ 001a:12ef64a4       _gl3wCompressedTexImage1D  1aee24a4     <common>
+ 001a:12ef64a8       _gl3wProgramUniform3uiv    1aee24a8     <common>
+ 001a:12ef64ac       _gl3wClearBufferiv         1aee24ac     <common>
+ 001a:12ef64b0       _gl3wGetShaderiv           1aee24b0     <common>
+ 001a:12ef64b4       _gl3wTextureStorage3DMultisampleEXT 1aee24b4     <common>
+ 001a:12ef64b8       _gl3wVertexArrayVertexAttribFormatEXT 1aee24b8     <common>
+ 001a:12ef64bc       _gl3wUniformMatrix2x3fv    1aee24bc     <common>
+ 001a:12ef64c0       _gl3wStencilOp             1aee24c0     <common>
+ 001a:12ef64c4       _gl3wMultiTexCoordP2uiv    1aee24c4     <common>
+ 001a:12ef64c8       _gl3wTexImage3DMultisample 1aee24c8     <common>
+ 001a:12ef64cc       _gl3wDrawElementsBaseVertex 1aee24cc     <common>
+ 001a:12ef64d0       _gl3wVertexAttrib3fv       1aee24d0     <common>
+ 001a:12ef64d4       _gl3wCopyTexSubImage3D     1aee24d4     <common>
+ 001a:12ef64d8       _gl3wProgramParameteri     1aee24d8     <common>
+ 001a:12ef64dc       _gl3wTexStorage3D          1aee24dc     <common>
+ 001a:12ef64e0       _gl3wVertexAttrib2dv       1aee24e0     <common>
+ 001a:12ef64e4       _gl3wVertexAttribI2iv      1aee24e4     <common>
+ 001a:12ef64e8       _gl3wViewportIndexedfv     1aee24e8     <common>
+ 001a:12ef64ec       _gl3wGenSamplers           1aee24ec     <common>
+ 001a:12ef64f0       _gl3wClearBufferuiv        1aee24f0     <common>
+ 001a:12ef64f4       _gl3wVertexP3uiv           1aee24f4     <common>
+ 001a:12ef64f8       _gl3wTexCoordP1uiv         1aee24f8     <common>
+ 001a:12ef64fc       _gl3wProgramUniformMatrix3x2dv 1aee24fc     <common>
+ 001a:12ef6500       _gl3wVertexAttrib4fv       1aee2500     <common>
+ 001a:12ef6504       _gl3wMultiTexCoordP4uiv    1aee2504     <common>
+ 001a:12ef6508       _gl3wBlendFuncSeparate     1aee2508     <common>
+ 001a:12ef650c       _gl3wVertexAttrib4Nusv     1aee250c     <common>
+ 001a:12ef6510       _gl3wFlush                 1aee2510     <common>
+ 001a:12ef6514       _gl3wVertexAttrib2d        1aee2514     <common>
+ 001a:12ef6518       _gl3wUniform1iv            1aee2518     <common>
+ 001a:12ef651c       _gl3wVertexAttribI4ubv     1aee251c     <common>
+ 001a:12ef6520       _gl3wDisablei              1aee2520     <common>
+ 001a:12ef6524       _gl3wGenBuffers            1aee2524     <common>
+ 001a:12ef6528       _gl3wProgramUniform2f      1aee2528     <common>
+ 001a:12ef652c       _gl3wProgramBinary         1aee252c     <common>
+ 001a:12ef6530       _gl3wDrawElementsIndirect  1aee2530     <common>
+ 001a:12ef6534       _gl3wShaderSource          1aee2534     <common>
+ 001a:12ef6538       _gl3wUniform3uiv           1aee2538     <common>
+ 001a:12ef653c       _gl3wTexStorage2DMultisample 1aee253c     <common>
+ 001a:12ef6540       _gl3wGetTexImage           1aee2540     <common>
+ 001a:12ef6544       _gl3wProgramUniformMatrix4fv 1aee2544     <common>
+ 001a:12ef6548       _gl3wGetActiveSubroutineName 1aee2548     <common>
+ 001a:12ef654c       _gl3wTexCoordP4uiv         1aee254c     <common>
+ 001a:12ef6550       _gl3wFramebufferTexture2D  1aee2550     <common>
+ 001a:12ef6554       _gl3wProgramUniform3d      1aee2554     <common>
+ 001a:12ef6558       _gl3wDeleteVertexArrays    1aee2558     <common>
+ 001a:12ef655c       _gl3wViewportArrayv        1aee255c     <common>
+ 001a:12ef6560       _gl3wUniform1dv            1aee2560     <common>
+ 001a:12ef6564       _gl3wDrawBuffer            1aee2564     <common>
+ 001a:12ef6568       _gl3wPatchParameterfv      1aee2568     <common>
+ 001a:12ef656c       _gl3wGetShaderPrecisionFormat 1aee256c     <common>
+ 001a:12ef6570       _gl3wGetQueryObjectuiv     1aee2570     <common>
+ 001a:12ef6574       _gl3wGetActiveUniformName  1aee2574     <common>
+ 001a:12ef6578       _gl3wDrawArraysInstanced   1aee2578     <common>
+ 001a:12ef657c       _gl3wUniformMatrix3dv      1aee257c     <common>
+ 001a:12ef6580       _gl3wDebugMessageInsertARB 1aee2580     <common>
+ 001a:12ef6584       _gl3wTexSubImage2D         1aee2584     <common>
+ 001a:12ef6588       _gl3wVertexAttrib3f        1aee2588     <common>
+ 001a:12ef658c       _gl3wPolygonOffset         1aee258c     <common>
+ 001a:12ef6590       _gl3wTextureStorage2DMultisampleEXT 1aee2590     <common>
+ 001a:12ef6594       _gl3wObjectPtrLabel        1aee2594     <common>
+ 001a:12ef6598       _gl3wBlendFunciARB         1aee2598     <common>
+ 001a:12ef659c       _gl3wInvalidateBufferData  1aee259c     <common>
+ 001a:12ef65a0       _gl3wDepthRangef           1aee25a0     <common>
+ 001a:12ef65a4       _gl3wMultiTexCoordP4ui     1aee25a4     <common>
+ 001a:12ef65a8       _gl3wIsFramebuffer         1aee25a8     <common>
+ 001a:12ef65ac       _gl3wViewportIndexedf      1aee25ac     <common>
+ 001a:12ef65b0       _gl3wEndTransformFeedback  1aee25b0     <common>
+ 001a:12ef65b4       _gl3wStencilMaskSeparate   1aee25b4     <common>
+ 001a:12ef65b8       _gl3wMemoryBarrier         1aee25b8     <common>
+ 001a:12ef65bc       _gl3wObjectLabel           1aee25bc     <common>
+ 001a:12ef65c0       _gl3wIsShader              1aee25c0     <common>
+ 001a:12ef65c4       _gl3wVertexAttribP1ui      1aee25c4     <common>
+ 001a:12ef65c8       _gl3wTextureStorage1DEXT   1aee25c8     <common>
+ 001a:12ef65cc       _gl3wVertexAttrib4Nbv      1aee25cc     <common>
+ 001a:12ef65d0       _gl3wGetProgramiv          1aee25d0     <common>
+ 001a:12ef65d4       _gl3wGetSubroutineUniformLocation 1aee25d4     <common>
+ 001a:12ef65d8       _gl3wUniform1f             1aee25d8     <common>
+ 001a:12ef65dc       _gl3wGetnUniformdvARB      1aee25dc     <common>
+ 001a:12ef65e0       _gl3wGetCompressedTexImage 1aee25e0     <common>
+ 001a:12ef65e4       _gl3wTextureView           1aee25e4     <common>
+ 001a:12ef65e8       _gl3wGetNamedStringivARB   1aee25e8     <common>
+ 001a:12ef65ec       _gl3wGetProgramInfoLog     1aee25ec     <common>
+ 001a:12ef65f0       _gl3wBlendEquationSeparatei 1aee25f0     <common>
+ 001a:12ef65f4       _gl3wColorMask             1aee25f4     <common>
+ 001a:12ef65f8       _gl3wCompressedTexImage3D  1aee25f8     <common>
+ 001a:12ef65fc       _gl3wProgramUniform4dv     1aee25fc     <common>
+ 001a:12ef6600       _gl3wGetBufferParameteri64v 1aee2600     <common>
+ 001a:12ef6604       _gl3wGenTransformFeedbacks 1aee2604     <common>
+ 001a:12ef6608       _gl3wPixelStorei           1aee2608     <common>
+ 001a:12ef660c       _gl3wTexCoordP2uiv         1aee260c     <common>
+ 001a:12ef6610       _gl3wVertexAttrib3s        1aee2610     <common>
+ 001a:12ef6614       _gl3wVertexAttrib1dv       1aee2614     <common>
+ 001a:12ef6618       _gl3wCreateShader          1aee2618     <common>
+ 001a:12ef661c       _gl3wDeleteProgram         1aee261c     <common>
+ 001a:12ef6620       _gl3wVertexAttribLFormat   1aee2620     <common>
+ 001a:12ef6624       _gl3wIsProgram             1aee2624     <common>
+ 001a:12ef6628       _gl3wBlendColor            1aee2628     <common>
+ 001a:12ef662c       _gl3wGetFloati_v           1aee262c     <common>
+ 001a:12ef6630       _gl3wFramebufferTextureLayer 1aee2630     <common>
+ 001a:12ef6634       _gl3wCopyImageSubData      1aee2634     <common>
+ 001a:12ef6638       _gl3wVertexAttrib4uiv      1aee2638     <common>
+ 001a:12ef663c       _gl3wScissorIndexed        1aee263c     <common>
+ 001a:12ef6640       _gl3wGetActiveSubroutineUniformiv 1aee2640     <common>
+ 001a:12ef6644       _gl3wVertexAttrib4ubv      1aee2644     <common>
+ 001a:12ef6648       _gl3wValidateProgram       1aee2648     <common>
+ 001a:12ef664c       _gl3wVertexAttribI2ui      1aee264c     <common>
+ 001a:12ef6650       _gl3wRenderbufferStorage   1aee2650     <common>
+ 001a:12ef6654       _gl3wUseProgram            1aee2654     <common>
+ 001a:12ef6658       _gl3wUniformMatrix2x3dv    1aee2658     <common>
+ 001a:12ef665c       _gl3wVertexAttribP4ui      1aee265c     <common>
+ 001a:12ef6660       _gl3wSamplerParameteriv    1aee2660     <common>
+ 001a:12ef6664       _gl3wIsSampler             1aee2664     <common>
+ 001a:12ef6668       _gl3wUniform2i             1aee2668     <common>
+ 001a:12ef666c       _gl3wProgramUniform4iv     1aee266c     <common>
+ 001a:12ef6670       _gl3wVertexAttribL2dv      1aee2670     <common>
+ 001a:12ef6674       _gl3wProgramUniform1fv     1aee2674     <common>
+ 001a:12ef6678       _gl3wTexSubImage1D         1aee2678     <common>
+ 001a:12ef667c       _gl3wGetObjectPtrLabel     1aee267c     <common>
+ 001a:12ef6680       _gl3wSecondaryColorP3ui    1aee2680     <common>
+ 001a:12ef6684       _gl3wGetInteger64i_v       1aee2684     <common>
+ 001a:12ef6688       _gl3wBindBufferBase        1aee2688     <common>
+ 001a:12ef668c       _gl3wCompileShaderIncludeARB 1aee268c     <common>
+ 001a:12ef6690       _gl3wCompressedTexSubImage2D 1aee2690     <common>
+ 001a:12ef6694       _gl3wTexCoordP3ui          1aee2694     <common>
+ 001a:12ef6698       _gl3wVertexP4uiv           1aee2698     <common>
+ 001a:12ef669c       _gl3wGetProgramResourceName 1aee269c     <common>
+ 001a:12ef66a0       _gl3wProgramUniformMatrix4x2fv 1aee26a0     <common>
+ 001a:12ef66a4       _gl3wGetIntegerv           1aee26a4     <common>
+ 001a:12ef66a8       _gl3wGenerateMipmap        1aee26a8     <common>
+ 001a:12ef66ac       _gl3wInvalidateTexSubImage 1aee26ac     <common>
+ 001a:12ef66b0       _gl3wFramebufferParameteri 1aee26b0     <common>
+ 001a:12ef66b4       _gl3wGenProgramPipelines   1aee26b4     <common>
+ 001a:12ef66b8       _gl3wResumeTransformFeedback 1aee26b8     <common>
+ 001a:12ef66bc       _gl3wUniform2fv            1aee26bc     <common>
+ 001a:12ef66c0       _gl3wVertexAttribL1d       1aee26c0     <common>
+ 001a:12ef66c4       _gl3wSamplerParameterf     1aee26c4     <common>
+ 001a:12ef66c8       _gl3wProgramUniform4i      1aee26c8     <common>
+ 001a:12ef66cc       _gl3wVertexAttribI4ui      1aee26cc     <common>
+ 001a:12ef66d0       _gl3wStencilFunc           1aee26d0     <common>
+ 001a:12ef66d4       _gl3wTexStorage2D          1aee26d4     <common>
+ 001a:12ef66d8       _gl3wGetPointerv           1aee26d8     <common>
+ 001a:12ef66dc       _gl3wFrontFace             1aee26dc     <common>
+ 001a:12ef66e0       _gl3wBindAttribLocation    1aee26e0     <common>
+ 001a:12ef66e4       _gl3wVertexAttrib1fv       1aee26e4     <common>
+ 001a:12ef66e8       _gl3wCompressedTexSubImage1D 1aee26e8     <common>
+ 001a:12ef66ec       _gl3wUniform2dv            1aee26ec     <common>
+ 001a:12ef66f0       _gl3wGenVertexArrays       1aee26f0     <common>
+ 001a:12ef66f4       _gl3wInvalidateTexImage    1aee26f4     <common>
+ 001a:12ef66f8       _gl3wVertexAttribP4uiv     1aee26f8     <common>
+ 001a:12ef66fc       _gl3wClampColor            1aee26fc     <common>
+ 001a:12ef6700       _gl3wGetActiveUniform      1aee2700     <common>
+ 001a:12ef6704       _gl3wBlendEquationi        1aee2704     <common>
+ 001a:12ef6708       _gl3wBindRenderbuffer      1aee2708     <common>
+ 001a:12ef670c       _gl3wBindTransformFeedback 1aee270c     <common>
+ 001a:12ef6710       _gl3wUniformMatrix4x2dv    1aee2710     <common>
+ 001a:12ef6714       _gl3wDrawTransformFeedbackStream 1aee2714     <common>
+ 001a:12ef6718       _gl3wPopDebugGroup         1aee2718     <common>
+ 001a:12ef671c       _gl3wVertexAttribP3ui      1aee271c     <common>
+ 001a:12ef6720       _gl3wMinSampleShadingARB   1aee2720     <common>
+ 001a:12ef6724       _gl3wGetStringi            1aee2724     <common>
+ 001a:12ef6728       _gl3wDrawTransformFeedback 1aee2728     <common>
+ 001a:12ef672c       _gl3wEndQuery              1aee272c     <common>
+ 001a:12ef6730       _gl3wGetFramebufferAttachmentParameteriv 1aee2730     <common>
+ 001a:12ef6734       _gl3wDrawBuffers           1aee2734     <common>
+ 001a:12ef6738       _gl3wUniform3d             1aee2738     <common>
+ 001a:12ef673c       _gl3wDeleteTransformFeedbacks 1aee273c     <common>
+ 001a:12ef6740       _gl3wVertexAttrib1sv       1aee2740     <common>
+ 001a:12ef6744       _gl3wTexCoordP4ui          1aee2744     <common>
+ 001a:12ef6748       _gl3wDrawElementsInstancedBaseVertexBaseInstance 1aee2748     <common>
+ 001a:12ef674c       _gl3wBlendFunci            1aee274c     <common>
+ 001a:12ef6750       _gl3wPushDebugGroup        1aee2750     <common>
+ 001a:12ef6754       _gl3wDepthRange            1aee2754     <common>
+ 001a:12ef6758       _gl3wTexParameterIuiv      1aee2758     <common>
+ 001a:12ef675c       _gl3wViewport              1aee275c     <common>
+ 001a:12ef6760       _gl3wDebugMessageCallback  1aee2760     <common>
+ 001a:12ef6764       _gl3wVertexAttrib4Niv      1aee2764     <common>
+ 001a:12ef6768       _gl3wGetInteger64v         1aee2768     <common>
+ 001a:12ef676c       _gl3wUniform4d             1aee276c     <common>
+ 001a:12ef6770       _gl3wVertexP2uiv           1aee2770     <common>
+ 001a:12ef6774       _gl3wVertexAttribI4sv      1aee2774     <common>
+ 001a:12ef6778       _gl3wMultiTexCoordP2ui     1aee2778     <common>
+ 001a:12ef677c       _gl3wGetActiveUniformBlockName 1aee277c     <common>
+ 001a:12ef6780       _gl3wLogicOp               1aee2780     <common>
+ 001a:12ef6784       _gl3wVertexAttrib3d        1aee2784     <common>
+ 001a:12ef6788       _gl3wGetUniformfv          1aee2788     <common>
+ 001a:12ef678c       _gl3wNamedStringARB        1aee278c     <common>
+ 001a:12ef6790       _gl3wDrawElementsInstancedBaseInstance 1aee2790     <common>
+ 001a:12ef6794       _gl3wIsNamedStringARB      1aee2794     <common>
+ 001a:12ef6798       _gl3wUniformMatrix2fv      1aee2798     <common>
+ 001a:12ef679c       _gl3wDrawElementsInstanced 1aee279c     <common>
+ 001a:12ef67a0       _gl3wBlendEquationSeparate 1aee27a0     <common>
+ 001a:12ef67a4       _gl3wTexSubImage3D         1aee27a4     <common>
+ 001a:12ef67a8       _gl3wDeleteRenderbuffers   1aee27a8     <common>
+ 001a:12ef67ac       _gl3wGetFragDataLocation   1aee27ac     <common>
+ 001a:12ef67b0       _gl3wEnable                1aee27b0     <common>
+ 001a:12ef67b4       _gl3wGetUniformIndices     1aee27b4     <common>
+ 001a:12ef67b8       _gl3wDepthMask             1aee27b8     <common>
+ 001a:12ef67bc       _gl3wBindImageTexture      1aee27bc     <common>
+ 001a:12ef67c0       _gl3wUniform2iv            1aee27c0     <common>
+ 001a:12ef67c4       _gl3wGetNamedFramebufferParameterivEXT 1aee27c4     <common>
+ 001a:12ef67c8       _gl3wTexImage2DMultisample 1aee27c8     <common>
+ 001a:12ef67cc       _gl3wTextureStorage2DEXT   1aee27cc     <common>
+ 001a:12ef67d0       _gl3wProgramUniform4uiv    1aee27d0     <common>
+ 001a:12ef67d4       _gl3wFenceSync             1aee27d4     <common>
+ 001a:12ef67d8       _gl3wDebugMessageCallbackARB 1aee27d8     <common>
+ 001a:12ef67dc       _gl3wUniformMatrix3x4fv    1aee27dc     <common>
+ 001a:12ef67e0       _gl3wVertexAttrib4bv       1aee27e0     <common>
+ 001a:12ef67e4       _gl3wBindTexture           1aee27e4     <common>
+ 001a:12ef67e8       _gl3wUniform4uiv           1aee27e8     <common>
+ 001a:12ef67ec       _gl3wInvalidateFramebuffer 1aee27ec     <common>
+ 001a:12ef67f0       _gl3wIsTexture             1aee27f0     <common>
+ 001a:12ef67f4       _gl3wFramebufferTexture1D  1aee27f4     <common>
+ 001a:12ef67f8       _gl3wGetString             1aee27f8     <common>
+ 001a:12ef67fc       _gl3wMultiTexCoordP1ui     1aee27fc     <common>
+ 001a:12ef6800       _gl3wProgramUniformMatrix4x3fv 1aee2800     <common>
+ 001a:12ef6804       _gl3wGetVertexAttribPointerv 1aee2804     <common>
+ 001a:12ef6808       _gl3wVertexAttribI2i       1aee2808     <common>
+ 001a:12ef680c       _gl3wGetProgramResourceLocation 1aee280c     <common>
+ 001a:12ef6810       _gl3wSamplerParameterIuiv  1aee2810     <common>
+ 001a:12ef6814       _gl3wCopyBufferSubData     1aee2814     <common>
+ 001a:12ef6818       _gl3wDepthRangeIndexed     1aee2818     <common>
+ 001a:12ef681c       _gl3wStencilFuncSeparate   1aee281c     <common>
+ 001a:12ef6820       _gl3wGetUniformSubroutineuiv 1aee2820     <common>
+ 001a:12ef6824       _gl3wGetRenderbufferParameteriv 1aee2824     <common>
+ 001a:12ef6828       _gl3wProgramUniformMatrix3x4fv 1aee2828     <common>
+ 001a:12ef682c       _gl3wSamplerParameteri     1aee282c     <common>
+ 001a:12ef6830       _gl3wIsEnabledi            1aee2830     <common>
+ 001a:12ef6834       _gl3wMultiDrawArrays       1aee2834     <common>
+ 001a:12ef6838       _gl3wGetShaderSource       1aee2838     <common>
+ 001a:12ef683c       _gl3wVertexAttribI4bv      1aee283c     <common>
+ 001a:12ef6840       _gl3wBindProgramPipeline   1aee2840     <common>
+ 001a:12ef6844       _gl3wCompressedTexImage2D  1aee2844     <common>
+ 001a:12ef6848       _gl3wUniformMatrix4x3dv    1aee2848     <common>
+ 001a:12ef684c       _gl3wIsEnabled             1aee284c     <common>
+ 001a:12ef6850       _gl3wMapBuffer             1aee2850     <common>
+ 001a:12ef6854       _gl3wVertexBindingDivisor  1aee2854     <common>
+ 001a:12ef6858       _gl3wProgramUniform1uiv    1aee2858     <common>
+ 001a:12ef685c       _gl3wEnablei               1aee285c     <common>
+ 001a:12ef6860       _gl3wVertexAttribL2d       1aee2860     <common>
+ 001a:12ef6864       _gl3wVertexAttribI4iv      1aee2864     <common>
+ 001a:12ef6868       _gl3wFinish                1aee2868     <common>
+ 001a:12ef686c       _gl3wGetUniformdv          1aee286c     <common>
+ 001a:12ef6870       _gl3wVertexAttribI4i       1aee2870     <common>
+ 001a:12ef6874       _gl3wGetUniformLocation    1aee2874     <common>
+ 001a:12ef6878       _gl3wGetNamedStringARB     1aee2878     <common>
+ 001a:12ef687c       _gl3wGetActiveAttrib       1aee287c     <common>
+ 001a:12ef6880       _gl3wGetFragDataIndex      1aee2880     <common>
+ 001a:12ef6884       _gl3wMinSampleShading      1aee2884     <common>
+ 001a:12ef6888       _gl3wEnableVertexAttribArray 1aee2888     <common>
+ 001a:12ef688c       _gl3wGetAttribLocation     1aee288c     <common>
+ 001a:12ef6890       _gl3wFramebufferRenderbuffer 1aee2890     <common>
+ 001a:12ef6894       _gl3wLinkProgram           1aee2894     <common>
+ 001a:12ef6898       _gl3wSamplerParameterIiv   1aee2898     <common>
+ 001a:12ef689c       _gl3wVertexAttrib4usv      1aee289c     <common>
+ 001a:12ef68a0       _gl3wGetAttachedShaders    1aee28a0     <common>
+ 001a:12ef68a4       _gl3wDrawElements          1aee28a4     <common>
+ 001a:12ef68a8       _gl3wClearBufferData       1aee28a8     <common>
+ 001a:12ef68ac       _gl3wVertexAttribLPointer  1aee28ac     <common>
+ 001a:12ef68b0       _gl3wProgramUniformMatrix2dv 1aee28b0     <common>
+ 001a:12ef68b4       _gl3wGetVertexAttribIiv    1aee28b4     <common>
+ 001a:12ef68b8       _gl3wGetQueryObjectiv      1aee28b8     <common>
+ 001a:12ef68bc       _gl3wUniform2d             1aee28bc     <common>
+ 001a:12ef68c0       _gl3wBeginQuery            1aee28c0     <common>
+ 001a:12ef68c4       _gl3wCreateProgram         1aee28c4     <common>
+ 001a:12ef68c8       _gl3wMultiTexCoordP3ui     1aee28c8     <common>
+ 001a:12ef68cc       _gl3wEndConditionalRender  1aee28cc     <common>
+ 001a:12ef68d0       _gl3wUnmapBuffer           1aee28d0     <common>
+ 001a:12ef68d4       _gl3wReadnPixelsARB        1aee28d4     <common>
+ 001a:12ef68d8       _gl3wGetUniformiv          1aee28d8     <common>
+ 001a:12ef68dc       _gl3wShaderStorageBlockBinding 1aee28dc     <common>
+ 001a:12ef68e0       _gl3wMultiDrawArraysIndirect 1aee28e0     <common>
+ 001a:12ef68e4       _gl3wIsProgramPipeline     1aee28e4     <common>
+ 001a:12ef68e8       _gl3wGetUniformBlockIndex  1aee28e8     <common>
+ 001a:12ef68ec       _gl3wCullFace              1aee28ec     <common>
+ 001a:12ef68f0       _gl3wGetProgramPipelineInfoLog 1aee28f0     <common>
+ 001a:12ef68f4       _gl3wProgramUniform1i      1aee28f4     <common>
+ 001a:12ef68f8       _gl3wProgramUniform3f      1aee28f8     <common>
+ 001a:12ef68fc       _gl3wGetSamplerParameterIiv 1aee28fc     <common>
+ 001a:12ef6900       _gl3wUniform3dv            1aee2900     <common>
+ 001a:12ef6904       _gl3wDeleteSync            1aee2904     <common>
+ 001a:12ef6908       _gl3wVertexAttrib4Nsv      1aee2908     <common>
+ 001a:12ef690c       _gl3wBufferData            1aee290c     <common>
+ 001a:12ef6910       _gl3wIsQuery               1aee2910     <common>
+ 001a:12ef6914       _gl3wProgramUniform1dv     1aee2914     <common>
+ 001a:12ef6918       _gl3wEndQueryIndexed       1aee2918     <common>
+ 001a:12ef691c       _gl3wUniformMatrix4x3fv    1aee291c     <common>
+ 001a:12ef6920       _gl3wVertexAttrib2f        1aee2920     <common>
+ 001a:12ef6924       _gl3wUniform1fv            1aee2924     <common>
+ 001a:12ef6928       _gl3wDepthRangeArrayv      1aee2928     <common>
+ 001a:12ef692c       _gl3wUniformMatrix4x2fv    1aee292c     <common>
+ 001a:12ef6930       _gl3wVertexAttrib4f        1aee2930     <common>
+ 001a:12ef6934       _gl3wGetInternalformativ   1aee2934     <common>
+ 001a:12ef6938       _gl3wScissor               1aee2938     <common>
+ 001a:12ef693c       _gl3wPointParameteriv      1aee293c     <common>
+ 001a:12ef6940       _gl3wProgramUniformMatrix3dv 1aee2940     <common>
+ 001a:12ef6944       _gl3wTexParameterf         1aee2944     <common>
+ 001a:12ef6948       _gl3wBindVertexArray       1aee2948     <common>
+ 001a:12ef694c       _gl3wNamedFramebufferParameteriEXT 1aee294c     <common>
+ 001a:12ef6950       _gl3wBindSampler           1aee2950     <common>
+ 001a:12ef6954       _gl3wGenRenderbuffers      1aee2954     <common>
+ 001a:12ef6958       _gl3wActiveTexture         1aee2958     <common>
+ 001a:12ef695c       _gl3wVertexAttribI4usv     1aee295c     <common>
+ 001a:12ef6960       _gl3wScissorArrayv         1aee2960     <common>
+ 001a:12ef6964       _gl3wDisable               1aee2964     <common>
+ 001a:12ef6968       _gl3wUniform3iv            1aee2968     <common>
+ 001a:12ef696c       _gl3wVertexAttribL4dv      1aee296c     <common>
+ 001a:12ef6970       _gl3wPointParameterf       1aee2970     <common>
+ 001a:12ef6974       _gl3wProgramUniformMatrix3x4dv 1aee2974     <common>
+ 001a:12ef6978       _gl3wBeginQueryIndexed     1aee2978     <common>
+ 001a:12ef697c       _gl3wTexParameterfv        1aee297c     <common>
+ 001a:12ef6980       _gl3wActiveShaderProgram   1aee2980     <common>
+ 001a:12ef6984       _gl3wPauseTransformFeedback 1aee2984     <common>
+ 001a:12ef6988       _gl3wVertexAttribBinding   1aee2988     <common>
+ 001a:12ef698c       _gl3wProgramUniform2dv     1aee298c     <common>
+ 001a:12ef6990       _gl3wGetSamplerParameterIuiv 1aee2990     <common>
+ 001a:12ef6994       _gl3wVertexAttrib1d        1aee2994     <common>
+ 001a:12ef6998       _gl3wVertexArrayVertexAttribBindingEXT 1aee2998     <common>
+ 001a:12ef699c       _gl3wGetnTexImageARB       1aee299c     <common>
+ 001a:12ef69a0       _gl3wVertexAttribI3ui      1aee29a0     <common>
+ 001a:12ef69a4       _gl3wGetActiveAtomicCounterBufferiv 1aee29a4     <common>
+ 001a:12ef69a8       _gl3wValidateProgramPipeline 1aee29a8     <common>
+ 001a:12ef69ac       _gl3wGetFloatv             1aee29ac     <common>
+ 001a:12ef69b0       _gl3wGetProgramResourceLocationIndex 1aee29b0     <common>
+ 001a:12ef69b4       _gl3wGenTextures           1aee29b4     <common>
+ 001a:12ef69b8       _gl3wProgramUniformMatrix2x3fv 1aee29b8     <common>
+ 001a:12ef69bc       _gl3wBindBuffer            1aee29bc     <common>
+ 001a:12ef69c0       _gl3wCopyTexSubImage2D     1aee29c0     <common>
+ 001a:12ef69c4       _gl3wTransformFeedbackVaryings 1aee29c4     <common>
+ 001a:12ef69c8       _gl3wProgramUniform4d      1aee29c8     <common>
+ 001a:12ef69cc       _gl3wGenQueries            1aee29cc     <common>
+ 001a:12ef69d0       _gl3wGetTexLevelParameterfv 1aee29d0     <common>
+ 001a:12ef69d4       _gl3wProgramUniform3dv     1aee29d4     <common>
+ 001a:12ef69d8       _gl3wProgramUniform1d      1aee29d8     <common>
+ 001a:12ef69dc       _gl3wProgramUniform4fv     1aee29dc     <common>
+ 001a:12ef69e0       _gl3wIsVertexArray         1aee29e0     <common>
+ 001a:12ef69e4       _gl3wVertexAttrib2sv       1aee29e4     <common>
+ 001a:12ef69e8       _gl3wProgramUniform3ui     1aee29e8     <common>
+ 001a:12ef69ec       _gl3wBindFragDataLocation  1aee29ec     <common>
+ 001a:12ef69f0       _gl3wVertexAttribL1dv      1aee29f0     <common>
+ 001a:12ef69f4       ___onexitend               1aee29f4     <common>
+ 001a:12ef69f8       ___onexitbegin             1aee29f8     <common>
+ 0020:00000000       _go4k_delay_times          1aeea000     purplebreak.obj
+ 0022:00000014       _RandSeed                  1aeec014     purplebreak.obj
+ 0022:00000024       _LFO_NORMALIZE             1aeec024     purplebreak.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0001:0000011d       ?Eval2D@@YAXMMMMMMMPAM0@Z  0060111d f   intro.obj
+ 0001:000001c1       ?Eval3D@@YAXMMMMMMMMPAM00@Z 006011c1 f   intro.obj
+ 0001:00002aca       _sync_find_track           00603aca f   device.obj
+ 0001:00002b1b       _sync_track_path           00603b1b f   device.obj
+ 0001:00002bf5       _get_track_data            00603bf5 f   device.obj
+ 0001:00002ce2       _mopen                     00603ce2 f   device.obj
+ 0001:00002d09       _mclose                    00603d09 f   device.obj
+ 0001:00002d1a       _mread                     00603d1a f   device.obj
+ 0001:00002d7e       _get_track_data_mem        00603d7e f   device.obj
+ 0001:00002e6c       _key_linear                00603e6c f   track.obj
+ 0001:00002e95       _key_smooth                00603e95 f   track.obj
+ 0001:00002ece       _key_ramp                  00603ece f   track.obj
+ 0001:00002f41       _key_idx_floor             00603f41 f   track.obj
+ 0001:00002ff8       _open_libgl                00603ff8 f   gl3w.obj
+ 0001:00003009       _close_libgl               00604009 f   gl3w.obj
+ 0001:00003016       _get_proc                  00604016 f   gl3w.obj
+ 0001:00003037       _parse_version             00604037 f   gl3w.obj
+ 0001:000030aa       _load_procs                006040aa f   gl3w.obj
+ 0001:0000e16a       ?loadbar@@YAXPAXH@Z        0060f16a f   main_rel.obj
+ 0001:0000e25d       ?WndProc@@YGJPAUHWND__@@IIJ@Z 0060f25d f   main_rel.obj
+ 0001:0000e2ae       ?window_end@@YAXPAUWININFO@@@Z 0060f2ae f   main_rel.obj
+ 0001:0000e30a       ?window_init@@YAHPAUWININFO@@@Z 0060f30a f   main_rel.obj
+ 0001:0000e864       ??__Esshape_normals@@YAXXZ 0060f864 f   intro.obj
+ 0001:0000e870       ??__Esshape_vertices@@YAXXZ 0060f870 f   intro.obj
+ 0001:0000e87c       ??__Esshape_colour@@YAXXZ  0060f87c f   intro.obj
+ 0001:0000e888       ??__Fsshape_normals@@YAXXZ 0060f888 f   intro.obj
+ 0001:0000e895       ??__Fsshape_vertices@@YAXXZ 0060f895 f   intro.obj
+ 0001:0000e8a2       ??__Fsshape_colour@@YAXXZ  0060f8a2 f   intro.obj
