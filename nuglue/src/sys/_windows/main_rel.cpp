@@ -11,11 +11,7 @@
 
 //#pragma check_stack(off)
 //#pragma runtime_checks("", off)
-
-
 #define ALLOWWINDOWED       // allow windowed mode
-
-
 
 #define WIN32_LEAN_AND_MEAN
 #define WIN32_EXTRA_LEAN
@@ -26,6 +22,7 @@
 #include "../events.h"
 #include "../../../resource.h"
 
+extern "C" int _fltused = 0x9875;
 extern "C" {
 	_declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
 }
